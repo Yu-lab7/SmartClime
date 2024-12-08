@@ -6,7 +6,7 @@ import sys
 def synthesize_voice(text, speaker=8, filename="../DigitalSignate/output/output.wav"):
     #print(f"送信するテキスト: {text}")  # デバッグ用プリント文
 
-    # 1. テキストから音声合成のためのクエリを作成
+    # テキストから音声合成のためのクエリを作成
     query_payload = {'text': text, 'speaker': speaker}
     query_response = requests.post(f'http://localhost:50021/audio_query', params=query_payload)
 
