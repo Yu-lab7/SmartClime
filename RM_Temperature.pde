@@ -9,7 +9,11 @@ void drawTemperatureRModule(Area area){
 
     image(rmoduleShadowImage(size), x-SHADOW_PADDING, y-SHADOW_PADDING); 
 
+    if (temperatureBackground != null) {
     image(temperatureBackground, x, y, w, h);
+  } else {
+    println("RM_Temperature: temperatureBackgroundが設定されていません.");
+  }
 
     drawText(LEFT,BASELINE, WHITE_COLOR, 32, "室温", x+50,y+50);
 

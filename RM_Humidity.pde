@@ -9,7 +9,11 @@ void drawHumidityRModule(Area area){
 
     image(rmoduleShadowImage(size), x-SHADOW_PADDING, y-SHADOW_PADDING); 
     
-    image(temperatureBackground, x, y, w, h);
+    if(humidityBackground != null){
+        image(humidityBackground, x, y, w, h);
+    } else {
+        println("RM_Humidity: humidityBackgroundが設定されていません.");
+    }
 
     drawText(LEFT,BASELINE, WHITE_COLOR, 32, "湿度", x+50,y+50);
 

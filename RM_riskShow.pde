@@ -9,7 +9,11 @@ void drawRiskRModule(Area area){
 
     image(rmoduleShadowImage(size), x-SHADOW_PADDING, y-SHADOW_PADDING);
     
+    if (riskBackground != null) {
     image(riskBackground, x, y, w, h);
+  } else {
+    println("RM_Risk: riskBackgroundが設定されていません.");
+  }
 
     String title = "リスク表示";
     drawText(CENTER,BASELINE,WHITE_COLOR,32,title,x+430,y+50);

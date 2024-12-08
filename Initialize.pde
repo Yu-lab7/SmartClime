@@ -46,6 +46,10 @@ void initializeGrid(){
 
 void initializePlaceholder(){
   placeholder = createGraphics(width,height);
+  if (placeholder == null) {
+    println("Error: Failed to create placeholder graphics");
+    return;
+  }
   
   placeholder.beginDraw();
   
@@ -59,6 +63,8 @@ void initializePlaceholder(){
   }
   
   placeholder.endDraw();
+
+  println("Placeholder graphics initialized successfully");
 }
 
 void initializeImage(){
@@ -89,8 +95,11 @@ void initializeRModuleBackground() {
   w = moduleWidth( moduleSize(module) );
   h = moduleHeight( moduleSize(module) );
   back = loadImage(TEMPERATURE_PATH + "background.jpg");
+  if (back == null) {
+    println("Error: Could not load image from " + TEMPERATURE_PATH + "background.jpg");
+  }
   temperatureBackground = createGraphics(w, h);
-    
+
   temperatureBackground.beginDraw();
   temperatureBackground.colorMode(HSB, 360, 100, 100, 100);
   temperatureBackground.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
@@ -106,6 +115,9 @@ void initializeRModuleBackground() {
   w = moduleWidth( moduleSize(module) );
   h = moduleHeight( moduleSize(module) );
   back = loadImage(WEATHER_PATH + "background.jpg");
+  if (back == null) {
+    println("Error: Could not load image from " + WEATHER_PATH + "background.jpg");
+  }
   weatherBackground = createGraphics(w, h);
  
   weatherBackground.beginDraw();
@@ -123,6 +135,9 @@ void initializeRModuleBackground() {
   w = moduleWidth( moduleSize(module) );
   h = moduleHeight( moduleSize(module) );
   back = loadImage(HUMIDITY_PATH + "background.jpg");
+  if (back == null) {
+    println("Error: Could not load image from " + HUMIDITY_PATH + "background.jpg");
+  }
   humidityBackground = createGraphics(w, h);
 
   humidityBackground.beginDraw();
@@ -139,6 +154,9 @@ void initializeRModuleBackground() {
   w = moduleWidth( moduleSize(module) );
   h = moduleHeight( moduleSize(module) );
   back = loadImage(RISK_PATH + "background.jpg");
+  if (back == null) {
+    println("Error: Could not load image from " + RISK_PATH + "background.jpg");
+  }
   riskBackground = createGraphics(w, h);
 
   riskBackground.beginDraw();
@@ -160,6 +178,9 @@ void initializeRModuleBackground() {
   w = moduleWidth( moduleSize(module) );
   h = moduleHeight( moduleSize(module) );
   back = loadImage(CLOTHES_PATH + "background.jpg");
+  if (back == null) {
+    println("Error: Could not load image from " + CLOTHES_PATH + "background.jpg");
+  }
   clothesBackground = createGraphics(w, h);
 
   clothesBackground.beginDraw();

@@ -8,8 +8,13 @@ void drawWeatherRModule(Area area){
   int h = moduleHeight(size);
 
   image(rmoduleShadowImage(size), x-SHADOW_PADDING, y-SHADOW_PADDING); 
+
+  if (weatherBackground != null) {
+    image(weatherBackground, x, y, w, h);
+  } else {
+    println("RM_Weather: weatherBackgroundが設定されていません.");
+  }
   
-  image(weatherBackground, x, y, w, h);
   
   drawText(LEFT, BASELINE, WHITE_COLOR, 32, "現在の大阪府の天気", x+50, y+50);
   drawText(LEFT, BASELINE, WHITE_COLOR, 16, "気象データ提供元: OpenWeather(TM)", x+50, y+100);

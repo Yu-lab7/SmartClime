@@ -9,7 +9,11 @@ void drawClothesRModule(Area area){
 
     image(rmoduleShadowImage(size), x-SHADOW_PADDING, y-SHADOW_PADDING);
     
+    if (clothesBackground != null) {
     image(clothesBackground, x, y, w, h);
+  } else {
+    println("RM_Clothes: clothesBackgroundが設定されていません.");
+  }
 
     
 

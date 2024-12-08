@@ -33,7 +33,7 @@ final String TEMPERATURE_PATH = "temperature/"; //気温画像が格納されて
 final String HUMIDITY_PATH = "humidity/"; //湿度画像が格納されているフォルダのパス
 final String RISK_PATH = "risk/"; //リスク画像が格納されているフォルダのパス
 final String CLOTHES_PATH = "clothes/"; //服装画像が格納されているフォルダのパス
-final String TTS_PATH = "C:\\Users\\kvk18\\OneDrive - 大阪工業大学\\devTool\\processing-4.3-windows-x64\\DigitalSignate\\python\\tts.py";
+final String TTS_PATH = "..\\DigitalSignate\\python\\tts.py";
 
 final String LOCATION =  "大阪府";// 現在位置を設定
 
@@ -144,9 +144,9 @@ void setup() {
     
     background = loadImage("background.jpg");
     //background = pImageCut(loadImage("background.jpg"),CENTER,CENTER,width,height);
-
+    
     callTTSPythonScript("はろー");
-    thread("initialize"); //初期化関数を呼ぶ
+    initialize();
 }
 
 void draw() {
