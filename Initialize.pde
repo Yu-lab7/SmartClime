@@ -63,8 +63,6 @@ void initializePlaceholder(){
   }
   
   placeholder.endDraw();
-
-  println("Placeholder graphics initialized successfully");
 }
 
 void initializeImage(){
@@ -167,6 +165,66 @@ void initializeRModuleBackground() {
   riskBackground.rect(0, 0, w, h);
   riskBackground.endDraw();
   riskBackground.mask( sizeToModuleMask( moduleSize(module) ) );
+
+  back = loadImage(RISK_PATH + "riskShowSummer.png");
+  if (back == null) {
+    println("Error: Could not load image from " + RISK_PATH + "riskShowSummer.png");
+  }
+  riskShowSpring = createGraphics(w, h);
+
+  riskShowSpring.beginDraw();
+  riskShowSpring.colorMode(HSB, 360, 100, 100, 100);
+  riskShowSpring.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
+  riskShowSpring.fill(0, 0, 0, 40);
+  riskShowSpring.noStroke();
+  riskShowSpring.rect(0, 0, w, h);
+  riskShowSpring.endDraw();
+  riskShowSpring.mask( sizeToModuleMask( moduleSize(module) ) );
+
+  back =loadImage(RISK_PATH + "riskShowSummer.png");
+  if (back == null) {
+    println("Error: Could not load image from " + RISK_PATH + "riskShowSummer.png");
+  }
+  riskShowSummer = createGraphics(w, h);
+  
+  riskShowSummer.beginDraw();
+  riskShowSummer.colorMode(HSB, 360, 100, 100, 100);
+  riskShowSummer.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
+  riskShowSummer.fill(0, 0, 0, 40);
+  riskShowSummer.noStroke();
+  riskShowSummer.rect(0, 0, w, h);
+  riskShowSummer.endDraw();
+  riskShowSummer.mask( sizeToModuleMask( moduleSize(module) ) );
+
+  back = loadImage(RISK_PATH + "riskShowWinter.png");
+  if (back == null) {
+    println("Error: Could not load image from " + RISK_PATH + "riskShowWinter.png");
+  }
+  riskShowWinter = createGraphics(w, h);
+
+  riskShowWinter.beginDraw();
+  riskShowWinter.colorMode(HSB, 360, 100, 100, 100);
+  riskShowWinter.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
+  riskShowWinter.fill(0, 0, 0, 40);
+  riskShowWinter.noStroke();
+  riskShowWinter.rect(0, 0, w, h);
+  riskShowWinter.endDraw();
+  riskShowWinter.mask( sizeToModuleMask( moduleSize(module) ) );
+
+  back = loadImage(RISK_PATH + "riskShowWinter.png");
+  if (back == null) {
+    println("Error: Could not load image from " + RISK_PATH + "riskShowWinter.png");
+  }
+  riskShowWinter = createGraphics(w, h);
+
+  riskShowWinter.beginDraw();
+  riskShowWinter.colorMode(HSB, 360, 100, 100, 100);
+  riskShowWinter.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
+  riskShowWinter.fill(0, 0, 0, 40);
+  riskShowWinter.noStroke();
+  riskShowWinter.rect(0, 0, w, h);
+  riskShowWinter.endDraw();
+  riskShowWinter.mask( sizeToModuleMask( moduleSize(module) ) );
   
 
   //----------------------------------------//

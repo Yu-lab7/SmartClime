@@ -46,6 +46,7 @@ color BLACK_COLOR;
 color LIGHT_COLOR; 
 color GRAY_COLOR;
 color GREEN_COLOR;
+color RED_COLOR;
 
 //時間の宣言
 int year;
@@ -85,8 +86,21 @@ float hum = 0.0; //湿度の変数
 PGraphics humidityBackground; //湿度の背景画像
 
 //RiskRModuleの変数
+float riskNum = 0.0; //室内外温度の差
 boolean isUpdatedRisk = true; //データが正しく取得できたか確認
 PGraphics riskBackground; //リスクの背景画像
+PGraphics riskShowSpring; //春のリスクの背景画像
+PGraphics riskShowSummer; //夏のリスクの背景画像
+PGraphics riskShowAutumn; //秋のリスクの背景画像
+PGraphics riskShowWinter; //冬のリスクの背景画像
+String riskStringSpring;
+String riskStringSummer;
+String riskStringAutumn;
+String riskStringWinter;
+String adviseStringSpring;
+String adviseStringSummer;
+String adviseStringAutumn;
+String adviseStringWinter;
 
 //ClothesRModuleの変数
 boolean isUpdatedClothes = true; //データが正しく取得できたか確認
@@ -102,21 +116,21 @@ PGraphics moduleShadowM;
 PGraphics moduleShadowL;
 
 //月の定義
-int  March = 3;
-int  April = 4;
-int  May = 5;
+int march = 3;
+int april = 4;
+int may = 5;
 
-int  June = 6;
-int  July = 7;
-int  August = 8;
+int june = 6;
+int july = 7;
+int august = 8;
 
-int  September = 9;
-int  October = 10;
-int  November = 11;
+int september = 9;
+int october = 10;
+int november = 11;
 
-int  December = 12;
-int  January = 1;
-int  February = 2;
+int december = 12;
+int january = 1;
+int february = 2;
 
 boolean debugMode = true; //デバックモードを設定
 
@@ -139,6 +153,7 @@ void setup() {
     LIGHT_COLOR = color(0,0,80);
     GRAY_COLOR = color(0,0,50);
     GREEN_COLOR = color(150,100,60);
+    RED_COLOR = color(0,100,100);
     
     textFont(createFont("Noto Sans CJK jp Bold" ,32)); //テキストフォントの追加
     
