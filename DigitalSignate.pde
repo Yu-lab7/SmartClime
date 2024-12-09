@@ -24,8 +24,10 @@ final int AD_IMAGE_COUNT = 1; //広告画像の枚数
 boolean isInitializedImages = false;
 boolean isInitializedDates = false;
 boolean isInitializedWeather = false;
-boolean isInitializedRoomTeperature = false;
+boolean isInitializedRoomTemperature = false;
 boolean isInitializedRoomHumidity = false;
+boolean isInitializedRisk = false;
+boolean isInitializedClothes = false;
 
 final String AD_PATH = "ad/"; //広告画像が格納されているフォルダのパス
 final String WEATHER_PATH = "weather/"; //天気画像が格納されているフォルダのパス
@@ -34,6 +36,7 @@ final String HUMIDITY_PATH = "humidity/"; //湿度画像が格納されている
 final String RISK_PATH = "risk/"; //リスク画像が格納されているフォルダのパス
 final String CLOTHES_PATH = "clothes/"; //服装画像が格納されているフォルダのパス
 final String TTS_PATH = "..\\DigitalSignate\\python\\tts.py";
+final String AI_PATH = "..\\DigitalSignate\\python\\suggestClothes.py";
 
 final String LOCATION =  "大阪府";// 現在位置を設定
 
@@ -75,19 +78,16 @@ String  weatherString = "";
 PGraphics weatherBackground;
 
 //TemperatureRModuleの変数
-boolean isUpdatedTemperature = true; //データが正しく取得できたか確認 
+boolean isUpdatedTemperature = false; //データが正しく取得できたか確認 
 PGraphics temperatureBackground; //気温の背景画像
 float temp = 0.0; //温度の変数
 
 //HumidityRModuleの変数
-boolean isHumidity = true; //データが正しく取得できたか確認
-boolean isUpdatedHumidity = true; //データが正しく取得できたか確認
 float hum = 0.0; //湿度の変数
 PGraphics humidityBackground; //湿度の背景画像
 
 //RiskRModuleの変数
 float riskNum = 0.0; //室内外温度の差
-boolean isUpdatedRisk = true; //データが正しく取得できたか確認
 PGraphics riskBackground; //リスクの背景画像
 PGraphics riskShowSpring; //春のリスクの背景画像
 PGraphics riskShowSummer; //夏のリスクの背景画像
@@ -103,8 +103,10 @@ String adviseStringAutumn;
 String adviseStringWinter;
 
 //ClothesRModuleの変数
-boolean isUpdatedClothes = true; //データが正しく取得できたか確認
 PGraphics clothesBackground; //服装の背景画像
+
+//AI作成のための変数
+int is_cold_sensitive = 0; //寒がりかどうか
 
 int nowPageID = -1; //現在のページを設定
 
@@ -161,7 +163,7 @@ void setup() {
     //background = pImageCut(loadImage("background.jpg"),CENTER,CENTER,width,height);
     
     callTTSPythonScript("はろー");
-    initialize();
+    thread("initialize");
 }
 
 void draw() {
@@ -220,6 +222,7 @@ void drawModules() {
         drawFullImageModule(background);
         drawGridModule();
         drawPlaceholderModule();
+        drawClothesRModule(Area.area2);
 }
     drawDateModule();
     drawLocationModule();

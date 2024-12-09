@@ -15,10 +15,10 @@ void drawRiskRModule(Area area) {
         println("RM_Risk: riskBackgroundが設定されていません.");
     }
     
-    String title = "リスク表示";
-    drawText(CENTER,BASELINE,WHITE_COLOR,32,title,x + 430,y + 50);
+    String riskTitle = "リスク表示";
+    drawText(CENTER,BASELINE,WHITE_COLOR,32,riskTitle,x + 430,y + 50);
     
-    if (temp != 0.0) {
+    if (temp != 0.0) { //実装時にはtemp == 0にする
         drawText(CENTER,BASELINE,WHITE_COLOR,32,"riskShowModule\nデータを取得できません",x + 430,y + 150);
     } else {
 
@@ -31,6 +31,8 @@ void drawRiskRModule(Area area) {
         
         if (month == march || month == april || month == may) { //春の場合
             //朝晩や前日との温度差を確認するプログラムが必要
+            //スプレッドシートに前日の温度などを記録する処理を追加するのがめんどくさい
+            //時間があれば追加する
         } else if (month == june || month == july || month == august || debugMode == true) { //夏の場合
             if(riskNum >= 5 || riskNum <=7){
                 riskStringSummer = "寒暖差疲労に注意";
@@ -41,6 +43,8 @@ void drawRiskRModule(Area area) {
             }
         } else if (month == september || month == october || month == november) { //秋の場合
             //朝晩や前日との温度差を確認するプログラムが必要
+            //スプレッドシートに前日の温度などを記録する処理を追加するのがめんどくさい
+            //時間があれば追加する
         } else if (month == december || month == january || month == february || debugMode == false) { //冬の場合
             if (riskNum >= 10) {
                 riskStringWinter = "ヒートショックに注意";

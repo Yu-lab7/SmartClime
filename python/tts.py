@@ -3,7 +3,7 @@ import json
 import sys
 
 # 音声合成を行うメソッド
-def synthesize_voice(text, speaker=8, filename="../DigitalSignate/output/output.wav"):
+def synthesize_voice(text, speaker=8, filename="../DigitalSignate/python/output/output.wav"):
     #print(f"送信するテキスト: {text}")  # デバッグ用プリント文
 
     # テキストから音声合成のためのクエリを作成
@@ -44,4 +44,4 @@ if __name__ == "__main__":
     text = sys.argv[1]
 
     # 音声合成の実行
-    synthesize_voice(text, speaker=8, filename="../DigitalSignate/output/output.wav")
+    synthesize_voice(text, speaker=8, filename="../DigitalSignate/python/output/output.wav")
