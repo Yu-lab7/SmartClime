@@ -17,9 +17,15 @@ void initialize(){
   initializeShadow();
   initializeRModuleBackground(); 
   isInitializedImages = true;
+  isInitializedRoomTemperature = true;
+  isInitializedRoomHumidity = true;
+  isInitializedRisk = true;
+  isInitializedClothes = true;
   
   isUpdatedWeather = updateWeather();
   isInitializedWeather = true;
+
+  updateNowPageID(true);
 }
 
 void initializeGrid(){
