@@ -24,8 +24,19 @@ void initialize(){
   
   isUpdatedWeather = updateWeather();
   isInitializedWeather = true;
-
+  connectWithPython(String.valueOf(temperature),weatherString,String.valueOf(1),String.valueOf(0));
+  connectWithPython2(String.valueOf(tempMax),String.valueOf(tempMin),String.valueOf(1),String.valueOf(0));
   updateNowPageID(true);
+
+  if(debugMode == true){
+    println("現在の緯度:"+latitude);
+    println("現在の経度:"+longitude);
+    println("現在の気温:"+temperature);
+    println("現在の湿度:"+humidity);
+    println("現在の天気:"+weatherString);
+    println("最高気温:"+tempMax);
+    println("最低気温:"+tempMin);
+  }
 }
 
 void initializeGrid(){
@@ -255,6 +266,216 @@ void initializeRModuleBackground() {
   clothesBackground.rect(0, 0, w, h);
   clothesBackground.endDraw();
   clothesBackground.mask( sizeToModuleMask( moduleSize(module) ) );
+
+  back = loadImage(CLOTHES_PATH + "glove.png");
+  if (back == null) {
+    println("Error: Could not load image from " + CLOTHES_PATH + "glove.png");
+  }
+  clothesGlove = createGraphics(w, h);
+
+  clothesGlove.beginDraw();
+  clothesGlove.colorMode(HSB, 360, 100, 100, 100);
+  clothesGlove.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
+  clothesGlove.fill(0, 0, 0, 40);
+  clothesGlove.noStroke();
+  clothesGlove.rect(0, 0, w, h);
+  clothesGlove.endDraw();
+  clothesGlove.mask( sizeToModuleMask( moduleSize(module) ) );
+
+  back = loadImage(CLOTHES_PATH + "scarf.png");
+  if (back == null) {
+    println("Error: Could not load image from " + CLOTHES_PATH + "scarf.png");
+  }
+  clothesScarf = createGraphics(w, h);
+
+  clothesScarf.beginDraw();
+  clothesScarf.colorMode(HSB, 360, 100, 100, 100);
+  clothesScarf.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
+  clothesScarf.fill(0, 0, 0, 40);
+  clothesScarf.noStroke();
+  clothesScarf.rect(0, 0, w, h);
+  clothesScarf.endDraw();
+  clothesScarf.mask( sizeToModuleMask( moduleSize(module) ) );
+
+  back = loadImage(CLOTHES_PATH + "hansode.png");
+  if (back == null) {
+    println("Error: Could not load image from " + CLOTHES_PATH + "hansode.png");
+  }
+  clothesHansode = createGraphics(w, h);
+
+  clothesHansode.beginDraw();
+  clothesHansode.colorMode(HSB, 360, 100, 100, 100);
+  clothesHansode.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
+  clothesHansode.fill(0, 0, 0, 40);
+  clothesHansode.noStroke();
+  clothesHansode.rect(0, 0, w, h);
+  clothesHansode.endDraw();
+  clothesHansode.mask( sizeToModuleMask( moduleSize(module) ) );
+
+  back = loadImage(CLOTHES_PATH + "nagasode.png");
+  if (back == null) {
+    println("Error: Could not load image from " + CLOTHES_PATH + "nagasode.png");
+  }
+  longsleevedshirt = createGraphics(w, h);
+
+  longsleevedshirt.beginDraw();
+  longsleevedshirt.colorMode(HSB, 360, 100, 100, 100);
+  longsleevedshirt.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
+  longsleevedshirt.fill(0, 0, 0, 40);
+  longsleevedshirt.noStroke();
+  longsleevedshirt.rect(0, 0, w, h);
+  longsleevedshirt.endDraw();
+  longsleevedshirt.mask( sizeToModuleMask( moduleSize(module) ) );
+
+  back = loadImage(CLOTHES_PATH + "cardigan.jpg");
+  if (back == null) {
+    println("Error: Could not load image from " + CLOTHES_PATH + "cardigan.jpg");
+  }
+  cardigan = createGraphics(w, h);
+
+  cardigan.beginDraw();
+  cardigan.colorMode(HSB, 360, 100, 100, 100);
+  cardigan.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
+  cardigan.fill(0, 0, 0, 40);
+  cardigan.noStroke();
+  cardigan.rect(0, 0, w, h);
+  cardigan.endDraw();
+  cardigan.mask( sizeToModuleMask( moduleSize(module) ) );
+
+  back = loadImage(CLOTHES_PATH + "seta_m.jpg");
+  if (back == null) {
+    println("Error: Could not load image from " + CLOTHES_PATH + "seta_m.jpg");
+  }
+  sweaterM = createGraphics(w, h);
+  
+  sweaterM.beginDraw();
+  sweaterM.colorMode(HSB, 360, 100, 100, 100);
+  sweaterM.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
+  sweaterM.fill(0, 0, 0, 40);
+  sweaterM.noStroke();
+  sweaterM.rect(0, 0, w, h);
+  sweaterM.endDraw();
+  sweaterM.mask( sizeToModuleMask( moduleSize(module) ) );
+
+  back = loadImage(CLOTHES_PATH + "seta_w.jpg");
+  if (back == null) {
+    println("Error: Could not load image from " + CLOTHES_PATH + "seta_w.jpg");
+  }
+  sweaterW = createGraphics(w, h);
+
+  sweaterW.beginDraw();
+  sweaterW.colorMode(HSB, 360, 100, 100, 100);
+  sweaterW.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
+  sweaterW.fill(0, 0, 0, 40);
+  sweaterW.noStroke();
+  sweaterW.rect(0, 0, w, h);
+  sweaterW.endDraw();
+  sweaterW.mask( sizeToModuleMask( moduleSize(module) ) );
+
+  back = loadImage(CLOTHES_PATH + "torenchi.jpg");
+  if (back == null) {
+    println("Error: Could not load image from " + CLOTHES_PATH + "torenchi.jpg");
+  }
+  toren = createGraphics(w, h);
+
+  toren.beginDraw();
+  toren.colorMode(HSB, 360, 100, 100, 100);
+  toren.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
+  toren.fill(0, 0, 0, 40);
+  toren.noStroke();
+  toren.rect(0, 0, w, h);
+  toren.endDraw();
+  toren.mask( sizeToModuleMask( moduleSize(module) ) );
+
+  back = loadImage(CLOTHES_PATH + "wintercoat.jpg");
+  if (back == null) {
+    println("Error: Could not load image from " + CLOTHES_PATH + "wintercoat.jpg");
+  }
+  winterCoat = createGraphics(w, h);
+
+  winterCoat.beginDraw();
+  winterCoat.colorMode(HSB, 360, 100, 100, 100);
+  winterCoat.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
+  winterCoat.fill(0, 0, 0, 40);
+  winterCoat.noStroke();
+  winterCoat.rect(0, 0, w, h);
+  winterCoat.endDraw();
+  winterCoat.mask( sizeToModuleMask( moduleSize(module) ) );
+
+  back = loadImage(CLOTHES_PATH + "downCoat.jpg");
+  if (back == null) {
+    println("Error: Could not load image from " + CLOTHES_PATH + "downCoat.jpg");
+  }
+  downCoat = createGraphics(w, h);
+
+  downCoat.beginDraw();
+  downCoat.colorMode(HSB, 360, 100, 100, 100);
+  downCoat.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
+  downCoat.fill(0, 0, 0, 40);
+  downCoat.noStroke();
+  downCoat.rect(0, 0, w, h);
+  downCoat.endDraw();
+  downCoat.mask( sizeToModuleMask( moduleSize(module) ) );
+
+  back = loadImage(CLOTHES_PATH + "bousuisei.jpg");
+  if (back == null) {
+    println("Error: Could not load image from " + CLOTHES_PATH + "bousuisei.jpg");
+  }
+  waterProof = createGraphics(w, h);
+
+  waterProof.beginDraw();
+  waterProof.colorMode(HSB, 360, 100, 100, 100);
+  waterProof.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
+  waterProof.fill(0, 0, 0, 40);
+  waterProof.noStroke();
+  waterProof.rect(0, 0, w, h);
+  waterProof.endDraw();
+  waterProof.mask( sizeToModuleMask( moduleSize(module) ) );
+
+  back = loadImage(CLOTHES_PATH + "haorimono.jpg");
+  if (back == null) {
+    println("Error: Could not load image from " + CLOTHES_PATH + "haorimono.jpg");
+  }
+  lightWeight = createGraphics(w, h);
+
+  lightWeight.beginDraw();
+  lightWeight.colorMode(HSB, 360, 100, 100, 100);
+  lightWeight.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
+  lightWeight.fill(0, 0, 0, 40);
+  lightWeight.noStroke();
+  lightWeight.rect(0, 0, w, h);
+  lightWeight.endDraw();
+  lightWeight.mask( sizeToModuleMask( moduleSize(module) ) );
+
+  back = loadImage(CLOTHES_PATH + "haorimono_w.jpg");
+  if (back == null) {
+    println("Error: Could not load image from " + CLOTHES_PATH + "haorimono_w.jpg");
+  }
+  lightWeight2 = createGraphics(w, h);
+
+  lightWeight2.beginDraw();
+  lightWeight2.colorMode(HSB, 360, 100, 100, 100);
+  lightWeight2.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
+  lightWeight2.fill(0, 0, 0, 40);
+  lightWeight2.noStroke();
+  lightWeight2.rect(0, 0, w, h);
+  lightWeight2.endDraw();
+  lightWeight2.mask( sizeToModuleMask( moduleSize(module) ) );
+
+  back = loadImage(CLOTHES_PATH + "mask.jpg");
+  if (back == null) {
+    println("Error: Could not load image from " + CLOTHES_PATH + "mask.jpg");
+  }
+  mask = createGraphics(w, h);
+
+  mask.beginDraw();
+  mask.colorMode(HSB, 360, 100, 100, 100);
+  mask.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
+  mask.fill(0, 0, 0, 40);
+  mask.noStroke();
+  mask.rect(0, 0, w, h);
+  mask.endDraw();
+  mask.mask( sizeToModuleMask( moduleSize(module) ) );
 }
 
 void initializeShadow() {

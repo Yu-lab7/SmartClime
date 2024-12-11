@@ -20,8 +20,8 @@ void drawWeatherRModule(Area area){
   drawText(LEFT, BASELINE, WHITE_COLOR, 16, "気象データ提供元: OpenWeather(TM)", x+50, y+100);
   
   if (isUpdatedWeather) {
-    drawText(LEFT, BASELINE, BLACK_COLOR, 64, int(temperature)+"℃ / "+humidity+"%", x+50, y+160);
-    drawText(LEFT, BASELINE, BLACK_COLOR, 42, weatherString, x+50, y+260);
+    drawText(LEFT, BASELINE, WHITE_COLOR, 64, int(temperature)+"℃ / "+humidity+"%", x+50, y+160);
+    drawText(LEFT, BASELINE, WHITE_COLOR, 42, weatherString, x+50, y+260);
     image(weatherIcon, x+w-h, y+50, h, h);
   } else {
     fill(0, 0, 0, 50);
@@ -44,6 +44,13 @@ boolean updateWeather(){
     JSONObject main = json.getJSONObject("main");
     temperature = main.getFloat("temp");
     humidity = main.getInt("humidity"); 
+    tempMax = main.getFloat("temp_max");
+    tempMin = main.getFloat("temp_min");
+
+    //華氏温度を摂氏温度に変換
+    temperature = temperature - 273.15;
+    tempMax = tempMax - 273.15;
+    tempMin = tempMin - 273.15;
   
     //現在の天気に対応する画像を取得
     final String iconCode = weather.getJSONObject(0).getString("icon");
