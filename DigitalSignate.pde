@@ -20,7 +20,6 @@ final int STAY_SECOND = 10; //1ページ当たりの滞在秒数
 final int PAGE_ALL_COUNT = 2; //全てのページの枚数
 final int AD_IMAGE_COUNT = 1; //広告画像の枚数
 
-                    // 起動画面用の初期化済フラグ [削除予定]
 boolean isInitializedImages = false;
 boolean isInitializedDates = false;
 boolean isInitializedWeather = false;
@@ -37,6 +36,7 @@ final String RISK_PATH = "risk/"; //リスク画像が格納されているフ�
 final String CLOTHES_PATH = "clothes/"; //服装画像が格納されているフォルダのパス
 final String TTS_PATH = "..\\DigitalSignate\\python\\tts.py";
 final String AI_PATH = "..\\DigitalSignate\\python\\suggestClothes.py";
+final String AI_PATH2 = "..\\DigitalSignate\\python\\suggestClothes2.py";
 
 final String LOCATION =  "大阪府";// 現在位置を設定
 
@@ -67,7 +67,6 @@ Youbi youbi;
 Youbi youbi2;
 boolean isHoliday;
 
-//              [isUpdate系の要素を追加予定]
 boolean isUpdatedWeather = false; //データが正しく取得できたか確認
 float latitude = 0;
 float longitude = 0;
@@ -75,6 +74,8 @@ PImage weatherIcon;
 float temperature = 0.0;
 int humidity = 0;
 String  weatherString = "";
+float tempMax = 0.0;
+float tempMin = 0.0;
 PGraphics weatherBackground;
 
 //TemperatureRModuleの変数
@@ -104,9 +105,26 @@ String adviseStringWinter;
 
 //ClothesRModuleの変数
 PGraphics clothesBackground; //服装の背景画像
-
+String[] outfit; //服装の変数
+String heavyOutfit; //防寒具の変数
+PGraphics clothesGlove; //手袋の画像
+PGraphics clothesScarf; //マフラーの画像
+PGraphics clothesHansode;//半袖シャツ
+PGraphics longsleevedshirt; //長袖シャツ
+PGraphics cardigan; //カーディガン
+PGraphics sweaterM; //セーター
+PGraphics sweaterW; //セーター
+PGraphics toren; //トレンチコート
+PGraphics winterCoat; //冬コートの半袖
+PGraphics downCoat; //ダウンコート
+PGraphics waterProof; //防水
+PGraphics lightWeight; //軽量
+PGraphics lightWeight2; //軽量
+PGraphics mask; //マスク
+ 
 //AI作成のための変数
 int is_cold_sensitive = 0; //寒がりかどうか
+int is_hot_sensitive = 0; //暑がりかどうかa
 
 int nowPageID = -1; //現在のページを設定
 
