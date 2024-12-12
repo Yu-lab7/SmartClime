@@ -11,7 +11,7 @@ void connectWithPython(String nowTemp, String ws,  String ics, String ihs) {
         String line;
         while((line = outputReader.readLine()) != null) {
             println("OUTPUT: " + line);
-            outfit= line.split("/");
+            outfit = line.split("/");
         }
         outputReader.close();
         
