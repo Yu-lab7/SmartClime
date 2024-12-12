@@ -20,12 +20,33 @@ void initialize(){
   isInitializedRoomTemperature = true;
   isInitializedRoomHumidity = true;
   isInitializedRisk = true;
+  connectWithPython(String.valueOf(temperature),weatherString,is_cold_sensitive,is_hot_sensitive);
+  connectWithPython2(String.valueOf(tempMax),String.valueOf(tempMin),is_cold_sensitive,is_hot_sensitive);
   isInitializedClothes = true;
   
   isUpdatedWeather = updateWeather();
   isInitializedWeather = true;
-  connectWithPython(String.valueOf(temperature),weatherString,String.valueOf(1),String.valueOf(0));
-  connectWithPython2(String.valueOf(tempMax),String.valueOf(tempMin),String.valueOf(1),String.valueOf(0));
+  if((morningTimeHT[0].equals(String.valueOf(hour)) && morningTimeHT[1].equals(String.valueOf(minute)))){
+        if(outfit.length == 1){
+            callTTSPythonScript(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),riskStringSummer,adviseStringSummer,outfit[0],heavyOutfit,String.valueOf(checkMorningOrNight));
+            openWaveFile();
+        } else {
+            callTTSPythonScript2(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),riskStringSummer,adviseStringSummer,outfit[0],outfit[1],heavyOutfit,String.valueOf(checkMorningOrNight));
+            openWaveFile();
+        }
+    } 
+
+    if((nightTimeHT[0].equals(String.valueOf(hour)) && nightTimeHT[1].equals(String.valueOf(minute)))){
+        checkMorningOrNight = 1;
+        if(outfit.length == 1){
+            callTTSPythonScript(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),riskStringSummer,adviseStringSummer,outfit[0],heavyOutfit,String.valueOf(checkMorningOrNight));
+            openWaveFile();
+        } else {
+            callTTSPythonScript2(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),riskStringSummer,adviseStringSummer,outfit[0],outfit[1],heavyOutfit,String.valueOf(checkMorningOrNight));
+            openWaveFile();
+        }
+        checkMorningOrNight = 0;
+    }
   updateNowPageID(true);
 
   if(debugMode == true){
@@ -34,6 +55,8 @@ void initialize(){
     println("現在の気温:"+temperature);
     println("現在の湿度:"+humidity);
     println("現在の天気:"+weatherString);
+    println("現在の部屋の温度"+temp);
+    println("現在の部屋の湿度"+hum);
     println("最高気温:"+tempMax);
     println("最低気温:"+tempMin);
   }

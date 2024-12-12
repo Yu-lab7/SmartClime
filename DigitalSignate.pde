@@ -34,9 +34,12 @@ final String TEMPERATURE_PATH = "temperature/"; //気温画像が格納されて
 final String HUMIDITY_PATH = "humidity/"; //湿度画像が格納されているフォルダのパス
 final String RISK_PATH = "risk/"; //リスク画像が格納されているフォルダのパス
 final String CLOTHES_PATH = "clothes/"; //服装画像が格納されているフォルダのパス
-final String TTS_PATH = "..\\DigitalSignate\\python\\tts.py";
+final String TTS_PATH = "..\\DigitalSignate\\python\\ttsAbout.py";
+final String TTS_PATH2 = "..\\DigitalSignate\\python\\ttsAbout2.py";
 final String AI_PATH = "..\\DigitalSignate\\python\\suggestClothes.py";
 final String AI_PATH2 = "..\\DigitalSignate\\python\\suggestClothes2.py";
+final String FORM_PATH = "..\\DigitalSignate\\python\\form.py";
+final String WAVE_PATH = "..\\DigitalSignate\\python\\openWav.py";
 
 final String LOCATION =  "大阪府";// 現在位置を設定
 
@@ -123,8 +126,8 @@ PGraphics lightWeight2; //軽量
 PGraphics mask; //マスク
  
 //AI作成のための変数
-int is_cold_sensitive = 0; //寒がりかどうか
-int is_hot_sensitive = 0; //暑がりかどうかa
+String is_cold_sensitive = "0"; //寒がりかどうか
+String is_hot_sensitive = "0"; //暑がりかどうか
 
 int nowPageID = -1; //現在のページを設定
 
@@ -152,6 +155,19 @@ int december = 12;
 int january = 1;
 int february = 2;
 
+//アンケート画面の設定
+String[] reserve;
+boolean isFirstLaunch = true; //初回起動かどうか
+String nickname = ""; //ニックネーム
+String morningTime = "7:00";
+String[] morningTimeHT = new String[2];  //朝の時間
+String nightTime = "20:00";
+String[] nightTimeHT = new String[2]; //夜の時間
+int checkMorningOrNight = 0;
+int currentDate = -1; 
+int lastExecutionDate = -1;
+int checkOpened = 0;
+
 boolean debugMode = true; //デバックモードを設定
 
 //パソコン向けにスクリーンを設定
@@ -163,7 +179,7 @@ void settings() {
 //初回描画時に実行
 void setup() { 
     frameRate(1); //描画処理を毎秒一回更新する
-    noCursor(); //マウスカーソルの削除
+    //noCursor(); //マウスカーソルの削除
     colorMode(HSB,360,100,100,100); //色の設定をHSBに設定
     
     WHITE_COLOR = color(0,0,100);
@@ -180,7 +196,9 @@ void setup() {
     background = loadImage("background.jpg");
     //background = pImageCut(loadImage("background.jpg"),CENTER,CENTER,width,height);
     
-    callTTSPythonScript("はろー");
+    connectWithPython3();
+    checkSubmitForm();
+
     thread("initialize");
 }
 
@@ -228,6 +246,12 @@ void updateDates() {
 }
 
 void drawModules() {
+    currentDate = day();
+    if(currentDate != lastExecutionDate){
+        checkOpened = 0;
+        lastExecutionDate = currentDate;
+    }
+
     if (nowPageID == 0) {
         drawFullImageModule(background);
         drawGridModule();
@@ -246,6 +270,29 @@ void drawModules() {
     drawLocationModule();
     drawProgressBarModule();
     drawPageControlModule();
+    if((morningTimeHT[0].equals(String.valueOf(hour)) && morningTimeHT[1].equals(String.valueOf(minute))) && checkOpened == 0){
+        if(outfit.length == 1){
+            callTTSPythonScript(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),riskStringSummer,adviseStringSummer,outfit[0],heavyOutfit,String.valueOf(checkMorningOrNight));
+            openWaveFile();
+        } else {
+            callTTSPythonScript2(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),riskStringSummer,adviseStringSummer,outfit[0],outfit[1],heavyOutfit,String.valueOf(checkMorningOrNight));
+            openWaveFile();
+        }
+        checkOpened = 1;
+    } 
+
+    if((nightTimeHT[0].equals(String.valueOf(hour)) && nightTimeHT[1].equals(String.valueOf(minute))) && checkOpened == 0){
+        checkMorningOrNight = 1;
+        if(outfit.length == 1){
+            callTTSPythonScript(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),riskStringSummer,adviseStringSummer,outfit[0],heavyOutfit,String.valueOf(checkMorningOrNight));
+            openWaveFile();
+        } else {
+            callTTSPythonScript2(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),riskStringSummer,adviseStringSummer,outfit[0],outfit[1],heavyOutfit,String.valueOf(checkMorningOrNight));
+            openWaveFile();
+        }
+        checkMorningOrNight = 0;
+        checkOpened = 1;
+    }
 }
 
 //エリア数の定義
@@ -413,3 +460,13 @@ PGraphics rmoduleShadowImage(Size size) {
   if (size == Size.L) return moduleShadowL;
   return null;
 }
+
+/*void callAI(){
+    connectWithPython(String.valueOf(temperature),weatherString,is_cold_sensitive,is_hot_sensitive);
+    connectWithPython2(String.valueOf(tempMax),String.valueOf(tempMin),is_cold_sensitive,is_hot_sensitive);
+    if(outfit.length == 1){
+        callTTSPythonScript(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),riskStringSummer,adviseStringSummer,outfit[0],heavyOutfit);
+    } else {
+        callTTSPythonScript2(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),riskStringSummer,adviseStringSummer,outfit[0],outfit[1],heavyOutfit);
+    }
+}*/
