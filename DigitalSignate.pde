@@ -254,16 +254,16 @@ void drawModules() {
 
     if (nowPageID == 0) {
         drawFullImageModule(background);
-        drawGridModule();
-        drawPlaceholderModule();
+        //drawGridModule();
+        //drawPlaceholderModule();
         drawWeatherRModule(Area.area1);
         drawTemperatureRModule(Area.area5);
         drawHumidityRModule(Area.area6);
         drawRiskRModule(Area.area3);
 } else if (nowPageID == 1) {
         drawFullImageModule(background);
-        drawGridModule();
-        drawPlaceholderModule();
+        //drawGridModule();
+        //drawPlaceholderModule();
         drawClothesRModule(Area.area2);
 }
     drawDateModule();
