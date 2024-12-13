@@ -12,8 +12,8 @@ void initialize(){
   isInitializedDates = true; 
 
   initializeImage();
-  initializeGrid();
-  initializePlaceholder();
+  //initializeGrid();
+  //initializePlaceholder();
   initializeShadow();
   initializeRModuleBackground(); 
   isInitializedImages = true;
@@ -214,12 +214,12 @@ void initializeRModuleBackground() {
 
   riskShowSpring.beginDraw();
   riskShowSpring.colorMode(HSB, 360, 100, 100, 100);
-  riskShowSpring.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
-  riskShowSpring.fill(0, 0, 0, 40);
+  riskShowSpring.image(  pImageCut(back, CENTER, CENTER, w, h) , -850, -950, 3*w, 3*h);
+  riskShowSpring.fill(0, 0, 0, 0);
   riskShowSpring.noStroke();
   riskShowSpring.rect(0, 0, w, h);
   riskShowSpring.endDraw();
-  riskShowSpring.mask( sizeToModuleMask( moduleSize(module) ) );
+  //riskShowSpring.mask( sizeToModuleMask( moduleSize(module) ) );
 
   back =loadImage(RISK_PATH + "riskShowSummer.png");
   if (back == null) {
@@ -229,12 +229,27 @@ void initializeRModuleBackground() {
   
   riskShowSummer.beginDraw();
   riskShowSummer.colorMode(HSB, 360, 100, 100, 100);
-  riskShowSummer.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
-  riskShowSummer.fill(0, 0, 0, 40);
+  riskShowSummer.image( pImageCut(back, CENTER, CENTER, w, h) , -850, -950, 3*w, 3*h);
+  riskShowSummer.fill(0, 0, 0, 0);
   riskShowSummer.noStroke();
   riskShowSummer.rect(0, 0, w, h);
   riskShowSummer.endDraw();
-  riskShowSummer.mask( sizeToModuleMask( moduleSize(module) ) );
+  //riskShowSummer.mask( sizeToModuleMask( moduleSize(module) ) );
+
+  back = loadImage(RISK_PATH + "riskShowWinter.png");
+  if (back == null) {
+    println("Error: Could not load image from " + RISK_PATH + "riskShowWinter.png");
+  }
+  riskShowAutumn = createGraphics(w, h);
+
+  riskShowAutumn.beginDraw();
+  riskShowAutumn.colorMode(HSB, 360, 100, 100, 100);
+  riskShowAutumn.image( pImageCut(back, CENTER, CENTER, w, h) , -850, -950, 3*w, 3*h);
+  riskShowAutumn.fill(0, 0, 0, 0);
+  riskShowAutumn.noStroke();
+  riskShowAutumn.rect(0, 0, w, h);
+  riskShowAutumn.endDraw();
+  //riskShowWinter.mask( sizeToModuleMask( moduleSize(module) ) );
 
   back = loadImage(RISK_PATH + "riskShowWinter.png");
   if (back == null) {
@@ -244,27 +259,12 @@ void initializeRModuleBackground() {
 
   riskShowWinter.beginDraw();
   riskShowWinter.colorMode(HSB, 360, 100, 100, 100);
-  riskShowWinter.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
-  riskShowWinter.fill(0, 0, 0, 40);
+  riskShowWinter.image(  pImageCut(back, CENTER, CENTER, w, h) , -850, -950, 3*w, 3*h);
+  riskShowWinter.fill(0, 0, 0, 0);
   riskShowWinter.noStroke();
   riskShowWinter.rect(0, 0, w, h);
   riskShowWinter.endDraw();
-  riskShowWinter.mask( sizeToModuleMask( moduleSize(module) ) );
-
-  back = loadImage(RISK_PATH + "riskShowWinter.png");
-  if (back == null) {
-    println("Error: Could not load image from " + RISK_PATH + "riskShowWinter.png");
-  }
-  riskShowWinter = createGraphics(w, h);
-
-  riskShowWinter.beginDraw();
-  riskShowWinter.colorMode(HSB, 360, 100, 100, 100);
-  riskShowWinter.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
-  riskShowWinter.fill(0, 0, 0, 40);
-  riskShowWinter.noStroke();
-  riskShowWinter.rect(0, 0, w, h);
-  riskShowWinter.endDraw();
-  riskShowWinter.mask( sizeToModuleMask( moduleSize(module) ) );
+  //riskShowWinter.mask( sizeToModuleMask( moduleSize(module) ) );
   
 
   //----------------------------------------//
@@ -284,7 +284,7 @@ void initializeRModuleBackground() {
   clothesBackground.beginDraw();
   clothesBackground.colorMode(HSB, 360, 100, 100, 100);
   clothesBackground.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
-  clothesBackground.fill(0, 0, 0, 40);
+  clothesBackground.fill(0, 0, 0, 0);
   clothesBackground.noStroke();
   clothesBackground.rect(0, 0, w, h);
   clothesBackground.endDraw();
@@ -298,12 +298,12 @@ void initializeRModuleBackground() {
 
   clothesGlove.beginDraw();
   clothesGlove.colorMode(HSB, 360, 100, 100, 100);
-  clothesGlove.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
-  clothesGlove.fill(0, 0, 0, 40);
+  clothesGlove.image( pImageCut(back, CENTER, CENTER, w, h) , -450, -550, 2*w, 2*h);
+  clothesGlove.fill(0, 0, 0, 0);
   clothesGlove.noStroke();
   clothesGlove.rect(0, 0, w, h);
   clothesGlove.endDraw();
-  clothesGlove.mask( sizeToModuleMask( moduleSize(module) ) );
+  //clothesGlove.mask( sizeToModuleMask( moduleSize(module) ) );
 
   back = loadImage(CLOTHES_PATH + "scarf.png");
   if (back == null) {
@@ -313,12 +313,12 @@ void initializeRModuleBackground() {
 
   clothesScarf.beginDraw();
   clothesScarf.colorMode(HSB, 360, 100, 100, 100);
-  clothesScarf.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
-  clothesScarf.fill(0, 0, 0, 40);
+  clothesScarf.image( pImageCut(back, CENTER, CENTER, w, h) , -450, -550, 2*w, 2*h);
+  clothesScarf.fill(0, 0, 0, 0);
   clothesScarf.noStroke();
   clothesScarf.rect(0, 0, w, h);
   clothesScarf.endDraw();
-  clothesScarf.mask( sizeToModuleMask( moduleSize(module) ) );
+  //clothesScarf.mask( sizeToModuleMask( moduleSize(module) ) );
 
   back = loadImage(CLOTHES_PATH + "hansode.png");
   if (back == null) {
@@ -328,12 +328,12 @@ void initializeRModuleBackground() {
 
   clothesHansode.beginDraw();
   clothesHansode.colorMode(HSB, 360, 100, 100, 100);
-  clothesHansode.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
-  clothesHansode.fill(0, 0, 0, 40);
+  clothesHansode.image( pImageCut(back, CENTER, CENTER, w, h) ,-450, -550, 2*w, 2*h);
+  clothesHansode.fill(0, 0, 0, 0);
   clothesHansode.noStroke();
   clothesHansode.rect(0, 0, w, h);
   clothesHansode.endDraw();
-  clothesHansode.mask( sizeToModuleMask( moduleSize(module) ) );
+ // clothesHansode.mask( sizeToModuleMask( moduleSize(module) ) );
 
   back = loadImage(CLOTHES_PATH + "nagasode.png");
   if (back == null) {
@@ -343,12 +343,12 @@ void initializeRModuleBackground() {
 
   longsleevedshirt.beginDraw();
   longsleevedshirt.colorMode(HSB, 360, 100, 100, 100);
-  longsleevedshirt.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
-  longsleevedshirt.fill(0, 0, 0, 40);
+  longsleevedshirt.image( pImageCut(back, CENTER, CENTER, w, h) , -450, -550, 2*w, 2*h);
+  longsleevedshirt.fill(0, 0, 0, 0);
   longsleevedshirt.noStroke();
   longsleevedshirt.rect(0, 0, w, h);
   longsleevedshirt.endDraw();
-  longsleevedshirt.mask( sizeToModuleMask( moduleSize(module) ) );
+  //longsleevedshirt.mask( sizeToModuleMask( moduleSize(module) ) );
 
   back = loadImage(CLOTHES_PATH + "cardigan.jpg");
   if (back == null) {
@@ -358,12 +358,12 @@ void initializeRModuleBackground() {
 
   cardigan.beginDraw();
   cardigan.colorMode(HSB, 360, 100, 100, 100);
-  cardigan.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
-  cardigan.fill(0, 0, 0, 40);
+  cardigan.image( pImageCut(back, CENTER, CENTER, w, h) , -450, -550, 2*w, 2*h);
+  cardigan.fill(0, 0, 0, 0);
   cardigan.noStroke();
   cardigan.rect(0, 0, w, h);
   cardigan.endDraw();
-  cardigan.mask( sizeToModuleMask( moduleSize(module) ) );
+  //cardigan.mask( sizeToModuleMask( moduleSize(module) ) );
 
   back = loadImage(CLOTHES_PATH + "seta_m.jpg");
   if (back == null) {
@@ -373,12 +373,12 @@ void initializeRModuleBackground() {
   
   sweaterM.beginDraw();
   sweaterM.colorMode(HSB, 360, 100, 100, 100);
-  sweaterM.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
-  sweaterM.fill(0, 0, 0, 40);
+  sweaterM.image( pImageCut(back, CENTER, CENTER, w, h) , -450, -550, 2*w, 2*h);
+  sweaterM.fill(0, 0, 0, 0);
   sweaterM.noStroke();
   sweaterM.rect(0, 0, w, h);
   sweaterM.endDraw();
-  sweaterM.mask( sizeToModuleMask( moduleSize(module) ) );
+  //sweaterM.mask( sizeToModuleMask( moduleSize(module) ) );
 
   back = loadImage(CLOTHES_PATH + "seta_w.jpg");
   if (back == null) {
@@ -388,27 +388,27 @@ void initializeRModuleBackground() {
 
   sweaterW.beginDraw();
   sweaterW.colorMode(HSB, 360, 100, 100, 100);
-  sweaterW.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
-  sweaterW.fill(0, 0, 0, 40);
+  sweaterW.image( pImageCut(back, CENTER, CENTER, w, h) , -450, -550, 2*w, 2*h);
+  sweaterW.fill(0, 0, 0, 0);
   sweaterW.noStroke();
   sweaterW.rect(0, 0, w, h);
   sweaterW.endDraw();
-  sweaterW.mask( sizeToModuleMask( moduleSize(module) ) );
+  //sweaterW.mask( sizeToModuleMask( moduleSize(module) ) );
 
-  back = loadImage(CLOTHES_PATH + "torenchi.jpg");
+  back = loadImage(CLOTHES_PATH + "torenchi.png");
   if (back == null) {
-    println("Error: Could not load image from " + CLOTHES_PATH + "torenchi.jpg");
+    println("Error: Could not load image from " + CLOTHES_PATH + "torenchi.png");
   }
   toren = createGraphics(w, h);
 
   toren.beginDraw();
   toren.colorMode(HSB, 360, 100, 100, 100);
-  toren.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
-  toren.fill(0, 0, 0, 40);
+  toren.image( pImageCut(back, CENTER, CENTER, w, h) , -450, -550, 2*w, 2*h);
+  toren.fill(0, 0, 0, 0);
   toren.noStroke();
   toren.rect(0, 0, w, h);
   toren.endDraw();
-  toren.mask( sizeToModuleMask( moduleSize(module) ) );
+  //toren.mask( sizeToModuleMask( moduleSize(module) ) );
 
   back = loadImage(CLOTHES_PATH + "wintercoat.jpg");
   if (back == null) {
@@ -418,42 +418,42 @@ void initializeRModuleBackground() {
 
   winterCoat.beginDraw();
   winterCoat.colorMode(HSB, 360, 100, 100, 100);
-  winterCoat.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
-  winterCoat.fill(0, 0, 0, 40);
+  winterCoat.image( pImageCut(back, CENTER, CENTER, w, h) , -450, -550, 2*w, 2*h);
+  winterCoat.fill(0, 0, 0, 0);
   winterCoat.noStroke();
   winterCoat.rect(0, 0, w, h);
   winterCoat.endDraw();
-  winterCoat.mask( sizeToModuleMask( moduleSize(module) ) );
+  //winterCoat.mask( sizeToModuleMask( moduleSize(module) ) );
 
-  back = loadImage(CLOTHES_PATH + "downCoat.jpg");
+  back = loadImage(CLOTHES_PATH + "downCoat.png");
   if (back == null) {
-    println("Error: Could not load image from " + CLOTHES_PATH + "downCoat.jpg");
+    println("Error: Could not load image from " + CLOTHES_PATH + "downCoat.png");
   }
   downCoat = createGraphics(w, h);
 
   downCoat.beginDraw();
   downCoat.colorMode(HSB, 360, 100, 100, 100);
-  downCoat.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
-  downCoat.fill(0, 0, 0, 40);
+  downCoat.image( pImageCut(back, CENTER, CENTER, w, h) ,-450, -550, 2*w, 2*h);
+  downCoat.fill(0, 0, 0, 0);
   downCoat.noStroke();
   downCoat.rect(0, 0, w, h);
   downCoat.endDraw();
-  downCoat.mask( sizeToModuleMask( moduleSize(module) ) );
+  //downCoat.mask( sizeToModuleMask( moduleSize(module) ) );
 
-  back = loadImage(CLOTHES_PATH + "bousuisei.jpg");
+  back = loadImage(CLOTHES_PATH + "bousuisei.png");
   if (back == null) {
-    println("Error: Could not load image from " + CLOTHES_PATH + "bousuisei.jpg");
+    println("Error: Could not load image from " + CLOTHES_PATH + "bousuisei.png");
   }
   waterProof = createGraphics(w, h);
 
   waterProof.beginDraw();
   waterProof.colorMode(HSB, 360, 100, 100, 100);
-  waterProof.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
-  waterProof.fill(0, 0, 0, 40);
+  waterProof.image( pImageCut(back, CENTER, CENTER, w, h) , -450, -550, 2*w, 2*h);
+  waterProof.fill(0, 0, 0, 0);
   waterProof.noStroke();
   waterProof.rect(0, 0, w, h);
   waterProof.endDraw();
-  waterProof.mask( sizeToModuleMask( moduleSize(module) ) );
+  //waterProof.mask( sizeToModuleMask( moduleSize(module) ) );
 
   back = loadImage(CLOTHES_PATH + "haorimono.jpg");
   if (back == null) {
@@ -463,12 +463,12 @@ void initializeRModuleBackground() {
 
   lightWeight.beginDraw();
   lightWeight.colorMode(HSB, 360, 100, 100, 100);
-  lightWeight.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
-  lightWeight.fill(0, 0, 0, 40);
+  lightWeight.image( pImageCut(back, CENTER, CENTER, w, h) , -450, -550, 2*w, 2*h);
+  lightWeight.fill(0, 0, 0, 0);
   lightWeight.noStroke();
   lightWeight.rect(0, 0, w, h);
   lightWeight.endDraw();
-  lightWeight.mask( sizeToModuleMask( moduleSize(module) ) );
+  //lightWeight.mask( sizeToModuleMask( moduleSize(module) ) );
 
   back = loadImage(CLOTHES_PATH + "haorimono_w.jpg");
   if (back == null) {
@@ -478,12 +478,12 @@ void initializeRModuleBackground() {
 
   lightWeight2.beginDraw();
   lightWeight2.colorMode(HSB, 360, 100, 100, 100);
-  lightWeight2.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
-  lightWeight2.fill(0, 0, 0, 40);
+  lightWeight2.image( pImageCut(back, CENTER, CENTER, w, h) , -450, -550, 2*w, 2*h);
+  lightWeight2.fill(0, 0, 0, 0);
   lightWeight2.noStroke();
   lightWeight2.rect(0, 0, w, h);
   lightWeight2.endDraw();
-  lightWeight2.mask( sizeToModuleMask( moduleSize(module) ) );
+  //lightWeight2.mask( sizeToModuleMask( moduleSize(module) ) );
 
   back = loadImage(CLOTHES_PATH + "mask.jpg");
   if (back == null) {
@@ -493,12 +493,12 @@ void initializeRModuleBackground() {
 
   mask.beginDraw();
   mask.colorMode(HSB, 360, 100, 100, 100);
-  mask.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
-  mask.fill(0, 0, 0, 40);
+  mask.image( pImageCut(back, CENTER, CENTER, w, h) , -450, -550, 2*w, 2*h);
+  mask.fill(0, 0, 0, 0);
   mask.noStroke();
   mask.rect(0, 0, w, h);
   mask.endDraw();
-  mask.mask( sizeToModuleMask( moduleSize(module) ) );
+  //mask.mask( sizeToModuleMask( moduleSize(module) ) );
 }
 
 void initializeShadow() {
