@@ -24,40 +24,9 @@ void connectWithPython(String nowTemp, String ws,  String ics, String ihs) {
         int exitCode = process.waitFor();
         println("Python script exited with code: " + exitCode);
         
-} catch(Exception e) {
+    } catch(Exception e) {
         e.printStackTrace();
-}
-}
-
-//pythonスクリプトを呼び出す
-void connectWithPython2(String tempMax, String tempMin,  String ics, String ihs) {
-    //コマンドライン引数としてテキストを渡す
-    String[] command = {"python", AI_PATH2, tempMax, tempMin, ics, ihs};
-    
-    try {
-        ProcessBuilder pb = new ProcessBuilder(command);
-        Process process = pb.start();
-        
-        BufferedReader outputReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-        String line2;
-        while((line2 = outputReader.readLine()) != null) {
-            println("OUTPUT: " + line2);
-            heavyOutfit = line2;
-        }
-        outputReader.close();
-        
-        BufferedReader errorReader = new BufferedReader(new InputStreamReader(process.getErrorStream()));
-        while((line2 = errorReader.readLine()) != null) {
-            println("ERROR: " + line2);
-        }
-        errorReader.close();
-        
-        int exitCode = process.waitFor();
-        println("Python script exited with code: " + exitCode);
-        
-} catch(Exception e) {
-        e.printStackTrace();
-}
+    }
 }
 
 void drawClothesRModule(Area area) {
@@ -81,7 +50,7 @@ void drawClothesRModule(Area area) {
     String clothesTitle = "おすすめの服装";
     drawText(CENTER,BASELINE,WHITE_COLOR,32,clothesTitle,x + 430,y + 50);
     
-    if (outfit != null && heavyOutfit != null && outfit.length == 1) {
+    if (outfit != null && outfit.length == 1) {
         if (outfit[0].equals("Short sleeves when outside, woven fabrics when indoors")) {
                 drawText(CENTER,BASELINE,WHITE_COLOR,32,"外出時は半袖、室内では羽織物を着ましょう",x + 430,y + 100);
                 image(clothesHansode, x + 280, y + 200, 200, 200);

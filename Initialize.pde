@@ -26,6 +26,7 @@ void initialize(){
   
   isUpdatedWeather = updateWeather();
   isInitializedWeather = true;
+  
   if((morningTimeHT[0].equals(String.valueOf(hour)) && morningTimeHT[1].equals(String.valueOf(minute)))){
         if(outfit.length == 1){
             callTTSPythonScript(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),riskStringSummer,adviseStringSummer,outfit[0],heavyOutfit,String.valueOf(checkMorningOrNight));
@@ -290,9 +291,24 @@ void initializeRModuleBackground() {
   clothesBackground.endDraw();
   clothesBackground.mask( sizeToModuleMask( moduleSize(module) ) );
 
-  back = loadImage(CLOTHES_PATH + "glove.png");
+  back = loadImage(HEAVY_PATH + "background.jpg");
   if (back == null) {
-    println("Error: Could not load image from " + CLOTHES_PATH + "glove.png");
+    println("Error: Could not load image from " + HEAVY_PATH + "background.jpg");
+  }
+  heavyOutfitBackground = createGraphics(w, h);
+
+  heavyOutfitBackground.beginDraw();
+  heavyOutfitBackground.colorMode(HSB, 360, 100, 100, 100);
+  heavyOutfitBackground.image( pImageCut(back, CENTER, CENTER, w, h) , 0, 0);
+  heavyOutfitBackground.fill(0, 0, 0, 0);
+  heavyOutfitBackground.noStroke();
+  heavyOutfitBackground.rect(0, 0, w, h);
+  heavyOutfitBackground.endDraw();
+  heavyOutfitBackground.mask( sizeToModuleMask( moduleSize(module) ) );
+
+  back = loadImage(HEAVY_PATH + "glove.png");
+  if (back == null) {
+    println("Error: Could not load image from " + HEAVY_PATH + "glove.png");
   }
   clothesGlove = createGraphics(w, h);
 
@@ -305,9 +321,9 @@ void initializeRModuleBackground() {
   clothesGlove.endDraw();
   //clothesGlove.mask( sizeToModuleMask( moduleSize(module) ) );
 
-  back = loadImage(CLOTHES_PATH + "scarf.png");
+  back = loadImage(HEAVY_PATH + "scarf.png");
   if (back == null) {
-    println("Error: Could not load image from " + CLOTHES_PATH + "scarf.png");
+    println("Error: Could not load image from " + HEAVY_PATH + "scarf.png");
   }
   clothesScarf = createGraphics(w, h);
 
@@ -319,6 +335,34 @@ void initializeRModuleBackground() {
   clothesScarf.rect(0, 0, w, h);
   clothesScarf.endDraw();
   //clothesScarf.mask( sizeToModuleMask( moduleSize(module) ) );
+
+  back = loadImage(HEAVY_PATH + "hat.png");
+  if (back == null) {
+    println("Error: Could not load image from " + HEAVY_PATH + "hat.png");
+  }
+  clothesHat = createGraphics(w, h);
+
+  clothesHat.beginDraw();
+  clothesHat.colorMode(HSB, 360, 100, 100, 100);
+  clothesHat.image( pImageCut(back, CENTER, CENTER, w, h) , -450, -550, 2*w, 2*h);
+  clothesHat.fill(0, 0, 0, 0);
+  clothesHat.noStroke();
+  clothesHat.rect(0, 0, w, h);
+  clothesHat.endDraw();
+
+  back = loadImage(HEAVY_PATH + "sunglass.png");
+  if (back == null) {
+    println("Error: Could not load image from " + HEAVY_PATH + "sunglass.png");
+  }
+  sunglasses = createGraphics(w, h);
+
+  sunglasses.beginDraw();
+  sunglasses.colorMode(HSB, 360, 100, 100, 100);
+  sunglasses.image( pImageCut(back, CENTER, CENTER, w, h) , -450, -550, 2*w, 2*h);
+  sunglasses.fill(0, 0, 0, 0);
+  sunglasses.noStroke();
+  sunglasses.rect(0, 0, w, h);
+  sunglasses.endDraw();
 
   back = loadImage(CLOTHES_PATH + "hansode.png");
   if (back == null) {
