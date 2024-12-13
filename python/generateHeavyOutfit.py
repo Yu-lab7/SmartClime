@@ -18,6 +18,10 @@ def determine_heavyOutfit(tempMax, tempMin, is_cold_sensitive, is_hot_sensitive)
         outfit = "glove and scarf"
     elif tempMin <= 10:
         outfit = "glove and scarf"
+    elif tempMax >= 30:
+        outfit = "hat and sunglasses"
+    elif tempMin >= 30:
+        outfit = "hat and sunglasses"
     else:
         outfit = "no heavy outfit"
 

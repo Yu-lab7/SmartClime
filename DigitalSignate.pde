@@ -34,6 +34,7 @@ final String TEMPERATURE_PATH = "temperature/"; //気温画像が格納されて
 final String HUMIDITY_PATH = "humidity/"; //湿度画像が格納されているフォルダのパス
 final String RISK_PATH = "risk/"; //リスク画像が格納されているフォルダのパス
 final String CLOTHES_PATH = "clothes/"; //服装画像が格納されているフォルダのパス
+final String HEAVY_PATH = "heavy/"; //防寒具画像が格納されているフォルダのパス
 final String TTS_PATH = "..\\DigitalSignate\\python\\ttsAbout.py";
 final String TTS_PATH2 = "..\\DigitalSignate\\python\\ttsAbout2.py";
 final String AI_PATH = "..\\DigitalSignate\\python\\suggestClothes.py";
@@ -105,9 +106,18 @@ String adviseStringSpring;
 String adviseStringSummer;
 String adviseStringAutumn;
 String adviseStringWinter;
+String riskSpring;
+String riskSummer;
+String riskAutumn;
+String riskWinter;
+String adviseSpring;
+String adviseSummer;
+String adviseAutumn;
+String adviseWinter;
 
 //ClothesRModuleの変数
 PGraphics clothesBackground; //服装の背景画像
+PGraphics heavyOutfitBackground; //防寒具の背景画像
 String[] outfit; //服装の変数
 String heavyOutfit; //防寒具の変数
 PGraphics clothesGlove; //手袋の画像
@@ -124,6 +134,8 @@ PGraphics waterProof; //防水
 PGraphics lightWeight; //軽量
 PGraphics lightWeight2; //軽量
 PGraphics mask; //マスク
+PGraphics clothesHat; //帽子
+PGraphics sunglasses; //サングラス
  
 //AI作成のための変数
 String is_cold_sensitive = "0"; //寒がりかどうか
@@ -264,18 +276,26 @@ void drawModules() {
         drawFullImageModule(background);
         //drawGridModule();
         //drawPlaceholderModule();
-        drawClothesRModule(Area.area2);
+        drawClothesRModule(Area.area1);
+        drawHeavyOutfitRModule(Area.area3);
 }
     drawDateModule();
     drawLocationModule();
     drawProgressBarModule();
     drawPageControlModule();
-    if((morningTimeHT[0].equals(String.valueOf(hour)) && morningTimeHT[1].equals(String.valueOf(minute))) && checkOpened == 0){
-        if(outfit.length == 1){
-            callTTSPythonScript(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),riskStringSummer,adviseStringSummer,outfit[0],heavyOutfit,String.valueOf(checkMorningOrNight));
+      if(outfit.length == 1){
+            callTTSPythonScript(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),setRiskString(),setAdviseString(),outfit[0],heavyOutfit,String.valueOf(checkMorningOrNight));
             openWaveFile();
         } else {
-            callTTSPythonScript2(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),riskStringSummer,adviseStringSummer,outfit[0],outfit[1],heavyOutfit,String.valueOf(checkMorningOrNight));
+            callTTSPythonScript2(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),setRiskString(),setAdviseString(),outfit[0],outfit[1],heavyOutfit,String.valueOf(checkMorningOrNight));
+            openWaveFile();
+        }
+    if((morningTimeHT[0].equals(String.valueOf(hour)) && morningTimeHT[1].equals(String.valueOf(minute))) && checkOpened == 0){
+        if(outfit.length == 1){
+            callTTSPythonScript(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),setRiskString(),setAdviseString(),outfit[0],heavyOutfit,String.valueOf(checkMorningOrNight));
+            openWaveFile();
+        } else {
+            callTTSPythonScript2(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),setRiskString(),setAdviseString(),outfit[0],outfit[1],heavyOutfit,String.valueOf(checkMorningOrNight));
             openWaveFile();
         }
         checkOpened = 1;
@@ -323,7 +343,8 @@ enum RModule{
     Temperature,
     Humidity,
     Risk,
-    Clothes
+    Clothes,
+    HeavyOutfit
 }
 
 Size moduleSize(RModule module) {
@@ -332,6 +353,7 @@ Size moduleSize(RModule module) {
     if(module == RModule.Humidity) return Size.S;
     if(module == RModule.Risk) return Size.L;
     if(module == RModule.Clothes) return Size.L;
+    if(module == RModule.HeavyOutfit) return Size.L;
     return Size.S;
 }
 

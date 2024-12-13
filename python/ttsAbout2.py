@@ -6,9 +6,9 @@ import sys
 def synthesize_voice(temperature, humidity, weather, temp, hum, riskString, advise, outfit, outfit2, heavy, check, speaker=8, filename="../DigitalSignate/python/output/output.wav"):
     #print(f"送信するテキスト: {text}")  # デバッグ用プリント文
     if check == "0":
-     text = f"おはようございます!、現在の気温は{temperature}度、湿度は{humidity}パーセントです。天気は{weather}です。室内温度は{temp}度、室内湿度は{hum}パーセントです。これらの情報から、{riskString}と注意報が発令されています。{advise}。また、今日のおすすめの服装は{outfit}です。{outfit2}も身に着けることをおすすめします。また、{heavy}も身に着けると良いでしょう。今日も一日頑張りましょう。"
+     text = f"おはようございます!、現在の気温は{temperature}度、湿度は{humidity}パーセントです。天気は{weather}です。室内温度は{temp}度、室内湿度は{hum}パーセントです。これらの情報から、{riskString}。{advise}。また、今日のおすすめの服装は{outfit}です。{outfit2}も身に着けることをおすすめします。また、{heavy}も身に着けると良いでしょう。今日も一日頑張りましょう。"
     else:
-     text = f"こんばんは!、明日の気温は{temperature}度、湿度は{humidity}パーセントです。天気は{weather}です。これらの情報から、{riskString}と注意報が発令されています。{advise}。また、明日のおすすめの服装は{outfit}です。{outfit2}も身に着けることをおすすめします。また、{heavy}も身に着けると良いでしょう。明日も一日頑張りましょう。おやすみなさい。"
+     text = f"こんばんは!、明日の気温は{temperature}度、湿度は{humidity}パーセントです。天気は{weather}です。これらの情報から、{riskString}。{advise}。また、明日のおすすめの服装は{outfit}と良いでしょう。{outfit2}も身に着けることをおすすめします。また、{heavy}も身に着けると良いでしょう。明日も一日頑張りましょう。おやすみなさい。"
 
     # テキストから音声合成のためのクエリを作成
     query_payload = {'text': text, 'speaker': speaker}
@@ -46,15 +46,89 @@ if __name__ == "__main__":
     
     # 引数の取得
     temperature = sys.argv[1]
+    temperature = temperature[0:2]
     humidity = sys.argv[2]
     weather = sys.argv[3]
+    if(weather == ("Clouds")):
+       weather = "曇り"
+    elif(weather == ("Thunderstorm")):
+       weather = "雷雨"
+    elif(weather == ("Drizzle")):
+       weather = "霧雨"
+    elif(weather == ("Rain")):
+        weather = "雨"
+    elif(weather == ("Snow")):
+        weather = "雪"
+    elif(weather == ("Mist")):
+        weather = "霧"
+    elif(weather == ("Smoke")):
+        weather = "煙"
+    elif(weather == ("Haze")):
+        weather = "煙霧"
+    elif(weather == ("Dust")):
+        weather = "ほこり"
+    elif(weather == ("Ash")):
+        weather = "灰"
+    elif(weather == ("Squall")):
+        weather = "スコール"
+    elif(weather == ("Tornado")):
+        weather = "竜巻"
+    else:
+        weather = "晴れ"
+
     temp = sys.argv[4]
+    temp = temp[0:2]
     hum = sys.argv[5]
     riskString = sys.argv[6]
+    if riskString != "リスク情報はありません":
+        riskString += "と注意報が発令されています。"
     advise = sys.argv[7]
     outfit = sys.argv[8]
+    if outfit == "Short sleeves when outside, woven fabrics when indoors":
+        outfit = "外出時は半袖、室内では、はおりもの"
+    elif outfit == "short-sleeved shirt":
+        outfit = "半袖シャツ"
+    elif outfit == "long-sleeved shirt":
+        outfit = "長袖シャツ"
+    elif outfit == "cardigan":
+        outfit = "カーディガン"
+    elif outfit == "sweater":
+        outfit = "セーター"
+    elif outfit == "trench coat":
+        outfit = "トレンチコート"
+    elif outfit == "winter coat":
+        outfit = "冬用コート"
+    elif outfit == "down coat":
+        outfit = "ダウンコート"
+    elif outfit == "waterproof clothing":
+        outfit = "防水の服"
+    elif outfit == "lightweight winter clothing":
+        outfit = "軽量の冬用服"
+    elif outfit == "mask":
+        outfit = "マスク"
+    else:
+        outfit = "不明な服装"
+
     outfit2 = sys.argv[9]
+    if outfit2 == "waterproof clothing":
+        outfit2 = "防水服を着る"
+    elif outfit2 == "waterproof coating":
+        outfit2 = "防水コートを着る"
+    elif outfit2 == "lightweight winter clothing":
+        outfit2 = "羽織物を着る"
+    elif outfit2 == "mask" :
+        outfit2 = "マスクをつける"
+    else:
+        outfit2 = "不明"
+        
     heavy = sys.argv[10]
+    if heavy == "glove and scarf":
+        heavy = "手袋やマフラー"    
+    elif heavy == "hat and sunglasses":
+        heavy = "帽子やサングラス"
+    else:
+        heavy = "不明"
+        
     check = sys.argv[11]
 
     # 音声合成の実行

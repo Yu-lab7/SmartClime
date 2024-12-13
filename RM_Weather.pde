@@ -38,7 +38,7 @@ boolean updateWeather(){
     final String url = openWeatherURL(latitude,longitude,WEATHER_API_KEY);
     final processing.data.JSONObject json = loadJSONObject(url);
     final processing.data.JSONArray weather = json.getJSONArray("weather");
-    weatherString = weather.getJSONObject(0).getString("description");
+    weatherString = weather.getJSONObject(0).getString("main");
   
     //天気の説明を取得
     JSONObject main = json.getJSONObject("main");
