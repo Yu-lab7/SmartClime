@@ -61,7 +61,7 @@ with open('./python/csv/outfit_recommendations.csv', mode='w', newline='', encod
     writer = csv.writer(file)
     writer.writerow(["temperature", "weather", "is_cold_sensitive", "is_hot_sensitive","outfit"])
 
-    for _ in range(200):
+    for _ in range(2000):
         weather = random.choice(list(temperature_weather_map.keys()))
         temp = random.choice(temperature_weather_map[weather])
         is_cold_sensitive = random.choice([0,1])

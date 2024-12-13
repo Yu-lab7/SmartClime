@@ -272,30 +272,23 @@ void drawModules() {
         drawTemperatureRModule(Area.area5);
         drawHumidityRModule(Area.area6);
         drawRiskRModule(Area.area3);
-} else if (nowPageID == 1) {
+    } else if (nowPageID == 1) {
         drawFullImageModule(background);
         //drawGridModule();
         //drawPlaceholderModule();
         drawClothesRModule(Area.area1);
         drawHeavyOutfitRModule(Area.area3);
-}
+    }
     drawDateModule();
     drawLocationModule();
     drawProgressBarModule();
     drawPageControlModule();
-      if(outfit.length == 1){
-            callTTSPythonScript(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),setRiskString(),setAdviseString(),outfit[0],heavyOutfit,String.valueOf(checkMorningOrNight));
-            openWaveFile();
-        } else {
-            callTTSPythonScript2(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),setRiskString(),setAdviseString(),outfit[0],outfit[1],heavyOutfit,String.valueOf(checkMorningOrNight));
-            openWaveFile();
-        }
     if((morningTimeHT[0].equals(String.valueOf(hour)) && morningTimeHT[1].equals(String.valueOf(minute))) && checkOpened == 0){
         if(outfit.length == 1){
-            callTTSPythonScript(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),setRiskString(),setAdviseString(),outfit[0],heavyOutfit,String.valueOf(checkMorningOrNight));
+            callTTSPythonScript(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),setRiskString(),setAdviseString(),outfit[0],heavyOutfit,String.valueOf(checkMorningOrNight),nickname);
             openWaveFile();
         } else {
-            callTTSPythonScript2(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),setRiskString(),setAdviseString(),outfit[0],outfit[1],heavyOutfit,String.valueOf(checkMorningOrNight));
+            callTTSPythonScript2(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),setRiskString(),setAdviseString(),outfit[0],outfit[1],heavyOutfit,String.valueOf(checkMorningOrNight),nickname);
             openWaveFile();
         }
         checkOpened = 1;
@@ -304,10 +297,10 @@ void drawModules() {
     if((nightTimeHT[0].equals(String.valueOf(hour)) && nightTimeHT[1].equals(String.valueOf(minute))) && checkOpened == 0){
         checkMorningOrNight = 1;
         if(outfit.length == 1){
-            callTTSPythonScript(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),riskStringSummer,adviseStringSummer,outfit[0],heavyOutfit,String.valueOf(checkMorningOrNight));
+            callTTSPythonScript(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),riskStringSummer,adviseStringSummer,outfit[0],heavyOutfit,String.valueOf(checkMorningOrNight),nickname);
             openWaveFile();
         } else {
-            callTTSPythonScript2(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),riskStringSummer,adviseStringSummer,outfit[0],outfit[1],heavyOutfit,String.valueOf(checkMorningOrNight));
+            callTTSPythonScript2(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),riskStringSummer,adviseStringSummer,outfit[0],outfit[1],heavyOutfit,String.valueOf(checkMorningOrNight),nickname);
             openWaveFile();
         }
         checkMorningOrNight = 0;
