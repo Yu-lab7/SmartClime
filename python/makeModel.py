@@ -2,9 +2,11 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 import pickle
+import os
 
 # CSVファイルの読み込み
-df = pd.read_csv('python/csv/outfit_recommendations.csv')
+csv_path = os.path.join(os.path.dirname(__file__), 'csv', 'outfit_recommendations.csv')
+df = pd.read_csv(csv_path)
 
 # 特徴量とターゲットの設定
 X = df[['temperature', 'weather', 'is_cold_sensitive', 'is_hot_sensitive']]
@@ -21,6 +23,7 @@ model = RandomForestClassifier(n_estimators=100, random_state=42)
 model.fit(X_train, y_train)
 
 # モデルと特徴量の順序を保存
-with open("python/model/outfit_model.pkl", "wb") as f:
+model_path = os.path.join(os.path.dirname(__file__), 'model', 'outfit_model.pkl')
+with open(model_path, "wb") as f:
     pickle.dump((model, X.columns.tolist()), f)
     print("makeModel.py: モデルを作成しました")

@@ -1,6 +1,6 @@
-void callTTSPythonScript(String tempe, String humi, String weatherS, String tempe2, String humi2, String riskS, String adviseS, String outfit, String heavyOutfit, String checkMorningOrNight) {
+void callTTSPythonScript(String tempe, String humi, String weatherS, String tempe2, String humi2, String riskS, String adviseS, String outfit, String heavyOutfit, String checkMorningOrNight, String nickname) {
   // コマンドライン引数としてテキストを渡す
-    String[] command = {"python", TTS_PATH, tempe, humi, weatherS, tempe2, humi2, riskS, adviseS, outfit, heavyOutfit, checkMorningOrNight};
+    String[] command = {"python", TTS_PATH, tempe, humi, weatherS, tempe2, humi2, riskS, adviseS, outfit, heavyOutfit, checkMorningOrNight, nickname};
 
   try {
     ProcessBuilder pb = new ProcessBuilder(command);
@@ -27,9 +27,9 @@ void callTTSPythonScript(String tempe, String humi, String weatherS, String temp
   }
 }
 
-void callTTSPythonScript2(String tempe, String humi, String weatherS, String tempe2, String humi2, String riskS, String adviseS, String outfit, String outfit2,  String heavyOutfit, String checkMorningOrNight) {
+void callTTSPythonScript2(String tempe, String humi, String weatherS, String tempe2, String humi2, String riskS, String adviseS, String outfit, String outfit2,  String heavyOutfit, String checkMorningOrNight, String nickname) {
   // コマンドライン引数としてテキストを渡す
-  String[] command = {"python", TTS_PATH2, tempe, humi, weatherS, tempe2, humi2, riskS, adviseS, outfit, outfit2, heavyOutfit, checkMorningOrNight};
+  String[] command = {"python", TTS_PATH2, tempe, humi, weatherS, tempe2, humi2, riskS, adviseS, outfit, outfit2, heavyOutfit, checkMorningOrNight, nickname};
 
   try {
     ProcessBuilder pb = new ProcessBuilder(command);

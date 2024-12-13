@@ -47,8 +47,8 @@ void drawRiskRModule(Area area) {
             //朝晩や前日との温度差を確認するプログラムが必要
             //スプレッドシートに前日の温度などを記録する処理を追加するのがめんどくさい
             //時間があれば追加する
-        } else if (month == december || month == january || month == february) { //冬の場合
-            if (riskNum >= 10) {
+        } else if (month == december || month == january || month == february || debugMode == true) { //冬の場合
+            if (riskNum >= 10 || debugMode == true) {
                 riskWinter = setRiskString();
                 adviseWinter = setAdviseString();
                 drawText(CENTER,BASELINE,RED_COLOR,32,riskWinter,x + 430,y + 250);
@@ -71,8 +71,8 @@ String setRiskString() {
         } else {
             return "リスク情報はありません";
         }
-    } else if (month == december || month == january || month == february) { //冬の場合
-        if(riskNum >= 10){
+    } else if (month == december || month == january || month == february || debugMode == true) { //冬の場合
+        if(riskNum >= 10 || debugMode == true){
             riskStringWinter = "ヒートショックに注意";
             return riskStringWinter;
         } else {
@@ -88,8 +88,8 @@ String setAdviseString(){
             adviseStringSummer = "室内外の温度差が大きいため、夏バテに\n注意しましょう";
             return adviseStringSummer;
         }
-    } else if (month == december || month == january || month == february) { //冬の場合
-        if(riskNum >= 10){
+    } else if (month == december || month == january || month == february || debugMode == true) { //冬の場合
+        if(riskNum >= 10 || debugMode == true){
             adviseStringWinter = "室内外の温度差が大きいため、暖かい服装で\n外出しましょう";
             return adviseStringWinter;
         }

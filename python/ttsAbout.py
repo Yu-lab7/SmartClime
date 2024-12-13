@@ -3,12 +3,12 @@ import json
 import sys
 
 # 音声合成を行うメソッド
-def synthesize_voice(temperature, humidity, weather, temp, hum, riskString, advise, outfit, heavy, check, speaker=8, filename="../DigitalSignate/python/output/output.wav"):
+def synthesize_voice(temperature, humidity, weather, temp, hum, riskString, advise, outfit, heavy, check, nickname, speaker=8, filename="../DigitalSignate/python/output/output.wav"):
     #print(f"送信するテキスト: {text}")  # デバッグ用プリント文
     if check == "0":
-     text = f"おはようございます!、現在の気温は{temperature}度、湿度は{humidity}パーセントです。天気は{weather}です。室内温度は{temp}度、室内湿度は{hum}パーセントです。これらの情報から、{riskString}。{advise}。また、今日のおすすめの服装は{outfit}です。{heavy}も身に着けると良いでしょう。今日も一日頑張りましょう。"
+     text = f"おはようございます!{nickname}さん、現在の気温は{temperature}度、湿度は{humidity}パーセントです。天気は{weather}です。室内温度は{temp}度、室内湿度は{hum}パーセントです。これらの情報から、{riskString}。{advise}。また、今日のおすすめの服装は{outfit}です。{heavy}も身に着けると良いでしょう。今日も一日頑張りましょう。"
     else:
-     text = f"こんばんは!、明日の気温は{temperature}度、湿度は{humidity}パーセントです。天気は{weather}です。これらの情報から、{riskString}。{advise}。また、明日のおすすめの服装は{outfit}です。{heavy}も身に着けると良いでしょう。明日も一日頑張りましょう。おやすみなさい。"
+     text = f"こんばんは!{nickname}さん、明日の気温は{temperature}度、湿度は{humidity}パーセントです。天気は{weather}です。これらの情報から、{riskString}。{advise}。また、明日のおすすめの服装は{outfit}です。{heavy}も身に着けると良いでしょう。明日も一日頑張りましょう。おやすみなさい。"
 
     # テキストから音声合成のためのクエリを作成
     query_payload = {'text': text, 'speaker': speaker}
@@ -58,7 +58,7 @@ if __name__ == "__main__":
     advise = sys.argv[7]
     outfit = sys.argv[8]
     if outfit == "Short sleeves when outside, woven fabrics when indoors":
-        outfit = "外出時は半袖、室内では、はおりもの"
+        outfit = "外出時は半袖、室内では、ジャンパー"
     elif outfit == "short-sleeved shirt":
         outfit = "半袖シャツ"
     elif outfit == "long-sleeved shirt":
@@ -76,7 +76,7 @@ if __name__ == "__main__":
     elif outfit == "waterproof clothing":
         outfit = "防水の服"
     elif outfit == "lightweight winter clothing":
-        outfit = "軽量の冬用服"
+        outfit = "軽いジャンパー"
     elif outfit == "mask":
         outfit = "マスク"
     else:
@@ -90,6 +90,7 @@ if __name__ == "__main__":
     else:
         heavy = "不明"
     check = sys.argv[10]
+    nickname = sys.argv[11]
 
     # 音声合成の実行
     synthesize_voice(temperature,humidity,weather,temp,hum,riskString,advise,check, speaker=8, filename="../DigitalSignate/python/output/output.wav")

@@ -6,9 +6,9 @@ import sys
 def synthesize_voice(temperature, humidity, weather, temp, hum, riskString, advise, outfit, outfit2, heavy, check, speaker=8, filename="../DigitalSignate/python/output/output.wav"):
     #print(f"送信するテキスト: {text}")  # デバッグ用プリント文
     if check == "0":
-     text = f"おはようございます!、現在の気温は{temperature}度、湿度は{humidity}パーセントです。天気は{weather}です。室内温度は{temp}度、室内湿度は{hum}パーセントです。これらの情報から、{riskString}。{advise}。また、今日のおすすめの服装は{outfit}です。{outfit2}も身に着けることをおすすめします。また、{heavy}も身に着けると良いでしょう。今日も一日頑張りましょう。"
+     text = f"おはようございます!{nickname}さん、現在の気温は{temperature}度、湿度は{humidity}パーセントです。天気は{weather}です。室内温度は{temp}度、室内湿度は{hum}パーセントです。これらの情報から、{riskString}。{advise}。また、今日のおすすめの服装は{outfit}です。{outfit2}。また、{heavy}も身に着けると良いでしょう。今日も一日頑張りましょう。"
     else:
-     text = f"こんばんは!、明日の気温は{temperature}度、湿度は{humidity}パーセントです。天気は{weather}です。これらの情報から、{riskString}。{advise}。また、明日のおすすめの服装は{outfit}と良いでしょう。{outfit2}も身に着けることをおすすめします。また、{heavy}も身に着けると良いでしょう。明日も一日頑張りましょう。おやすみなさい。"
+     text = f"こんばんは!{nickname}さん、明日の気温は{temperature}度、湿度は{humidity}パーセントです。天気は{weather}です。これらの情報から、{riskString}。{advise}。また、明日のおすすめの服装は{outfit}をおすすめします。{outfit2}。また、{heavy}も身に着けると良いでしょう。明日も一日頑張りましょう。おやすみなさい。"
 
     # テキストから音声合成のためのクエリを作成
     query_payload = {'text': text, 'speaker': speaker}
@@ -46,7 +46,7 @@ if __name__ == "__main__":
     
     # 引数の取得
     temperature = sys.argv[1]
-    temperature = temperature[0:2]
+    temperature = temperature[0:1]
     humidity = sys.argv[2]
     weather = sys.argv[3]
     if(weather == ("Clouds")):
@@ -77,7 +77,6 @@ if __name__ == "__main__":
         weather = "晴れ"
 
     temp = sys.argv[4]
-    temp = temp[0:2]
     hum = sys.argv[5]
     riskString = sys.argv[6]
     if riskString != "リスク情報はありません":
@@ -111,13 +110,13 @@ if __name__ == "__main__":
 
     outfit2 = sys.argv[9]
     if outfit2 == "waterproof clothing":
-        outfit2 = "防水服を着る"
+        outfit2 = "防水服を身に着けるのも良いでしょう"
     elif outfit2 == "waterproof coating":
-        outfit2 = "防水コートを着る"
+        outfit2 = "防水コートを身に着けるのも良いでしょう"
     elif outfit2 == "lightweight winter clothing":
-        outfit2 = "羽織物を着る"
+        outfit2 = "軽いジャンパーを身に着けるのも良いでしょう"
     elif outfit2 == "mask" :
-        outfit2 = "マスクをつける"
+        outfit2 = "マスクをつけることをおすすめします"
     else:
         outfit2 = "不明"
         
@@ -130,6 +129,7 @@ if __name__ == "__main__":
         heavy = "不明"
         
     check = sys.argv[11]
+    nickname = sys.argv[12]
 
     # 音声合成の実行
     synthesize_voice(temperature,humidity,weather,temp,hum,riskString,advise,outfit,outfit2,heavy,check, speaker=8, filename="../DigitalSignate/python/output/output.wav")

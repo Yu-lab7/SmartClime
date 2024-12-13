@@ -1,201 +1,2001 @@
 temperature,weather,is_cold_sensitive,is_hot_sensitive,outfit
-17,Dust,0,0,cardigan/mask
-35,Clear,1,0,"Short sleeves when outside, woven fabrics when indoors"
-27,Clear,1,0,long-sleeved shirt
-13,Drizzle,0,1,cardigan/waterproof clothing
-25,Mist,1,0,long-sleeved shirt/lightweight winter clothing
-27,Haze,0,0,short-sleeved shirt/lightweight winter clothing
-15,Clear,0,1,long-sleeved shirt
-26,Ash,1,0,long-sleeved shirt/mask
-1,Fog,0,0,down coat/lightweight winter clothing
-15,Clouds,1,0,trench coat
--5,Clouds,0,0,down coat
-23,Clouds,1,0,cardigan
--2,Snow,1,0,down coat/waterproof coating
-34,Rain,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
-15,Thunderstorm,0,0,sweater/waterproof clothing
--4,Snow,1,0,down coat/waterproof coating
-20,Squall,1,0,sweater/waterproof clothing
--2,Dust,0,0,down coat/mask
-25,Clear,0,1,"Short sleeves when outside, woven fabrics when indoors"
--1,Mist,0,0,down coat/lightweight winter clothing
-35,Squall,1,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
-30,Tornado,1,0,short-sleeved shirt/mask
-32,Drizzle,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
-13,Ash,0,0,sweater/mask
-22,Rain,0,0,long-sleeved shirt/waterproof clothing
-20,Tornado,0,0,long-sleeved shirt/mask
-35,Squall,1,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
-17,Ash,0,1,long-sleeved shirt/mask
-18,Squall,1,0,sweater/waterproof clothing
-30,Dust,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
-15,Clouds,0,1,long-sleeved shirt
-1,Haze,0,0,down coat/lightweight winter clothing
-23,Clear,1,0,cardigan
-22,Squall,1,0,cardigan/waterproof clothing
-31,Drizzle,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
-25,Tornado,1,0,long-sleeved shirt/mask
-32,Thunderstorm,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
-6,Dust,1,0,down coat/mask
-12,Clouds,0,0,sweater
-26,Mist,0,0,short-sleeved shirt/lightweight winter clothing
-21,Ash,1,0,cardigan/mask
-5,Haze,0,1,trench coat/lightweight winter clothing
--2,Rain,0,0,down coat/waterproof clothing
-6,Clouds,0,1,trench coat
-34,Fog,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
-5,Clouds,0,0,winter coat
-9,Mist,0,1,sweater/lightweight winter clothing
-24,Squall,0,0,long-sleeved shirt/waterproof clothing
-9,Haze,0,1,sweater/lightweight winter clothing
-32,Ash,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
-16,Mist,0,0,cardigan/lightweight winter clothing
-3,Rain,1,0,down coat/waterproof clothing
-24,Squall,0,1,short-sleeved shirt/waterproof clothing
-9,Haze,1,0,down coat/lightweight winter clothing
-31,Ash,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
-2,Rain,0,0,down coat/waterproof clothing
-11,Mist,0,0,trench coat/lightweight winter clothing
-16,Tornado,0,0,cardigan/mask
-22,Tornado,0,1,short-sleeved shirt/mask
-19,Drizzle,0,1,long-sleeved shirt/waterproof clothing
-11,Haze,0,1,cardigan/lightweight winter clothing
-27,Drizzle,0,0,short-sleeved shirt/waterproof clothing
-13,Drizzle,0,1,cardigan/waterproof clothing
--5,Clear,0,1,down coat
-24,Dust,0,1,short-sleeved shirt/mask
--5,Haze,0,0,down coat/lightweight winter clothing
-16,Dust,1,0,trench coat/mask
-11,Mist,0,1,cardigan/lightweight winter clothing
-3,Fog,0,1,trench coat/lightweight winter clothing
-11,Drizzle,0,1,cardigan/waterproof clothing
-27,Tornado,0,0,short-sleeved shirt/mask
-11,Mist,0,0,trench coat/lightweight winter clothing
-17,Ash,0,1,long-sleeved shirt/mask
-19,Haze,0,0,cardigan/lightweight winter clothing
-24,Ash,0,0,long-sleeved shirt/mask
-17,Dust,1,0,sweater/mask
-6,Mist,1,0,down coat/lightweight winter clothing
-3,Clouds,0,0,down coat
-25,Squall,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
-0,Rain,1,0,down coat/waterproof clothing
-35,Tornado,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
-1,Clouds,0,1,winter coat
-13,Dust,0,1,cardigan/mask
-16,Squall,0,0,cardigan/waterproof clothing
-1,Fog,1,0,down coat/lightweight winter clothing
-18,Rain,1,0,sweater/waterproof clothing
--3,Rain,0,1,down coat/waterproof clothing
-0,Ash,0,1,winter coat/mask
--4,Haze,0,0,down coat/lightweight winter clothing
-0,Haze,0,0,down coat/lightweight winter clothing
-25,Haze,0,0,short-sleeved shirt/lightweight winter clothing
-22,Clear,0,1,short-sleeved shirt
-34,Rain,1,0,short-sleeved shirt/waterproof clothing
-32,Squall,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
-13,Mist,0,0,sweater/lightweight winter clothing
-10,Fog,0,1,sweater/lightweight winter clothing
-35,Ash,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
-18,Mist,0,0,cardigan/lightweight winter clothing
+4,Mist,0,0,down coat/lightweight winter clothing
 13,Thunderstorm,0,0,sweater/waterproof clothing
-11,Ash,0,0,trench coat/mask
-35,Thunderstorm,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
-24,Mist,1,0,cardigan/lightweight winter clothing
--3,Snow,0,0,down coat/waterproof coating
-27,Clouds,0,1,"Short sleeves when outside, woven fabrics when indoors"
-27,Drizzle,1,0,long-sleeved shirt/waterproof clothing
-15,Haze,0,1,long-sleeved shirt/lightweight winter clothing
-21,Clear,0,1,short-sleeved shirt
-32,Tornado,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
-14,Squall,0,1,cardigan/waterproof clothing
--5,Fog,0,0,down coat/lightweight winter clothing
-22,Tornado,0,1,short-sleeved shirt/mask
--5,Fog,1,0,down coat/lightweight winter clothing
-10,Drizzle,0,1,sweater/waterproof clothing
-29,Squall,0,0,short-sleeved shirt/waterproof clothing
-28,Dust,0,0,short-sleeved shirt/mask
-5,Ash,0,1,trench coat/mask
-12,Haze,0,1,cardigan/lightweight winter clothing
-33,Dust,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
-17,Mist,0,1,long-sleeved shirt/lightweight winter clothing
-30,Clear,0,0,"Short sleeves when outside, woven fabrics when indoors"
-2,Ash,0,0,down coat/mask
-12,Ash,0,0,sweater/mask
--2,Clouds,0,0,down coat
-21,Tornado,0,1,short-sleeved shirt/mask
-30,Fog,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
--2,Thunderstorm,0,0,down coat/waterproof clothing
-30,Ash,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
--5,Mist,0,1,down coat/lightweight winter clothing
-19,Thunderstorm,1,0,sweater/waterproof clothing
-11,Rain,1,0,winter coat/waterproof clothing
-5,Rain,1,0,down coat/waterproof clothing
-4,Snow,0,0,down coat/waterproof coating
-16,Ash,0,0,cardigan/mask
-31,Thunderstorm,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
--3,Snow,0,0,down coat/waterproof coating
-2,Snow,0,0,down coat/waterproof coating
-13,Haze,0,0,sweater/lightweight winter clothing
--2,Snow,0,1,down coat/waterproof coating
-17,Haze,0,1,long-sleeved shirt/lightweight winter clothing
--4,Fog,0,0,down coat/lightweight winter clothing
-20,Fog,0,1,short-sleeved shirt/lightweight winter clothing
-14,Clouds,1,0,trench coat
-33,Thunderstorm,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
-34,Mist,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
--1,Snow,0,0,down coat/waterproof coating
-8,Rain,1,0,down coat/waterproof clothing
-24,Drizzle,0,0,long-sleeved shirt/waterproof clothing
-15,Squall,0,1,long-sleeved shirt/waterproof clothing
-23,Rain,0,1,short-sleeved shirt/waterproof clothing
-19,Drizzle,0,0,cardigan/waterproof clothing
--1,Snow,0,0,down coat/waterproof coating
-28,Drizzle,1,0,long-sleeved shirt/waterproof clothing
-0,Haze,0,1,winter coat/lightweight winter clothing
--3,Fog,0,1,down coat/lightweight winter clothing
--2,Haze,1,0,down coat/lightweight winter clothing
-10,Fog,0,1,sweater/lightweight winter clothing
-29,Rain,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
-1,Clouds,1,0,down coat
-15,Ash,0,1,long-sleeved shirt/mask
-19,Haze,0,0,cardigan/lightweight winter clothing
-11,Clouds,0,0,trench coat
--1,Dust,0,0,down coat/mask
-34,Squall,1,0,short-sleeved shirt/waterproof clothing
-0,Snow,0,0,down coat/waterproof coating
-26,Drizzle,1,0,long-sleeved shirt/waterproof clothing
--5,Snow,1,0,down coat/waterproof coating
-1,Clear,0,1,winter coat
-32,Tornado,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
-14,Squall,0,0,sweater/waterproof clothing
-32,Tornado,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
--4,Rain,0,0,down coat/waterproof clothing
-17,Dust,0,0,cardigan/mask
--2,Snow,1,0,down coat/waterproof coating
-23,Mist,0,1,short-sleeved shirt/lightweight winter clothing
-33,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
-7,Mist,0,1,sweater/lightweight winter clothing
-20,Tornado,0,0,long-sleeved shirt/mask
-15,Tornado,0,0,sweater/mask
-29,Squall,1,0,long-sleeved shirt/waterproof clothing
-34,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+9,Mist,0,1,sweater/lightweight winter clothing
+22,Dust,1,0,cardigan/mask
+-4,Dust,1,0,down coat/mask
+28,Tornado,1,0,long-sleeved shirt/mask
+12,Clear,0,0,sweater
+4,Haze,0,1,trench coat/lightweight winter clothing
 -1,Ash,0,1,down coat/mask
-10,Dust,0,0,trench coat/mask
-19,Rain,0,0,cardigan/waterproof clothing
-4,Snow,1,0,down coat/waterproof coating
-12,Drizzle,0,1,cardigan/waterproof clothing
-19,Drizzle,0,0,cardigan/waterproof clothing
-23,Rain,1,0,cardigan/waterproof clothing
-20,Squall,0,1,short-sleeved shirt/waterproof clothing
-33,Clouds,0,0,"Short sleeves when outside, woven fabrics when indoors"
-9,Mist,0,0,trench coat/lightweight winter clothing
-27,Dust,0,0,short-sleeved shirt/mask
+6,Haze,0,1,trench coat/lightweight winter clothing
+35,Ash,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+6,Clear,0,0,winter coat
+14,Clear,0,0,sweater
+33,Mist,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+22,Mist,0,0,long-sleeved shirt/lightweight winter clothing
+4,Mist,1,0,down coat/lightweight winter clothing
+16,Thunderstorm,1,0,trench coat/waterproof clothing
+-5,Thunderstorm,0,1,down coat/waterproof clothing
+3,Fog,0,0,down coat/lightweight winter clothing
+23,Ash,0,0,long-sleeved shirt/mask
+10,Fog,0,0,trench coat/lightweight winter clothing
+13,Mist,0,1,cardigan/lightweight winter clothing
+7,Fog,1,0,down coat/lightweight winter clothing
+4,Snow,0,1,trench coat/waterproof coating
+5,Rain,1,0,down coat/waterproof clothing
+10,Drizzle,0,1,sweater/waterproof clothing
+19,Fog,0,1,long-sleeved shirt/lightweight winter clothing
+6,Clouds,1,0,down coat
+4,Ash,0,0,down coat/mask
+23,Squall,0,1,short-sleeved shirt/waterproof clothing
+24,Clouds,0,0,long-sleeved shirt
+20,Rain,0,1,short-sleeved shirt/waterproof clothing
+-1,Mist,0,0,down coat/lightweight winter clothing
+0,Snow,0,0,down coat/waterproof coating
+26,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+6,Thunderstorm,1,0,down coat/waterproof clothing
+29,Thunderstorm,0,0,short-sleeved shirt/waterproof clothing
+35,Squall,1,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+13,Clear,0,1,cardigan
+20,Squall,1,0,sweater/waterproof clothing
+-5,Snow,0,1,down coat/waterproof coating
+33,Fog,1,0,short-sleeved shirt/lightweight winter clothing
+-4,Thunderstorm,0,0,down coat/waterproof clothing
+16,Ash,0,0,cardigan/mask
+32,Mist,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+29,Dust,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+32,Thunderstorm,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+4,Snow,0,1,trench coat/waterproof coating
+29,Thunderstorm,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+35,Mist,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+25,Squall,0,0,short-sleeved shirt/waterproof clothing
+27,Tornado,0,0,short-sleeved shirt/mask
 8,Clear,0,0,trench coat
-21,Dust,0,1,short-sleeved shirt/mask
-31,Mist,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+27,Ash,0,0,short-sleeved shirt/mask
+19,Dust,1,0,sweater/mask
+19,Tornado,0,0,cardigan/mask
+35,Clear,0,0,"Short sleeves when outside, woven fabrics when indoors"
+8,Haze,0,0,trench coat/lightweight winter clothing
+35,Haze,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+24,Tornado,0,1,short-sleeved shirt/mask
+3,Clouds,1,0,down coat
+-2,Rain,1,0,down coat/waterproof clothing
+-2,Snow,0,0,down coat/waterproof coating
+23,Clear,0,1,short-sleeved shirt
+5,Ash,1,0,down coat/mask
+24,Fog,0,0,long-sleeved shirt/lightweight winter clothing
+4,Snow,1,0,down coat/waterproof coating
+20,Dust,0,0,long-sleeved shirt/mask
+27,Haze,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+27,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+-3,Snow,0,0,down coat/waterproof coating
+28,Squall,1,0,long-sleeved shirt/waterproof clothing
+20,Clouds,1,0,sweater
+30,Dust,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+10,Rain,0,1,sweater/waterproof clothing
+0,Fog,0,0,down coat/lightweight winter clothing
+16,Haze,0,0,cardigan/lightweight winter clothing
+25,Mist,0,0,short-sleeved shirt/lightweight winter clothing
+-3,Snow,0,1,down coat/waterproof coating
+31,Dust,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+14,Drizzle,1,0,trench coat/waterproof clothing
+22,Squall,1,0,cardigan/waterproof clothing
+20,Rain,0,0,long-sleeved shirt/waterproof clothing
+3,Snow,0,1,trench coat/waterproof coating
+21,Drizzle,0,0,long-sleeved shirt/waterproof clothing
+4,Snow,0,0,down coat/waterproof coating
+19,Drizzle,1,0,sweater/waterproof clothing
+27,Fog,0,0,short-sleeved shirt/lightweight winter clothing
+0,Snow,0,0,down coat/waterproof coating
+21,Squall,0,0,long-sleeved shirt/waterproof clothing
+3,Dust,0,0,down coat/mask
+25,Squall,0,0,short-sleeved shirt/waterproof clothing
+-2,Fog,0,0,down coat/lightweight winter clothing
+27,Fog,1,0,long-sleeved shirt/lightweight winter clothing
+31,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+30,Rain,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+13,Mist,0,0,sweater/lightweight winter clothing
+20,Dust,1,0,sweater/mask
+11,Fog,0,0,trench coat/lightweight winter clothing
+-2,Thunderstorm,0,1,down coat/waterproof clothing
+18,Ash,0,1,long-sleeved shirt/mask
+32,Clear,0,0,"Short sleeves when outside, woven fabrics when indoors"
+9,Fog,0,0,trench coat/lightweight winter clothing
+22,Tornado,0,0,long-sleeved shirt/mask
+30,Tornado,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+6,Mist,0,1,trench coat/lightweight winter clothing
+13,Drizzle,0,1,cardigan/waterproof clothing
+3,Snow,0,1,trench coat/waterproof coating
+19,Tornado,0,0,cardigan/mask
+18,Drizzle,0,0,cardigan/waterproof clothing
+30,Fog,1,0,short-sleeved shirt/lightweight winter clothing
+23,Clear,0,1,short-sleeved shirt
+14,Haze,0,0,sweater/lightweight winter clothing
+25,Haze,0,0,short-sleeved shirt/lightweight winter clothing
+32,Tornado,1,0,short-sleeved shirt/mask
+22,Rain,1,0,cardigan/waterproof clothing
+34,Clear,0,0,"Short sleeves when outside, woven fabrics when indoors"
+24,Dust,1,0,cardigan/mask
+28,Tornado,0,0,short-sleeved shirt/mask
+13,Rain,0,1,cardigan/waterproof clothing
+0,Ash,0,1,winter coat/mask
+23,Tornado,0,1,short-sleeved shirt/mask
+4,Dust,1,0,down coat/mask
+19,Clear,0,0,cardigan
+5,Rain,0,0,winter coat/waterproof clothing
+-2,Fog,0,1,down coat/lightweight winter clothing
+26,Ash,0,0,short-sleeved shirt/mask
+-3,Rain,0,0,down coat/waterproof clothing
+-2,Snow,0,0,down coat/waterproof coating
+27,Rain,1,0,long-sleeved shirt/waterproof clothing
+-2,Snow,0,0,down coat/waterproof coating
+13,Mist,0,0,sweater/lightweight winter clothing
+20,Clear,1,0,sweater
+-4,Snow,0,0,down coat/waterproof coating
+11,Thunderstorm,1,0,winter coat/waterproof clothing
+13,Fog,1,0,trench coat/lightweight winter clothing
+26,Clouds,0,0,short-sleeved shirt
+1,Rain,1,0,down coat/waterproof clothing
+19,Tornado,0,0,cardigan/mask
 3,Ash,0,0,down coat/mask
-11,Squall,1,0,winter coat/waterproof clothing
-22,Fog,0,1,short-sleeved shirt/lightweight winter clothing
-33,Rain,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
-15,Tornado,0,0,sweater/mask
+35,Fog,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+12,Squall,1,0,winter coat/waterproof clothing
+-1,Rain,1,0,down coat/waterproof clothing
+-3,Clouds,0,0,down coat
+21,Squall,0,0,long-sleeved shirt/waterproof clothing
+4,Thunderstorm,0,0,down coat/waterproof clothing
+30,Squall,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+8,Fog,0,0,trench coat/lightweight winter clothing
+12,Fog,0,0,sweater/lightweight winter clothing
+-2,Snow,0,0,down coat/waterproof coating
+2,Snow,1,0,down coat/waterproof coating
+1,Fog,1,0,down coat/lightweight winter clothing
+30,Clouds,0,0,"Short sleeves when outside, woven fabrics when indoors"
+34,Clouds,0,0,"Short sleeves when outside, woven fabrics when indoors"
+21,Mist,0,0,long-sleeved shirt/lightweight winter clothing
+-5,Fog,1,0,down coat/lightweight winter clothing
+1,Snow,0,0,down coat/waterproof coating
+28,Clouds,0,0,short-sleeved shirt
+14,Haze,0,0,sweater/lightweight winter clothing
+29,Tornado,0,0,short-sleeved shirt/mask
+0,Mist,1,0,down coat/lightweight winter clothing
+32,Ash,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+5,Thunderstorm,0,1,trench coat/waterproof clothing
+4,Snow,1,0,down coat/waterproof coating
+19,Fog,0,0,cardigan/lightweight winter clothing
+29,Rain,0,0,short-sleeved shirt/waterproof clothing
+11,Drizzle,0,1,cardigan/waterproof clothing
+25,Ash,1,0,long-sleeved shirt/mask
+17,Fog,0,0,cardigan/lightweight winter clothing
+32,Clear,0,0,"Short sleeves when outside, woven fabrics when indoors"
+-4,Snow,0,1,down coat/waterproof coating
+22,Haze,0,0,long-sleeved shirt/lightweight winter clothing
+27,Mist,0,0,short-sleeved shirt/lightweight winter clothing
+4,Mist,0,1,trench coat/lightweight winter clothing
+-3,Rain,1,0,down coat/waterproof clothing
+28,Rain,0,0,short-sleeved shirt/waterproof clothing
+26,Clear,1,0,long-sleeved shirt
+2,Snow,0,1,winter coat/waterproof coating
+0,Snow,0,0,down coat/waterproof coating
+34,Clouds,0,1,"Short sleeves when outside, woven fabrics when indoors"
+15,Clouds,0,0,sweater
+17,Clouds,0,1,long-sleeved shirt
+17,Tornado,0,0,cardigan/mask
+9,Thunderstorm,0,1,sweater/waterproof clothing
+35,Clouds,1,0,"Short sleeves when outside, woven fabrics when indoors"
+11,Thunderstorm,0,0,trench coat/waterproof clothing
+29,Squall,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+3,Snow,0,0,down coat/waterproof coating
+12,Clear,1,0,winter coat
+21,Haze,1,0,cardigan/lightweight winter clothing
+33,Rain,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+4,Clouds,1,0,down coat
+7,Mist,0,0,winter coat/lightweight winter clothing
+-1,Clear,0,0,down coat
+32,Clouds,1,0,short-sleeved shirt
+34,Haze,1,0,short-sleeved shirt/lightweight winter clothing
+22,Clear,0,1,short-sleeved shirt
+32,Mist,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+5,Ash,0,1,trench coat/mask
+21,Clear,0,0,long-sleeved shirt
+28,Drizzle,1,0,long-sleeved shirt/waterproof clothing
+32,Squall,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+3,Fog,0,1,trench coat/lightweight winter clothing
+14,Drizzle,0,0,sweater/waterproof clothing
+22,Clear,0,0,long-sleeved shirt
+6,Haze,0,1,trench coat/lightweight winter clothing
+2,Snow,1,0,down coat/waterproof coating
+-2,Snow,1,0,down coat/waterproof coating
+13,Haze,0,0,sweater/lightweight winter clothing
+4,Haze,0,0,down coat/lightweight winter clothing
+27,Squall,0,0,short-sleeved shirt/waterproof clothing
+4,Ash,0,1,trench coat/mask
+31,Fog,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+25,Thunderstorm,0,0,short-sleeved shirt/waterproof clothing
+32,Thunderstorm,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+-1,Rain,0,0,down coat/waterproof clothing
+24,Ash,0,0,long-sleeved shirt/mask
+15,Haze,0,1,long-sleeved shirt/lightweight winter clothing
+-4,Clouds,1,0,down coat
+-5,Rain,1,0,down coat/waterproof clothing
+25,Clear,0,0,short-sleeved shirt
+11,Fog,0,0,trench coat/lightweight winter clothing
+27,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+1,Snow,0,0,down coat/waterproof coating
+7,Fog,0,0,winter coat/lightweight winter clothing
+2,Fog,1,0,down coat/lightweight winter clothing
+31,Dust,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+29,Clear,0,1,"Short sleeves when outside, woven fabrics when indoors"
+-4,Fog,0,1,down coat/lightweight winter clothing
+19,Clear,0,1,long-sleeved shirt
+19,Fog,0,1,long-sleeved shirt/lightweight winter clothing
+26,Clouds,0,0,short-sleeved shirt
+1,Fog,1,0,down coat/lightweight winter clothing
+18,Rain,0,1,long-sleeved shirt/waterproof clothing
+35,Rain,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+24,Drizzle,1,0,cardigan/waterproof clothing
 13,Clouds,1,0,trench coat
+22,Fog,0,0,long-sleeved shirt/lightweight winter clothing
+7,Thunderstorm,1,0,down coat/waterproof clothing
+20,Thunderstorm,1,0,sweater/waterproof clothing
+22,Squall,0,0,long-sleeved shirt/waterproof clothing
+19,Thunderstorm,0,0,cardigan/waterproof clothing
+-3,Ash,1,0,down coat/mask
+1,Snow,0,0,down coat/waterproof coating
+-5,Rain,0,0,down coat/waterproof clothing
+10,Drizzle,0,0,trench coat/waterproof clothing
+-5,Snow,1,0,down coat/waterproof coating
+9,Mist,0,1,sweater/lightweight winter clothing
+22,Fog,0,0,long-sleeved shirt/lightweight winter clothing
+0,Rain,1,0,down coat/waterproof clothing
+26,Mist,0,0,short-sleeved shirt/lightweight winter clothing
+-4,Dust,0,0,down coat/mask
+2,Snow,0,1,winter coat/waterproof coating
+0,Dust,0,1,winter coat/mask
+18,Tornado,0,0,cardigan/mask
+12,Drizzle,0,0,sweater/waterproof clothing
+12,Thunderstorm,0,1,cardigan/waterproof clothing
+32,Haze,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+9,Dust,1,0,down coat/mask
+1,Thunderstorm,0,0,down coat/waterproof clothing
+-2,Ash,0,0,down coat/mask
+6,Dust,1,0,down coat/mask
+31,Fog,1,0,short-sleeved shirt/lightweight winter clothing
+20,Tornado,1,0,sweater/mask
+24,Dust,0,0,long-sleeved shirt/mask
+10,Clouds,0,0,trench coat
+34,Dust,1,0,short-sleeved shirt/mask
+0,Dust,1,0,down coat/mask
+-4,Rain,0,0,down coat/waterproof clothing
+11,Rain,0,0,trench coat/waterproof clothing
+21,Fog,0,0,long-sleeved shirt/lightweight winter clothing
+9,Fog,1,0,down coat/lightweight winter clothing
+12,Ash,0,0,sweater/mask
+-4,Fog,0,0,down coat/lightweight winter clothing
+15,Thunderstorm,0,1,long-sleeved shirt/waterproof clothing
+16,Rain,0,1,long-sleeved shirt/waterproof clothing
+31,Fog,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+4,Fog,1,0,down coat/lightweight winter clothing
+-1,Haze,0,0,down coat/lightweight winter clothing
+16,Dust,0,0,cardigan/mask
+17,Rain,0,1,long-sleeved shirt/waterproof clothing
+27,Fog,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+26,Clear,1,0,long-sleeved shirt
+1,Rain,0,1,winter coat/waterproof clothing
+16,Tornado,0,0,cardigan/mask
+-3,Thunderstorm,0,0,down coat/waterproof clothing
+-4,Fog,0,0,down coat/lightweight winter clothing
+32,Rain,1,0,short-sleeved shirt/waterproof clothing
+30,Drizzle,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+20,Drizzle,1,0,sweater/waterproof clothing
+-2,Haze,0,1,down coat/lightweight winter clothing
+26,Drizzle,1,0,long-sleeved shirt/waterproof clothing
+16,Rain,0,1,long-sleeved shirt/waterproof clothing
+23,Drizzle,1,0,cardigan/waterproof clothing
+14,Squall,1,0,trench coat/waterproof clothing
+30,Mist,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+32,Mist,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+-3,Haze,0,0,down coat/lightweight winter clothing
+18,Dust,1,0,sweater/mask
+-3,Snow,1,0,down coat/waterproof coating
+31,Drizzle,1,0,short-sleeved shirt/waterproof clothing
+6,Fog,1,0,down coat/lightweight winter clothing
+15,Haze,0,0,sweater/lightweight winter clothing
+13,Squall,0,0,sweater/waterproof clothing
+21,Haze,1,0,cardigan/lightweight winter clothing
+6,Fog,0,0,winter coat/lightweight winter clothing
+16,Fog,0,0,cardigan/lightweight winter clothing
+34,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+18,Drizzle,0,1,long-sleeved shirt/waterproof clothing
+7,Dust,1,0,down coat/mask
+6,Clouds,1,0,down coat
+0,Dust,0,0,down coat/mask
+12,Fog,0,0,sweater/lightweight winter clothing
+17,Tornado,1,0,sweater/mask
+-1,Ash,0,0,down coat/mask
+15,Ash,0,0,sweater/mask
+18,Clear,1,0,sweater
+22,Drizzle,0,0,long-sleeved shirt/waterproof clothing
+29,Tornado,0,0,short-sleeved shirt/mask
+-5,Dust,0,0,down coat/mask
+-2,Snow,1,0,down coat/waterproof coating
+-2,Clouds,0,0,down coat
+-1,Thunderstorm,0,0,down coat/waterproof clothing
+5,Ash,0,0,winter coat/mask
+34,Clouds,1,0,short-sleeved shirt
+8,Clear,1,0,down coat
+7,Fog,0,0,winter coat/lightweight winter clothing
+27,Squall,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+-3,Clear,1,0,down coat
+27,Drizzle,0,0,short-sleeved shirt/waterproof clothing
+22,Ash,1,0,cardigan/mask
+0,Ash,1,0,down coat/mask
+14,Ash,0,0,sweater/mask
+6,Rain,0,0,winter coat/waterproof clothing
+22,Squall,0,1,short-sleeved shirt/waterproof clothing
+-3,Mist,0,0,down coat/lightweight winter clothing
+23,Squall,1,0,cardigan/waterproof clothing
+6,Thunderstorm,0,0,winter coat/waterproof clothing
+11,Squall,1,0,winter coat/waterproof clothing
+12,Mist,0,0,sweater/lightweight winter clothing
+25,Tornado,1,0,long-sleeved shirt/mask
+22,Squall,0,0,long-sleeved shirt/waterproof clothing
+0,Snow,0,0,down coat/waterproof coating
+15,Dust,0,0,sweater/mask
+29,Thunderstorm,1,0,long-sleeved shirt/waterproof clothing
+2,Rain,0,0,down coat/waterproof clothing
+6,Clouds,0,0,winter coat
+21,Ash,0,0,long-sleeved shirt/mask
+8,Clouds,0,1,sweater
+19,Rain,0,0,cardigan/waterproof clothing
+31,Tornado,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+30,Rain,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+-2,Snow,0,0,down coat/waterproof coating
+19,Rain,1,0,sweater/waterproof clothing
+9,Clouds,0,1,sweater
+33,Squall,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+1,Snow,1,0,down coat/waterproof coating
+21,Tornado,0,0,long-sleeved shirt/mask
+-5,Rain,0,0,down coat/waterproof clothing
+34,Ash,1,0,short-sleeved shirt/mask
+2,Snow,0,0,down coat/waterproof coating
+24,Drizzle,0,0,long-sleeved shirt/waterproof clothing
+35,Rain,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+17,Clear,0,0,cardigan
+12,Mist,1,0,winter coat/lightweight winter clothing
+4,Clear,1,0,down coat
+-4,Fog,0,1,down coat/lightweight winter clothing
+5,Fog,1,0,down coat/lightweight winter clothing
+2,Snow,0,0,down coat/waterproof coating
+33,Clouds,0,0,"Short sleeves when outside, woven fabrics when indoors"
+7,Dust,0,1,sweater/mask
+34,Mist,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+18,Fog,0,0,cardigan/lightweight winter clothing
+14,Squall,0,1,cardigan/waterproof clothing
+1,Ash,0,1,winter coat/mask
+34,Thunderstorm,1,0,short-sleeved shirt/waterproof clothing
+28,Ash,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+21,Fog,0,1,short-sleeved shirt/lightweight winter clothing
+16,Squall,0,0,cardigan/waterproof clothing
+7,Clear,0,1,sweater
+31,Mist,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+14,Ash,1,0,trench coat/mask
+35,Thunderstorm,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+23,Haze,0,1,short-sleeved shirt/lightweight winter clothing
+-4,Clouds,0,0,down coat
+33,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+28,Rain,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+34,Tornado,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+5,Rain,1,0,down coat/waterproof clothing
+34,Ash,1,0,short-sleeved shirt/mask
+31,Drizzle,1,0,short-sleeved shirt/waterproof clothing
+16,Tornado,0,1,long-sleeved shirt/mask
+-1,Snow,0,0,down coat/waterproof coating
+35,Drizzle,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+12,Drizzle,0,0,sweater/waterproof clothing
+32,Thunderstorm,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+25,Drizzle,0,0,short-sleeved shirt/waterproof clothing
+1,Haze,0,0,down coat/lightweight winter clothing
+14,Mist,0,0,sweater/lightweight winter clothing
+19,Tornado,1,0,sweater/mask
+9,Fog,0,0,trench coat/lightweight winter clothing
+-3,Snow,0,1,down coat/waterproof coating
+0,Ash,0,1,winter coat/mask
+12,Mist,0,0,sweater/lightweight winter clothing
+26,Clouds,1,0,long-sleeved shirt
+33,Rain,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+28,Rain,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+31,Tornado,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+19,Drizzle,1,0,sweater/waterproof clothing
+26,Squall,0,0,short-sleeved shirt/waterproof clothing
+20,Ash,0,0,long-sleeved shirt/mask
+12,Ash,0,0,sweater/mask
+27,Clear,0,0,short-sleeved shirt
+20,Drizzle,0,0,long-sleeved shirt/waterproof clothing
+-4,Rain,0,0,down coat/waterproof clothing
+25,Tornado,0,0,short-sleeved shirt/mask
+21,Squall,0,0,long-sleeved shirt/waterproof clothing
+31,Fog,1,0,short-sleeved shirt/lightweight winter clothing
+13,Fog,0,0,sweater/lightweight winter clothing
+20,Tornado,0,1,short-sleeved shirt/mask
+7,Dust,0,0,winter coat/mask
+5,Rain,0,0,winter coat/waterproof clothing
+12,Drizzle,1,0,winter coat/waterproof clothing
+31,Haze,1,0,short-sleeved shirt/lightweight winter clothing
+19,Drizzle,1,0,sweater/waterproof clothing
+33,Rain,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+15,Squall,0,0,sweater/waterproof clothing
+9,Clear,1,0,down coat
+28,Tornado,0,0,short-sleeved shirt/mask
+28,Tornado,0,0,short-sleeved shirt/mask
+29,Rain,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+9,Clouds,1,0,down coat
+19,Clouds,0,0,cardigan
+32,Tornado,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+14,Haze,1,0,trench coat/lightweight winter clothing
+33,Squall,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+-3,Snow,1,0,down coat/waterproof coating
+27,Ash,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+25,Rain,0,0,short-sleeved shirt/waterproof clothing
+22,Rain,0,0,long-sleeved shirt/waterproof clothing
+21,Fog,0,0,long-sleeved shirt/lightweight winter clothing
+21,Squall,1,0,cardigan/waterproof clothing
+33,Clear,0,0,"Short sleeves when outside, woven fabrics when indoors"
+9,Mist,0,0,trench coat/lightweight winter clothing
+22,Thunderstorm,0,0,long-sleeved shirt/waterproof clothing
+13,Ash,0,0,sweater/mask
+32,Clear,0,0,"Short sleeves when outside, woven fabrics when indoors"
+19,Rain,0,0,cardigan/waterproof clothing
+-5,Mist,0,1,down coat/lightweight winter clothing
+-4,Dust,0,0,down coat/mask
+30,Mist,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+-3,Clouds,0,0,down coat
+19,Haze,0,0,cardigan/lightweight winter clothing
+25,Tornado,0,0,short-sleeved shirt/mask
+24,Fog,1,0,cardigan/lightweight winter clothing
+1,Thunderstorm,1,0,down coat/waterproof clothing
+33,Drizzle,1,0,short-sleeved shirt/waterproof clothing
+25,Thunderstorm,0,0,short-sleeved shirt/waterproof clothing
+12,Clouds,1,0,winter coat
+31,Thunderstorm,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+-1,Haze,0,0,down coat/lightweight winter clothing
+1,Snow,0,0,down coat/waterproof coating
+-3,Snow,1,0,down coat/waterproof coating
+34,Tornado,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+10,Dust,0,0,trench coat/mask
+22,Fog,0,0,long-sleeved shirt/lightweight winter clothing
+-4,Dust,0,1,down coat/mask
+17,Haze,1,0,sweater/lightweight winter clothing
+17,Clear,0,0,cardigan
+28,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+34,Tornado,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+22,Clear,0,0,long-sleeved shirt
+8,Rain,0,1,sweater/waterproof clothing
+35,Clear,0,0,"Short sleeves when outside, woven fabrics when indoors"
+27,Tornado,0,0,short-sleeved shirt/mask
+17,Fog,0,0,cardigan/lightweight winter clothing
+21,Dust,0,0,long-sleeved shirt/mask
+12,Squall,1,0,winter coat/waterproof clothing
+-4,Snow,0,0,down coat/waterproof coating
+35,Thunderstorm,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+-3,Fog,0,0,down coat/lightweight winter clothing
+-2,Thunderstorm,0,0,down coat/waterproof clothing
+-2,Clouds,1,0,down coat
+28,Haze,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+16,Mist,0,0,cardigan/lightweight winter clothing
+12,Dust,0,1,cardigan/mask
+21,Clear,1,0,cardigan
+2,Snow,0,0,down coat/waterproof coating
+19,Fog,1,0,sweater/lightweight winter clothing
+12,Drizzle,1,0,winter coat/waterproof clothing
+6,Haze,0,0,winter coat/lightweight winter clothing
+19,Fog,0,0,cardigan/lightweight winter clothing
+31,Ash,1,0,short-sleeved shirt/mask
+27,Clouds,1,0,long-sleeved shirt
+-3,Snow,0,0,down coat/waterproof coating
+24,Rain,0,0,long-sleeved shirt/waterproof clothing
+0,Snow,0,1,winter coat/waterproof coating
+23,Haze,0,1,short-sleeved shirt/lightweight winter clothing
+28,Ash,1,0,long-sleeved shirt/mask
+31,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+21,Tornado,0,1,short-sleeved shirt/mask
+-4,Thunderstorm,1,0,down coat/waterproof clothing
+4,Snow,0,1,trench coat/waterproof coating
+8,Dust,0,1,sweater/mask
+2,Clear,0,0,down coat
+8,Ash,0,0,trench coat/mask
+17,Squall,0,0,cardigan/waterproof clothing
+35,Tornado,1,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+4,Fog,0,1,trench coat/lightweight winter clothing
+7,Mist,0,0,winter coat/lightweight winter clothing
+1,Clouds,0,1,winter coat
+16,Tornado,0,1,long-sleeved shirt/mask
+4,Haze,0,1,trench coat/lightweight winter clothing
+32,Clouds,0,1,"Short sleeves when outside, woven fabrics when indoors"
+-4,Snow,1,0,down coat/waterproof coating
+-5,Snow,0,0,down coat/waterproof coating
+30,Tornado,1,0,short-sleeved shirt/mask
+2,Haze,0,1,winter coat/lightweight winter clothing
+-1,Ash,0,0,down coat/mask
+18,Ash,0,0,cardigan/mask
+18,Thunderstorm,0,0,cardigan/waterproof clothing
+-3,Snow,0,1,down coat/waterproof coating
+28,Squall,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+15,Squall,0,1,long-sleeved shirt/waterproof clothing
+10,Thunderstorm,0,0,trench coat/waterproof clothing
+18,Clouds,0,0,cardigan
+6,Clear,0,1,trench coat
+8,Haze,0,0,trench coat/lightweight winter clothing
+12,Ash,1,0,winter coat/mask
+5,Dust,1,0,down coat/mask
+21,Clouds,0,0,long-sleeved shirt
+21,Fog,0,0,long-sleeved shirt/lightweight winter clothing
+-3,Mist,0,0,down coat/lightweight winter clothing
+26,Haze,1,0,long-sleeved shirt/lightweight winter clothing
+10,Clear,0,0,trench coat
+28,Ash,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+17,Ash,0,0,cardigan/mask
+20,Ash,0,1,short-sleeved shirt/mask
+35,Ash,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+10,Clear,0,0,trench coat
+7,Thunderstorm,0,0,winter coat/waterproof clothing
+29,Squall,1,0,long-sleeved shirt/waterproof clothing
+2,Clear,1,0,down coat
+6,Haze,1,0,down coat/lightweight winter clothing
+23,Tornado,0,0,long-sleeved shirt/mask
+14,Squall,1,0,trench coat/waterproof clothing
+7,Fog,0,1,sweater/lightweight winter clothing
+13,Mist,1,0,trench coat/lightweight winter clothing
+0,Snow,0,0,down coat/waterproof coating
+26,Squall,0,0,short-sleeved shirt/waterproof clothing
+23,Mist,0,0,long-sleeved shirt/lightweight winter clothing
+-1,Snow,1,0,down coat/waterproof coating
+23,Drizzle,1,0,cardigan/waterproof clothing
+34,Clear,0,0,"Short sleeves when outside, woven fabrics when indoors"
+9,Haze,0,0,trench coat/lightweight winter clothing
+27,Rain,0,0,short-sleeved shirt/waterproof clothing
+15,Clouds,1,0,trench coat
+2,Snow,0,0,down coat/waterproof coating
+28,Thunderstorm,0,0,short-sleeved shirt/waterproof clothing
+21,Ash,0,1,short-sleeved shirt/mask
+12,Thunderstorm,0,1,cardigan/waterproof clothing
+25,Squall,1,0,long-sleeved shirt/waterproof clothing
+2,Snow,0,1,winter coat/waterproof coating
+12,Clouds,1,0,winter coat
+30,Tornado,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+30,Mist,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+-2,Clear,0,0,down coat
+34,Dust,1,0,short-sleeved shirt/mask
+3,Mist,1,0,down coat/lightweight winter clothing
+32,Fog,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+25,Tornado,0,0,short-sleeved shirt/mask
+25,Drizzle,0,0,short-sleeved shirt/waterproof clothing
+9,Rain,0,0,trench coat/waterproof clothing
+20,Mist,0,0,long-sleeved shirt/lightweight winter clothing
+27,Squall,1,0,long-sleeved shirt/waterproof clothing
+-5,Thunderstorm,0,0,down coat/waterproof clothing
+2,Snow,1,0,down coat/waterproof coating
+34,Haze,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+0,Snow,0,0,down coat/waterproof coating
+26,Clouds,1,0,long-sleeved shirt
+34,Tornado,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+-3,Mist,0,1,down coat/lightweight winter clothing
+31,Rain,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+0,Thunderstorm,1,0,down coat/waterproof clothing
+31,Rain,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+23,Tornado,0,0,long-sleeved shirt/mask
+-3,Haze,1,0,down coat/lightweight winter clothing
+34,Rain,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+29,Squall,1,0,long-sleeved shirt/waterproof clothing
+20,Tornado,0,1,short-sleeved shirt/mask
+-4,Snow,0,0,down coat/waterproof coating
+31,Drizzle,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+21,Clouds,0,0,long-sleeved shirt
+-1,Clear,0,0,down coat
+-2,Haze,0,1,down coat/lightweight winter clothing
+4,Clouds,0,0,down coat
+5,Mist,1,0,down coat/lightweight winter clothing
+2,Ash,0,1,winter coat/mask
+17,Fog,0,1,long-sleeved shirt/lightweight winter clothing
+2,Snow,0,1,winter coat/waterproof coating
+23,Squall,0,0,long-sleeved shirt/waterproof clothing
+11,Mist,0,0,trench coat/lightweight winter clothing
+35,Clear,0,0,"Short sleeves when outside, woven fabrics when indoors"
+3,Ash,0,1,trench coat/mask
+0,Haze,0,0,down coat/lightweight winter clothing
+-4,Snow,1,0,down coat/waterproof coating
+28,Rain,0,0,short-sleeved shirt/waterproof clothing
+10,Mist,1,0,winter coat/lightweight winter clothing
+2,Thunderstorm,1,0,down coat/waterproof clothing
+26,Drizzle,0,0,short-sleeved shirt/waterproof clothing
+12,Clouds,0,0,sweater
+30,Thunderstorm,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+27,Squall,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+14,Mist,1,0,trench coat/lightweight winter clothing
+27,Clouds,0,0,short-sleeved shirt
+23,Tornado,0,0,long-sleeved shirt/mask
+26,Tornado,1,0,long-sleeved shirt/mask
+-5,Snow,0,1,down coat/waterproof coating
+18,Tornado,1,0,sweater/mask
+21,Thunderstorm,0,0,long-sleeved shirt/waterproof clothing
+34,Ash,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+33,Rain,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+-1,Snow,1,0,down coat/waterproof coating
+2,Mist,0,0,down coat/lightweight winter clothing
+19,Mist,0,1,long-sleeved shirt/lightweight winter clothing
+24,Clouds,1,0,cardigan
+31,Clouds,0,0,"Short sleeves when outside, woven fabrics when indoors"
+18,Ash,1,0,sweater/mask
+12,Dust,0,0,sweater/mask
+10,Squall,0,0,trench coat/waterproof clothing
+32,Thunderstorm,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+19,Clear,0,1,long-sleeved shirt
+11,Squall,0,0,trench coat/waterproof clothing
+15,Fog,0,0,sweater/lightweight winter clothing
+20,Thunderstorm,1,0,sweater/waterproof clothing
+17,Haze,0,1,long-sleeved shirt/lightweight winter clothing
+1,Ash,1,0,down coat/mask
+28,Squall,0,0,short-sleeved shirt/waterproof clothing
+9,Fog,0,1,sweater/lightweight winter clothing
+12,Haze,1,0,winter coat/lightweight winter clothing
+35,Drizzle,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+11,Clear,1,0,winter coat
+15,Clouds,0,0,sweater
+-1,Snow,1,0,down coat/waterproof coating
+28,Clear,0,1,"Short sleeves when outside, woven fabrics when indoors"
+29,Clear,0,0,short-sleeved shirt
+24,Drizzle,0,1,short-sleeved shirt/waterproof clothing
+32,Thunderstorm,1,0,short-sleeved shirt/waterproof clothing
+3,Fog,0,1,trench coat/lightweight winter clothing
+19,Fog,0,1,long-sleeved shirt/lightweight winter clothing
+33,Haze,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+1,Snow,1,0,down coat/waterproof coating
+3,Clear,0,0,down coat
+-2,Ash,0,1,down coat/mask
+15,Tornado,1,0,trench coat/mask
+-3,Snow,0,0,down coat/waterproof coating
+5,Rain,0,1,trench coat/waterproof clothing
+35,Ash,1,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+-4,Snow,0,1,down coat/waterproof coating
+34,Mist,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+35,Tornado,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+17,Dust,1,0,sweater/mask
+6,Haze,0,0,winter coat/lightweight winter clothing
+5,Clouds,0,0,winter coat
+17,Clear,0,0,cardigan
+28,Haze,0,0,short-sleeved shirt/lightweight winter clothing
+5,Ash,0,1,trench coat/mask
+10,Haze,0,0,trench coat/lightweight winter clothing
+29,Ash,1,0,long-sleeved shirt/mask
+35,Tornado,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+7,Ash,0,0,winter coat/mask
+6,Fog,0,0,winter coat/lightweight winter clothing
+25,Clear,0,0,short-sleeved shirt
+15,Mist,0,0,sweater/lightweight winter clothing
+4,Rain,0,0,down coat/waterproof clothing
+27,Thunderstorm,0,0,short-sleeved shirt/waterproof clothing
+3,Fog,0,1,trench coat/lightweight winter clothing
+25,Haze,1,0,long-sleeved shirt/lightweight winter clothing
+11,Haze,0,0,trench coat/lightweight winter clothing
+20,Clear,0,1,short-sleeved shirt
+4,Snow,1,0,down coat/waterproof coating
+19,Tornado,1,0,sweater/mask
+-5,Mist,1,0,down coat/lightweight winter clothing
+11,Squall,0,0,trench coat/waterproof clothing
+30,Squall,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+34,Squall,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+10,Haze,0,1,sweater/lightweight winter clothing
+9,Dust,0,0,trench coat/mask
+1,Clear,0,1,winter coat
+20,Haze,0,0,long-sleeved shirt/lightweight winter clothing
+21,Ash,0,1,short-sleeved shirt/mask
+15,Fog,1,0,trench coat/lightweight winter clothing
+6,Clear,1,0,down coat
+26,Rain,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+15,Tornado,0,0,sweater/mask
+4,Rain,0,0,down coat/waterproof clothing
+23,Thunderstorm,1,0,cardigan/waterproof clothing
+22,Drizzle,1,0,cardigan/waterproof clothing
+33,Clear,0,0,"Short sleeves when outside, woven fabrics when indoors"
+33,Tornado,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+-4,Ash,1,0,down coat/mask
+20,Thunderstorm,0,0,long-sleeved shirt/waterproof clothing
+19,Thunderstorm,0,1,long-sleeved shirt/waterproof clothing
+6,Clear,0,1,trench coat
+31,Haze,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+21,Thunderstorm,0,0,long-sleeved shirt/waterproof clothing
+0,Ash,1,0,down coat/mask
+34,Ash,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+16,Thunderstorm,0,0,cardigan/waterproof clothing
+18,Haze,0,0,cardigan/lightweight winter clothing
+5,Dust,1,0,down coat/mask
+-5,Rain,0,1,down coat/waterproof clothing
+31,Clouds,0,0,"Short sleeves when outside, woven fabrics when indoors"
+31,Thunderstorm,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+12,Mist,1,0,winter coat/lightweight winter clothing
+6,Fog,0,0,winter coat/lightweight winter clothing
+7,Fog,0,0,winter coat/lightweight winter clothing
+24,Haze,1,0,cardigan/lightweight winter clothing
+28,Haze,0,0,short-sleeved shirt/lightweight winter clothing
+8,Haze,1,0,down coat/lightweight winter clothing
+31,Clear,0,0,"Short sleeves when outside, woven fabrics when indoors"
+27,Thunderstorm,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+6,Haze,0,1,trench coat/lightweight winter clothing
+14,Dust,0,0,sweater/mask
+17,Haze,0,0,cardigan/lightweight winter clothing
+1,Snow,0,0,down coat/waterproof coating
+10,Thunderstorm,0,0,trench coat/waterproof clothing
+-3,Snow,0,0,down coat/waterproof coating
+11,Ash,0,1,cardigan/mask
+34,Tornado,1,0,short-sleeved shirt/mask
+2,Snow,1,0,down coat/waterproof coating
+27,Tornado,0,0,short-sleeved shirt/mask
+-1,Rain,0,1,down coat/waterproof clothing
+0,Thunderstorm,0,1,winter coat/waterproof clothing
+29,Clouds,1,0,long-sleeved shirt
+18,Drizzle,0,0,cardigan/waterproof clothing
+27,Fog,1,0,long-sleeved shirt/lightweight winter clothing
+34,Thunderstorm,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+19,Squall,0,0,cardigan/waterproof clothing
+10,Squall,0,0,trench coat/waterproof clothing
+19,Tornado,0,0,cardigan/mask
+18,Thunderstorm,0,0,cardigan/waterproof clothing
+3,Dust,0,0,down coat/mask
+2,Fog,1,0,down coat/lightweight winter clothing
+33,Clouds,0,0,"Short sleeves when outside, woven fabrics when indoors"
+29,Ash,1,0,long-sleeved shirt/mask
+2,Ash,0,0,down coat/mask
+8,Dust,1,0,down coat/mask
+28,Fog,0,0,short-sleeved shirt/lightweight winter clothing
+28,Mist,0,0,short-sleeved shirt/lightweight winter clothing
+2,Haze,0,1,winter coat/lightweight winter clothing
+0,Snow,0,0,down coat/waterproof coating
+27,Clear,0,0,short-sleeved shirt
+4,Snow,1,0,down coat/waterproof coating
+18,Ash,0,1,long-sleeved shirt/mask
+10,Squall,0,0,trench coat/waterproof clothing
+14,Rain,0,0,sweater/waterproof clothing
+29,Squall,0,0,short-sleeved shirt/waterproof clothing
+3,Dust,0,1,trench coat/mask
+-3,Snow,0,1,down coat/waterproof coating
+17,Clouds,0,1,long-sleeved shirt
+10,Fog,0,1,sweater/lightweight winter clothing
+26,Dust,1,0,long-sleeved shirt/mask
+0,Snow,0,0,down coat/waterproof coating
+13,Haze,0,1,cardigan/lightweight winter clothing
+30,Haze,1,0,short-sleeved shirt/lightweight winter clothing
+15,Ash,0,1,long-sleeved shirt/mask
+17,Fog,0,0,cardigan/lightweight winter clothing
+12,Squall,0,1,cardigan/waterproof clothing
+2,Clouds,1,0,down coat
+35,Ash,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+16,Clouds,0,1,long-sleeved shirt
+5,Dust,0,1,trench coat/mask
+15,Squall,0,1,long-sleeved shirt/waterproof clothing
+-5,Snow,0,0,down coat/waterproof coating
+3,Thunderstorm,0,1,trench coat/waterproof clothing
+1,Clouds,0,0,down coat
+12,Clouds,1,0,winter coat
+-1,Snow,0,0,down coat/waterproof coating
+21,Ash,0,0,long-sleeved shirt/mask
+-5,Fog,0,1,down coat/lightweight winter clothing
+29,Haze,0,0,short-sleeved shirt/lightweight winter clothing
+-3,Ash,0,0,down coat/mask
+20,Mist,0,0,long-sleeved shirt/lightweight winter clothing
+0,Mist,0,1,winter coat/lightweight winter clothing
+23,Haze,0,0,long-sleeved shirt/lightweight winter clothing
+21,Mist,0,1,short-sleeved shirt/lightweight winter clothing
+2,Snow,0,0,down coat/waterproof coating
+31,Dust,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+7,Haze,1,0,down coat/lightweight winter clothing
+10,Clouds,0,0,trench coat
+16,Thunderstorm,0,0,cardigan/waterproof clothing
+28,Thunderstorm,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+28,Ash,1,0,long-sleeved shirt/mask
+29,Thunderstorm,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+14,Drizzle,0,1,cardigan/waterproof clothing
+1,Snow,0,1,winter coat/waterproof coating
+30,Rain,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+35,Thunderstorm,1,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+16,Haze,0,1,long-sleeved shirt/lightweight winter clothing
+34,Clear,0,0,"Short sleeves when outside, woven fabrics when indoors"
+6,Thunderstorm,0,0,winter coat/waterproof clothing
+32,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+0,Dust,0,1,winter coat/mask
+35,Haze,1,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+18,Tornado,0,1,long-sleeved shirt/mask
+34,Dust,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+21,Squall,1,0,cardigan/waterproof clothing
+11,Squall,0,0,trench coat/waterproof clothing
+-5,Fog,0,1,down coat/lightweight winter clothing
+31,Ash,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+1,Haze,1,0,down coat/lightweight winter clothing
+30,Clear,0,1,"Short sleeves when outside, woven fabrics when indoors"
+16,Dust,1,0,trench coat/mask
+28,Squall,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+26,Dust,1,0,long-sleeved shirt/mask
+-3,Clouds,0,1,down coat
+30,Mist,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+29,Squall,0,0,short-sleeved shirt/waterproof clothing
+5,Fog,0,0,winter coat/lightweight winter clothing
+27,Tornado,0,0,short-sleeved shirt/mask
+-2,Snow,0,0,down coat/waterproof coating
+25,Clear,0,1,"Short sleeves when outside, woven fabrics when indoors"
+14,Thunderstorm,0,0,sweater/waterproof clothing
+26,Tornado,0,0,short-sleeved shirt/mask
+9,Dust,0,0,trench coat/mask
+-4,Haze,0,1,down coat/lightweight winter clothing
+30,Tornado,1,0,short-sleeved shirt/mask
+20,Rain,0,0,long-sleeved shirt/waterproof clothing
+15,Dust,0,0,sweater/mask
+34,Dust,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+17,Mist,0,1,long-sleeved shirt/lightweight winter clothing
+-5,Mist,0,0,down coat/lightweight winter clothing
+14,Dust,0,0,sweater/mask
+10,Drizzle,0,0,trench coat/waterproof clothing
+21,Dust,1,0,cardigan/mask
+31,Thunderstorm,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+5,Mist,0,1,trench coat/lightweight winter clothing
+16,Haze,1,0,trench coat/lightweight winter clothing
+6,Haze,1,0,down coat/lightweight winter clothing
+23,Drizzle,0,1,short-sleeved shirt/waterproof clothing
+32,Tornado,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+19,Tornado,0,0,cardigan/mask
+22,Haze,0,0,long-sleeved shirt/lightweight winter clothing
+3,Snow,1,0,down coat/waterproof coating
+32,Ash,1,0,short-sleeved shirt/mask
+28,Squall,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+-3,Thunderstorm,0,0,down coat/waterproof clothing
+33,Squall,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+-5,Dust,0,0,down coat/mask
+16,Haze,0,0,cardigan/lightweight winter clothing
+14,Squall,0,1,cardigan/waterproof clothing
+29,Drizzle,0,0,short-sleeved shirt/waterproof clothing
+32,Thunderstorm,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+6,Clouds,0,0,winter coat
+9,Thunderstorm,1,0,down coat/waterproof clothing
+8,Thunderstorm,0,0,trench coat/waterproof clothing
+35,Clouds,0,1,"Short sleeves when outside, woven fabrics when indoors"
+22,Dust,0,1,short-sleeved shirt/mask
+26,Tornado,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+21,Squall,0,1,short-sleeved shirt/waterproof clothing
+11,Drizzle,0,1,cardigan/waterproof clothing
+24,Mist,0,1,short-sleeved shirt/lightweight winter clothing
+20,Rain,0,1,short-sleeved shirt/waterproof clothing
+27,Dust,0,0,short-sleeved shirt/mask
+5,Rain,0,0,winter coat/waterproof clothing
+1,Snow,1,0,down coat/waterproof coating
+8,Fog,0,1,sweater/lightweight winter clothing
+11,Mist,1,0,winter coat/lightweight winter clothing
+26,Tornado,1,0,long-sleeved shirt/mask
+21,Drizzle,0,0,long-sleeved shirt/waterproof clothing
+3,Clear,0,1,trench coat
+34,Dust,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+7,Mist,1,0,down coat/lightweight winter clothing
+10,Drizzle,0,1,sweater/waterproof clothing
+11,Drizzle,0,0,trench coat/waterproof clothing
+-5,Ash,1,0,down coat/mask
+18,Dust,0,1,long-sleeved shirt/mask
+23,Clear,0,1,short-sleeved shirt
+-3,Dust,0,1,down coat/mask
+10,Ash,0,0,trench coat/mask
+1,Snow,0,0,down coat/waterproof coating
+19,Clouds,1,0,sweater
+23,Squall,0,0,long-sleeved shirt/waterproof clothing
+17,Drizzle,0,0,cardigan/waterproof clothing
+14,Drizzle,1,0,trench coat/waterproof clothing
+-4,Mist,0,0,down coat/lightweight winter clothing
+10,Ash,1,0,winter coat/mask
+34,Dust,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+30,Clear,0,0,"Short sleeves when outside, woven fabrics when indoors"
+5,Thunderstorm,0,0,winter coat/waterproof clothing
+16,Ash,0,0,cardigan/mask
+-4,Haze,0,0,down coat/lightweight winter clothing
+26,Tornado,1,0,long-sleeved shirt/mask
+23,Thunderstorm,0,0,long-sleeved shirt/waterproof clothing
+30,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+28,Squall,0,0,short-sleeved shirt/waterproof clothing
+4,Rain,0,0,down coat/waterproof clothing
+13,Thunderstorm,0,0,sweater/waterproof clothing
+-3,Snow,0,0,down coat/waterproof coating
+33,Dust,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+3,Clear,0,1,trench coat
+-5,Snow,0,0,down coat/waterproof coating
+34,Drizzle,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+28,Dust,0,0,short-sleeved shirt/mask
+1,Snow,0,1,winter coat/waterproof coating
+16,Squall,0,0,cardigan/waterproof clothing
+24,Drizzle,0,1,short-sleeved shirt/waterproof clothing
+-5,Snow,1,0,down coat/waterproof coating
+0,Snow,0,1,winter coat/waterproof coating
+20,Tornado,0,1,short-sleeved shirt/mask
+-5,Thunderstorm,1,0,down coat/waterproof clothing
+26,Rain,0,0,short-sleeved shirt/waterproof clothing
+8,Clear,0,1,sweater
+28,Rain,1,0,long-sleeved shirt/waterproof clothing
+24,Tornado,0,1,short-sleeved shirt/mask
+15,Tornado,0,1,long-sleeved shirt/mask
+5,Haze,0,0,winter coat/lightweight winter clothing
+15,Mist,0,1,long-sleeved shirt/lightweight winter clothing
+-5,Dust,0,0,down coat/mask
+27,Clouds,0,0,short-sleeved shirt
+28,Haze,0,0,short-sleeved shirt/lightweight winter clothing
+5,Ash,0,1,trench coat/mask
+4,Ash,0,0,down coat/mask
+11,Squall,0,0,trench coat/waterproof clothing
+27,Rain,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+20,Tornado,0,0,long-sleeved shirt/mask
+35,Dust,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+27,Dust,0,0,short-sleeved shirt/mask
+29,Ash,1,0,long-sleeved shirt/mask
+8,Ash,0,1,sweater/mask
+-4,Thunderstorm,0,0,down coat/waterproof clothing
+0,Ash,0,0,down coat/mask
+31,Haze,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+19,Rain,0,0,cardigan/waterproof clothing
+29,Dust,1,0,long-sleeved shirt/mask
+3,Ash,0,0,down coat/mask
+15,Ash,1,0,trench coat/mask
+20,Dust,0,0,long-sleeved shirt/mask
+24,Ash,1,0,cardigan/mask
+1,Clear,0,0,down coat
+28,Tornado,1,0,long-sleeved shirt/mask
+-5,Thunderstorm,0,1,down coat/waterproof clothing
+12,Ash,0,0,sweater/mask
+1,Snow,0,0,down coat/waterproof coating
+11,Clouds,1,0,winter coat
+12,Ash,0,1,cardigan/mask
+1,Thunderstorm,0,0,down coat/waterproof clothing
+-1,Fog,0,1,down coat/lightweight winter clothing
+-4,Snow,0,1,down coat/waterproof coating
+5,Dust,0,0,winter coat/mask
+20,Thunderstorm,0,0,long-sleeved shirt/waterproof clothing
+8,Haze,0,1,sweater/lightweight winter clothing
+-1,Fog,0,1,down coat/lightweight winter clothing
+7,Ash,1,0,down coat/mask
+14,Clear,0,0,sweater
+33,Rain,1,0,short-sleeved shirt/waterproof clothing
+-3,Snow,1,0,down coat/waterproof coating
+-4,Dust,0,0,down coat/mask
+18,Drizzle,1,0,sweater/waterproof clothing
+21,Haze,1,0,cardigan/lightweight winter clothing
+31,Clouds,1,0,short-sleeved shirt
+12,Ash,1,0,winter coat/mask
+18,Haze,1,0,sweater/lightweight winter clothing
+10,Drizzle,0,0,trench coat/waterproof clothing
+10,Thunderstorm,0,1,sweater/waterproof clothing
+14,Rain,0,0,sweater/waterproof clothing
+28,Fog,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+34,Fog,1,0,short-sleeved shirt/lightweight winter clothing
+13,Drizzle,0,0,sweater/waterproof clothing
+24,Rain,1,0,cardigan/waterproof clothing
+33,Squall,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+16,Haze,1,0,trench coat/lightweight winter clothing
+-5,Fog,0,0,down coat/lightweight winter clothing
+3,Clouds,1,0,down coat
+23,Drizzle,0,1,short-sleeved shirt/waterproof clothing
+21,Dust,1,0,cardigan/mask
+10,Clear,1,0,winter coat
+-3,Ash,0,1,down coat/mask
+23,Thunderstorm,1,0,cardigan/waterproof clothing
+23,Squall,1,0,cardigan/waterproof clothing
+5,Haze,0,0,winter coat/lightweight winter clothing
+11,Ash,0,0,trench coat/mask
+2,Ash,0,0,down coat/mask
+34,Haze,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+11,Squall,0,0,trench coat/waterproof clothing
+17,Thunderstorm,1,0,sweater/waterproof clothing
+32,Haze,1,0,short-sleeved shirt/lightweight winter clothing
+13,Rain,0,1,cardigan/waterproof clothing
+19,Clear,1,0,sweater
+26,Fog,0,0,short-sleeved shirt/lightweight winter clothing
+16,Rain,0,0,cardigan/waterproof clothing
+1,Fog,1,0,down coat/lightweight winter clothing
+31,Rain,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+31,Thunderstorm,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+4,Clear,0,1,trench coat
+18,Squall,1,0,sweater/waterproof clothing
+13,Rain,0,0,sweater/waterproof clothing
+7,Thunderstorm,0,0,winter coat/waterproof clothing
+25,Rain,1,0,long-sleeved shirt/waterproof clothing
+22,Tornado,0,1,short-sleeved shirt/mask
+8,Fog,1,0,down coat/lightweight winter clothing
+0,Clouds,0,0,down coat
+30,Mist,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+22,Drizzle,0,1,short-sleeved shirt/waterproof clothing
+10,Thunderstorm,0,1,sweater/waterproof clothing
+10,Clouds,1,0,winter coat
+19,Haze,0,0,cardigan/lightweight winter clothing
+5,Dust,0,1,trench coat/mask
+-5,Rain,0,0,down coat/waterproof clothing
+13,Haze,0,1,cardigan/lightweight winter clothing
+10,Fog,0,0,trench coat/lightweight winter clothing
+11,Clear,1,0,winter coat
+20,Fog,0,0,long-sleeved shirt/lightweight winter clothing
+1,Thunderstorm,0,1,winter coat/waterproof clothing
+27,Drizzle,1,0,long-sleeved shirt/waterproof clothing
+1,Snow,0,0,down coat/waterproof coating
+28,Tornado,0,0,short-sleeved shirt/mask
+3,Snow,0,0,down coat/waterproof coating
+7,Clouds,1,0,down coat
+19,Clear,0,0,cardigan
+10,Haze,0,0,trench coat/lightweight winter clothing
+8,Clouds,0,1,sweater
+28,Ash,0,0,short-sleeved shirt/mask
+19,Mist,0,0,cardigan/lightweight winter clothing
+4,Snow,0,0,down coat/waterproof coating
+19,Drizzle,1,0,sweater/waterproof clothing
+23,Ash,0,1,short-sleeved shirt/mask
+33,Clear,0,1,"Short sleeves when outside, woven fabrics when indoors"
+14,Clouds,0,0,sweater
+26,Thunderstorm,0,0,short-sleeved shirt/waterproof clothing
+29,Ash,1,0,long-sleeved shirt/mask
+2,Snow,1,0,down coat/waterproof coating
+24,Tornado,0,1,short-sleeved shirt/mask
+6,Mist,1,0,down coat/lightweight winter clothing
+0,Fog,1,0,down coat/lightweight winter clothing
+18,Drizzle,0,0,cardigan/waterproof clothing
+21,Clouds,0,1,short-sleeved shirt
+-4,Thunderstorm,0,0,down coat/waterproof clothing
+28,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+0,Snow,0,1,winter coat/waterproof coating
+5,Clouds,0,0,winter coat
+14,Haze,0,0,sweater/lightweight winter clothing
+0,Haze,1,0,down coat/lightweight winter clothing
+21,Rain,1,0,cardigan/waterproof clothing
+28,Thunderstorm,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+14,Clouds,1,0,trench coat
+23,Mist,1,0,cardigan/lightweight winter clothing
+26,Fog,0,0,short-sleeved shirt/lightweight winter clothing
+21,Fog,1,0,cardigan/lightweight winter clothing
+17,Tornado,0,0,cardigan/mask
+0,Rain,1,0,down coat/waterproof clothing
+-2,Haze,1,0,down coat/lightweight winter clothing
+19,Clouds,0,0,cardigan
+-3,Fog,0,1,down coat/lightweight winter clothing
+32,Rain,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+28,Ash,0,0,short-sleeved shirt/mask
+-5,Rain,0,0,down coat/waterproof clothing
+19,Tornado,0,0,cardigan/mask
+4,Mist,1,0,down coat/lightweight winter clothing
+26,Drizzle,1,0,long-sleeved shirt/waterproof clothing
+15,Tornado,0,1,long-sleeved shirt/mask
+3,Clouds,0,0,down coat
+4,Snow,0,1,trench coat/waterproof coating
+24,Thunderstorm,0,1,short-sleeved shirt/waterproof clothing
+-4,Thunderstorm,0,0,down coat/waterproof clothing
+34,Squall,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+33,Dust,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+9,Fog,0,0,trench coat/lightweight winter clothing
+4,Dust,1,0,down coat/mask
+25,Ash,0,0,short-sleeved shirt/mask
+20,Dust,1,0,sweater/mask
+-3,Ash,1,0,down coat/mask
+29,Squall,0,0,short-sleeved shirt/waterproof clothing
+17,Thunderstorm,0,0,cardigan/waterproof clothing
+9,Fog,0,0,trench coat/lightweight winter clothing
+11,Thunderstorm,1,0,winter coat/waterproof clothing
+9,Thunderstorm,1,0,down coat/waterproof clothing
+28,Thunderstorm,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+31,Thunderstorm,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+29,Clear,0,1,"Short sleeves when outside, woven fabrics when indoors"
+4,Rain,0,0,down coat/waterproof clothing
+21,Tornado,0,0,long-sleeved shirt/mask
+25,Thunderstorm,0,0,short-sleeved shirt/waterproof clothing
+25,Fog,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+16,Clear,0,0,cardigan
+2,Fog,1,0,down coat/lightweight winter clothing
+17,Haze,0,1,long-sleeved shirt/lightweight winter clothing
+16,Drizzle,0,1,long-sleeved shirt/waterproof clothing
+31,Squall,1,0,short-sleeved shirt/waterproof clothing
+8,Fog,0,0,trench coat/lightweight winter clothing
+6,Fog,0,0,winter coat/lightweight winter clothing
+25,Clear,0,0,short-sleeved shirt
+16,Tornado,1,0,trench coat/mask
+3,Snow,0,0,down coat/waterproof coating
+30,Dust,1,0,short-sleeved shirt/mask
+28,Ash,0,0,short-sleeved shirt/mask
+-1,Clouds,0,0,down coat
+18,Clouds,0,0,cardigan
+7,Rain,0,0,winter coat/waterproof clothing
+27,Rain,0,0,short-sleeved shirt/waterproof clothing
+16,Tornado,1,0,trench coat/mask
+16,Squall,1,0,trench coat/waterproof clothing
+-4,Haze,0,0,down coat/lightweight winter clothing
+25,Clouds,1,0,long-sleeved shirt
+24,Clear,1,0,cardigan
+14,Clouds,0,1,cardigan
+9,Clouds,0,0,trench coat
+21,Drizzle,1,0,cardigan/waterproof clothing
+-4,Rain,0,1,down coat/waterproof clothing
+1,Fog,0,0,down coat/lightweight winter clothing
+17,Tornado,0,1,long-sleeved shirt/mask
+35,Rain,1,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+-2,Snow,0,1,down coat/waterproof coating
+28,Clouds,0,0,short-sleeved shirt
+-2,Fog,0,0,down coat/lightweight winter clothing
+33,Clear,1,0,short-sleeved shirt
+21,Clouds,0,0,long-sleeved shirt
+17,Clouds,0,1,long-sleeved shirt
+11,Mist,0,0,trench coat/lightweight winter clothing
+20,Tornado,0,0,long-sleeved shirt/mask
+31,Rain,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+22,Clouds,0,0,long-sleeved shirt
+34,Dust,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+8,Clouds,0,0,trench coat
+22,Ash,0,0,long-sleeved shirt/mask
+-4,Clouds,0,0,down coat
+17,Fog,1,0,sweater/lightweight winter clothing
+21,Drizzle,1,0,cardigan/waterproof clothing
+34,Dust,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+28,Ash,0,0,short-sleeved shirt/mask
+22,Tornado,1,0,cardigan/mask
+33,Dust,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+24,Mist,0,0,long-sleeved shirt/lightweight winter clothing
+-2,Clear,1,0,down coat
+30,Rain,1,0,short-sleeved shirt/waterproof clothing
+15,Fog,0,0,sweater/lightweight winter clothing
+17,Haze,1,0,sweater/lightweight winter clothing
+18,Clear,0,0,cardigan
+2,Haze,0,0,down coat/lightweight winter clothing
+21,Dust,1,0,cardigan/mask
+26,Dust,0,0,short-sleeved shirt/mask
+18,Drizzle,0,1,long-sleeved shirt/waterproof clothing
+25,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+4,Dust,1,0,down coat/mask
+28,Tornado,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+10,Mist,0,0,trench coat/lightweight winter clothing
+6,Rain,0,1,trench coat/waterproof clothing
+30,Clouds,0,1,"Short sleeves when outside, woven fabrics when indoors"
+-5,Snow,0,1,down coat/waterproof coating
+16,Tornado,0,0,cardigan/mask
+12,Haze,0,1,cardigan/lightweight winter clothing
+-4,Haze,0,0,down coat/lightweight winter clothing
+16,Drizzle,0,0,cardigan/waterproof clothing
+4,Snow,0,0,down coat/waterproof coating
+16,Fog,0,0,cardigan/lightweight winter clothing
+-4,Ash,0,0,down coat/mask
+-2,Dust,0,0,down coat/mask
+23,Drizzle,0,1,short-sleeved shirt/waterproof clothing
+33,Clouds,0,1,"Short sleeves when outside, woven fabrics when indoors"
+27,Dust,1,0,long-sleeved shirt/mask
+9,Dust,0,0,trench coat/mask
+23,Fog,0,0,long-sleeved shirt/lightweight winter clothing
+-2,Fog,0,0,down coat/lightweight winter clothing
+21,Clear,0,1,short-sleeved shirt
+18,Mist,1,0,sweater/lightweight winter clothing
+14,Dust,0,0,sweater/mask
+20,Mist,0,1,short-sleeved shirt/lightweight winter clothing
+13,Ash,0,0,sweater/mask
+18,Ash,0,0,cardigan/mask
+13,Mist,0,0,sweater/lightweight winter clothing
+19,Thunderstorm,0,1,long-sleeved shirt/waterproof clothing
+-3,Snow,0,0,down coat/waterproof coating
+12,Haze,1,0,winter coat/lightweight winter clothing
+7,Fog,0,0,winter coat/lightweight winter clothing
+19,Rain,0,1,long-sleeved shirt/waterproof clothing
+20,Fog,0,0,long-sleeved shirt/lightweight winter clothing
+9,Mist,1,0,down coat/lightweight winter clothing
+6,Thunderstorm,0,0,winter coat/waterproof clothing
+-1,Haze,0,1,down coat/lightweight winter clothing
+30,Haze,1,0,short-sleeved shirt/lightweight winter clothing
+24,Haze,0,0,long-sleeved shirt/lightweight winter clothing
+32,Clear,0,0,"Short sleeves when outside, woven fabrics when indoors"
+11,Thunderstorm,1,0,winter coat/waterproof clothing
+18,Rain,0,0,cardigan/waterproof clothing
+31,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+30,Tornado,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+7,Fog,0,1,sweater/lightweight winter clothing
+16,Ash,0,0,cardigan/mask
+21,Tornado,0,0,long-sleeved shirt/mask
+34,Fog,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+31,Thunderstorm,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+-5,Snow,0,0,down coat/waterproof coating
+32,Tornado,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+-4,Mist,0,0,down coat/lightweight winter clothing
+18,Tornado,0,1,long-sleeved shirt/mask
+29,Clear,1,0,long-sleeved shirt
+12,Drizzle,1,0,winter coat/waterproof clothing
+-2,Rain,0,0,down coat/waterproof clothing
+8,Fog,1,0,down coat/lightweight winter clothing
+30,Rain,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+9,Thunderstorm,0,1,sweater/waterproof clothing
+-4,Snow,0,0,down coat/waterproof coating
+35,Drizzle,1,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+30,Dust,1,0,short-sleeved shirt/mask
+33,Clear,0,0,"Short sleeves when outside, woven fabrics when indoors"
+23,Ash,1,0,cardigan/mask
+20,Dust,0,0,long-sleeved shirt/mask
+14,Dust,1,0,trench coat/mask
+0,Haze,0,0,down coat/lightweight winter clothing
+28,Thunderstorm,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+3,Mist,0,0,down coat/lightweight winter clothing
+0,Rain,0,1,winter coat/waterproof clothing
+5,Ash,0,0,winter coat/mask
+29,Squall,0,0,short-sleeved shirt/waterproof clothing
+35,Tornado,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+24,Fog,1,0,cardigan/lightweight winter clothing
+2,Haze,0,0,down coat/lightweight winter clothing
+25,Drizzle,1,0,long-sleeved shirt/waterproof clothing
+-4,Snow,1,0,down coat/waterproof coating
+24,Squall,0,0,long-sleeved shirt/waterproof clothing
+14,Clouds,0,0,sweater
+4,Ash,0,0,down coat/mask
+11,Clouds,1,0,winter coat
+35,Haze,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+31,Clear,0,1,"Short sleeves when outside, woven fabrics when indoors"
+-4,Thunderstorm,0,0,down coat/waterproof clothing
+1,Snow,0,0,down coat/waterproof coating
+14,Rain,0,0,sweater/waterproof clothing
+-5,Snow,1,0,down coat/waterproof coating
+17,Dust,1,0,sweater/mask
+13,Squall,0,1,cardigan/waterproof clothing
+11,Fog,0,1,cardigan/lightweight winter clothing
+22,Squall,1,0,cardigan/waterproof clothing
+25,Clear,0,0,short-sleeved shirt
+12,Squall,0,1,cardigan/waterproof clothing
+18,Rain,0,0,cardigan/waterproof clothing
+35,Squall,1,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+-2,Dust,0,1,down coat/mask
+-3,Fog,1,0,down coat/lightweight winter clothing
+15,Clear,1,0,trench coat
+30,Squall,1,0,short-sleeved shirt/waterproof clothing
+34,Haze,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+-3,Mist,0,0,down coat/lightweight winter clothing
+7,Rain,0,0,winter coat/waterproof clothing
+-4,Rain,0,0,down coat/waterproof clothing
+17,Clouds,0,0,cardigan
+3,Dust,0,1,trench coat/mask
+4,Rain,0,1,trench coat/waterproof clothing
+32,Clear,0,1,"Short sleeves when outside, woven fabrics when indoors"
+10,Mist,0,1,sweater/lightweight winter clothing
+26,Squall,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+6,Haze,0,1,trench coat/lightweight winter clothing
+25,Mist,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+10,Clouds,0,1,sweater
+33,Dust,1,0,short-sleeved shirt/mask
+19,Mist,0,0,cardigan/lightweight winter clothing
+3,Mist,0,0,down coat/lightweight winter clothing
+5,Dust,0,0,winter coat/mask
+6,Haze,0,0,winter coat/lightweight winter clothing
+28,Thunderstorm,0,0,short-sleeved shirt/waterproof clothing
+13,Dust,0,0,sweater/mask
+-5,Snow,1,0,down coat/waterproof coating
+23,Mist,1,0,cardigan/lightweight winter clothing
+34,Mist,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+17,Haze,0,0,cardigan/lightweight winter clothing
+11,Squall,1,0,winter coat/waterproof clothing
+12,Squall,0,0,sweater/waterproof clothing
+34,Ash,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+28,Thunderstorm,0,0,short-sleeved shirt/waterproof clothing
+34,Squall,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+-3,Dust,0,1,down coat/mask
+-5,Fog,0,1,down coat/lightweight winter clothing
+-2,Rain,0,0,down coat/waterproof clothing
+-3,Haze,0,0,down coat/lightweight winter clothing
+25,Fog,0,0,short-sleeved shirt/lightweight winter clothing
+-3,Thunderstorm,1,0,down coat/waterproof clothing
+13,Squall,0,0,sweater/waterproof clothing
+10,Clouds,1,0,winter coat
+23,Drizzle,0,0,long-sleeved shirt/waterproof clothing
+8,Ash,1,0,down coat/mask
+26,Mist,0,0,short-sleeved shirt/lightweight winter clothing
+-4,Mist,0,0,down coat/lightweight winter clothing
+30,Squall,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+27,Clear,1,0,long-sleeved shirt
+15,Haze,0,0,sweater/lightweight winter clothing
+2,Thunderstorm,0,0,down coat/waterproof clothing
+35,Rain,1,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+4,Dust,1,0,down coat/mask
+-2,Mist,1,0,down coat/lightweight winter clothing
+12,Fog,0,0,sweater/lightweight winter clothing
+3,Dust,0,0,down coat/mask
+15,Clear,1,0,trench coat
+-1,Snow,1,0,down coat/waterproof coating
+18,Fog,1,0,sweater/lightweight winter clothing
+30,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+6,Fog,0,0,winter coat/lightweight winter clothing
+-5,Clouds,1,0,down coat
+19,Tornado,0,1,long-sleeved shirt/mask
+30,Tornado,1,0,short-sleeved shirt/mask
+31,Mist,1,0,short-sleeved shirt/lightweight winter clothing
+32,Ash,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+19,Thunderstorm,1,0,sweater/waterproof clothing
+13,Mist,1,0,trench coat/lightweight winter clothing
+30,Drizzle,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+35,Dust,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+13,Thunderstorm,0,0,sweater/waterproof clothing
+21,Tornado,0,0,long-sleeved shirt/mask
+27,Tornado,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+27,Rain,1,0,long-sleeved shirt/waterproof clothing
+14,Mist,0,0,sweater/lightweight winter clothing
+1,Snow,0,1,winter coat/waterproof coating
+12,Thunderstorm,0,0,sweater/waterproof clothing
+13,Haze,1,0,trench coat/lightweight winter clothing
+29,Drizzle,0,0,short-sleeved shirt/waterproof clothing
+13,Drizzle,1,0,trench coat/waterproof clothing
+32,Dust,1,0,short-sleeved shirt/mask
+28,Tornado,0,0,short-sleeved shirt/mask
+-3,Haze,0,0,down coat/lightweight winter clothing
+24,Tornado,1,0,cardigan/mask
+22,Thunderstorm,0,1,short-sleeved shirt/waterproof clothing
+23,Mist,0,0,long-sleeved shirt/lightweight winter clothing
+19,Tornado,1,0,sweater/mask
+-3,Clouds,1,0,down coat
+30,Thunderstorm,1,0,short-sleeved shirt/waterproof clothing
+32,Fog,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+29,Thunderstorm,0,0,short-sleeved shirt/waterproof clothing
+1,Ash,0,0,down coat/mask
+31,Mist,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+-3,Snow,0,0,down coat/waterproof coating
+23,Ash,1,0,cardigan/mask
+15,Dust,1,0,trench coat/mask
+26,Clear,0,0,short-sleeved shirt
+12,Ash,0,1,cardigan/mask
+13,Haze,0,0,sweater/lightweight winter clothing
+34,Fog,1,0,short-sleeved shirt/lightweight winter clothing
+26,Dust,0,0,short-sleeved shirt/mask
+3,Snow,0,0,down coat/waterproof coating
+-2,Dust,1,0,down coat/mask
+34,Dust,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+15,Rain,0,0,sweater/waterproof clothing
+29,Thunderstorm,0,0,short-sleeved shirt/waterproof clothing
+12,Drizzle,1,0,winter coat/waterproof clothing
+28,Rain,1,0,long-sleeved shirt/waterproof clothing
+34,Ash,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+22,Haze,1,0,cardigan/lightweight winter clothing
+10,Clouds,0,0,trench coat
+-2,Haze,0,0,down coat/lightweight winter clothing
+19,Tornado,0,1,long-sleeved shirt/mask
+25,Rain,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+31,Squall,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+34,Ash,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+0,Snow,0,0,down coat/waterproof coating
+20,Dust,1,0,sweater/mask
+34,Clouds,0,0,"Short sleeves when outside, woven fabrics when indoors"
+28,Fog,0,0,short-sleeved shirt/lightweight winter clothing
+24,Squall,0,0,long-sleeved shirt/waterproof clothing
+35,Mist,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+32,Rain,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+21,Mist,0,1,short-sleeved shirt/lightweight winter clothing
+23,Haze,1,0,cardigan/lightweight winter clothing
+27,Fog,0,0,short-sleeved shirt/lightweight winter clothing
+17,Thunderstorm,0,1,long-sleeved shirt/waterproof clothing
+20,Ash,1,0,sweater/mask
+-4,Snow,0,0,down coat/waterproof coating
+31,Fog,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+9,Thunderstorm,1,0,down coat/waterproof clothing
+20,Drizzle,0,1,short-sleeved shirt/waterproof clothing
+13,Drizzle,0,0,sweater/waterproof clothing
+23,Tornado,0,0,long-sleeved shirt/mask
+19,Rain,0,0,cardigan/waterproof clothing
+21,Clouds,0,1,short-sleeved shirt
+15,Tornado,0,0,sweater/mask
+-3,Snow,1,0,down coat/waterproof coating
+31,Tornado,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+7,Mist,0,0,winter coat/lightweight winter clothing
+28,Rain,0,0,short-sleeved shirt/waterproof clothing
+8,Ash,1,0,down coat/mask
+7,Rain,0,0,winter coat/waterproof clothing
+16,Ash,0,1,long-sleeved shirt/mask
+0,Snow,0,0,down coat/waterproof coating
+7,Clear,0,0,winter coat
+3,Ash,0,0,down coat/mask
+30,Haze,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+1,Haze,0,0,down coat/lightweight winter clothing
+15,Tornado,0,0,sweater/mask
+0,Clouds,0,1,winter coat
+10,Clear,0,1,sweater
+32,Clouds,0,0,"Short sleeves when outside, woven fabrics when indoors"
+20,Tornado,0,0,long-sleeved shirt/mask
+4,Snow,0,1,trench coat/waterproof coating
+30,Haze,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+5,Rain,0,1,trench coat/waterproof clothing
+32,Fog,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+27,Squall,1,0,long-sleeved shirt/waterproof clothing
+8,Rain,0,1,sweater/waterproof clothing
+-1,Clear,0,0,down coat
+23,Clear,0,1,short-sleeved shirt
+16,Mist,0,0,cardigan/lightweight winter clothing
+17,Drizzle,0,0,cardigan/waterproof clothing
+20,Clear,0,0,long-sleeved shirt
+32,Ash,1,0,short-sleeved shirt/mask
+34,Tornado,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+0,Thunderstorm,0,0,down coat/waterproof clothing
+12,Clouds,0,0,sweater
+28,Rain,0,0,short-sleeved shirt/waterproof clothing
+35,Rain,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+35,Haze,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+15,Dust,1,0,trench coat/mask
+24,Squall,0,0,long-sleeved shirt/waterproof clothing
+22,Squall,1,0,cardigan/waterproof clothing
+7,Clouds,0,1,sweater
+23,Haze,0,0,long-sleeved shirt/lightweight winter clothing
+-1,Mist,1,0,down coat/lightweight winter clothing
+21,Rain,0,1,short-sleeved shirt/waterproof clothing
+0,Snow,0,1,winter coat/waterproof coating
+24,Rain,0,0,long-sleeved shirt/waterproof clothing
+24,Rain,0,1,short-sleeved shirt/waterproof clothing
+21,Clouds,0,0,long-sleeved shirt
+15,Clouds,0,0,sweater
+23,Haze,1,0,cardigan/lightweight winter clothing
+28,Clouds,0,1,"Short sleeves when outside, woven fabrics when indoors"
+27,Drizzle,0,0,short-sleeved shirt/waterproof clothing
+34,Dust,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+18,Drizzle,0,0,cardigan/waterproof clothing
+-3,Fog,0,0,down coat/lightweight winter clothing
+22,Thunderstorm,0,0,long-sleeved shirt/waterproof clothing
+5,Thunderstorm,0,0,winter coat/waterproof clothing
+18,Fog,0,0,cardigan/lightweight winter clothing
+30,Squall,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+16,Tornado,0,0,cardigan/mask
+6,Clouds,1,0,down coat
+33,Rain,1,0,short-sleeved shirt/waterproof clothing
+0,Snow,1,0,down coat/waterproof coating
+18,Squall,0,0,cardigan/waterproof clothing
+7,Clouds,0,1,sweater
+4,Snow,0,1,trench coat/waterproof coating
+21,Drizzle,0,0,long-sleeved shirt/waterproof clothing
+7,Thunderstorm,1,0,down coat/waterproof clothing
+-2,Snow,0,0,down coat/waterproof coating
+12,Mist,0,1,cardigan/lightweight winter clothing
+26,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+8,Mist,0,0,trench coat/lightweight winter clothing
+-2,Clear,1,0,down coat
+-3,Snow,0,0,down coat/waterproof coating
+7,Rain,0,0,winter coat/waterproof clothing
+3,Mist,0,1,trench coat/lightweight winter clothing
+9,Rain,1,0,down coat/waterproof clothing
+29,Dust,0,0,short-sleeved shirt/mask
+27,Fog,1,0,long-sleeved shirt/lightweight winter clothing
+15,Mist,1,0,trench coat/lightweight winter clothing
+0,Clouds,0,0,down coat
+22,Dust,0,0,long-sleeved shirt/mask
+12,Mist,1,0,winter coat/lightweight winter clothing
+8,Dust,1,0,down coat/mask
+8,Fog,1,0,down coat/lightweight winter clothing
+11,Dust,0,1,cardigan/mask
+31,Squall,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+1,Dust,0,0,down coat/mask
+25,Tornado,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+35,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+31,Ash,1,0,short-sleeved shirt/mask
+31,Tornado,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+-5,Haze,0,0,down coat/lightweight winter clothing
+9,Clear,0,1,sweater
+32,Drizzle,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+15,Tornado,0,0,sweater/mask
+25,Haze,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+-1,Snow,0,1,down coat/waterproof coating
+30,Tornado,1,0,short-sleeved shirt/mask
+21,Ash,0,0,long-sleeved shirt/mask
+31,Thunderstorm,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+15,Clear,0,0,sweater
+34,Mist,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+-3,Ash,0,1,down coat/mask
+34,Squall,1,0,short-sleeved shirt/waterproof clothing
+7,Fog,0,0,winter coat/lightweight winter clothing
+5,Haze,0,0,winter coat/lightweight winter clothing
+-2,Clouds,0,1,down coat
+-1,Mist,1,0,down coat/lightweight winter clothing
+22,Squall,1,0,cardigan/waterproof clothing
+27,Mist,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+29,Tornado,0,0,short-sleeved shirt/mask
+-3,Clouds,0,0,down coat
+19,Fog,0,1,long-sleeved shirt/lightweight winter clothing
+4,Snow,0,1,trench coat/waterproof coating
+35,Rain,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+-2,Mist,1,0,down coat/lightweight winter clothing
+20,Drizzle,1,0,sweater/waterproof clothing
+11,Clouds,1,0,winter coat
+-2,Snow,1,0,down coat/waterproof coating
+10,Drizzle,0,1,sweater/waterproof clothing
+22,Drizzle,0,0,long-sleeved shirt/waterproof clothing
+19,Fog,1,0,sweater/lightweight winter clothing
+5,Thunderstorm,0,0,winter coat/waterproof clothing
+15,Squall,0,1,long-sleeved shirt/waterproof clothing
+4,Clear,1,0,down coat
+10,Clear,0,1,sweater
+27,Drizzle,1,0,long-sleeved shirt/waterproof clothing
+15,Clear,0,0,sweater
+34,Drizzle,1,0,short-sleeved shirt/waterproof clothing
+10,Squall,1,0,winter coat/waterproof clothing
+2,Clear,0,1,winter coat
+19,Dust,0,0,cardigan/mask
+32,Thunderstorm,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+20,Tornado,1,0,sweater/mask
+31,Tornado,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+27,Thunderstorm,0,0,short-sleeved shirt/waterproof clothing
+18,Mist,0,1,long-sleeved shirt/lightweight winter clothing
+34,Mist,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+4,Rain,1,0,down coat/waterproof clothing
+17,Clouds,0,0,cardigan
+9,Clear,0,0,trench coat
+15,Ash,0,0,sweater/mask
+26,Squall,0,0,short-sleeved shirt/waterproof clothing
+27,Squall,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+-2,Dust,0,0,down coat/mask
+28,Tornado,0,0,short-sleeved shirt/mask
+19,Fog,0,1,long-sleeved shirt/lightweight winter clothing
+33,Squall,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+19,Thunderstorm,1,0,sweater/waterproof clothing
+-4,Snow,0,0,down coat/waterproof coating
+16,Clouds,1,0,trench coat
+22,Squall,0,0,long-sleeved shirt/waterproof clothing
+32,Squall,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+14,Haze,0,0,sweater/lightweight winter clothing
+17,Squall,1,0,sweater/waterproof clothing
+4,Snow,1,0,down coat/waterproof coating
+-5,Haze,1,0,down coat/lightweight winter clothing
+33,Thunderstorm,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+21,Squall,0,1,short-sleeved shirt/waterproof clothing
+13,Mist,0,0,sweater/lightweight winter clothing
+-4,Dust,0,1,down coat/mask
+12,Squall,0,1,cardigan/waterproof clothing
+31,Squall,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+30,Squall,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+-3,Clouds,0,0,down coat
+3,Snow,0,0,down coat/waterproof coating
+14,Clouds,0,0,sweater
+4,Thunderstorm,0,1,trench coat/waterproof clothing
+10,Dust,0,0,trench coat/mask
+22,Tornado,0,0,long-sleeved shirt/mask
+10,Drizzle,1,0,winter coat/waterproof clothing
+34,Squall,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+26,Ash,0,0,short-sleeved shirt/mask
+24,Thunderstorm,0,0,long-sleeved shirt/waterproof clothing
+8,Rain,1,0,down coat/waterproof clothing
+14,Squall,0,0,sweater/waterproof clothing
+17,Squall,1,0,sweater/waterproof clothing
+11,Dust,0,1,cardigan/mask
+12,Ash,0,1,cardigan/mask
+14,Drizzle,0,1,cardigan/waterproof clothing
+19,Tornado,0,1,long-sleeved shirt/mask
+14,Squall,0,0,sweater/waterproof clothing
+33,Fog,1,0,short-sleeved shirt/lightweight winter clothing
+18,Tornado,0,1,long-sleeved shirt/mask
+8,Rain,1,0,down coat/waterproof clothing
+12,Haze,0,0,sweater/lightweight winter clothing
+35,Squall,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+14,Drizzle,0,1,cardigan/waterproof clothing
+21,Squall,0,1,short-sleeved shirt/waterproof clothing
+22,Drizzle,0,0,long-sleeved shirt/waterproof clothing
+22,Clouds,0,0,long-sleeved shirt
+-2,Snow,1,0,down coat/waterproof coating
+28,Fog,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+18,Rain,1,0,sweater/waterproof clothing
+-4,Dust,1,0,down coat/mask
+17,Clear,1,0,sweater
+12,Rain,0,1,cardigan/waterproof clothing
+26,Fog,1,0,long-sleeved shirt/lightweight winter clothing
+14,Dust,0,1,cardigan/mask
+22,Rain,0,1,short-sleeved shirt/waterproof clothing
+35,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+29,Fog,0,0,short-sleeved shirt/lightweight winter clothing
+-4,Clouds,0,1,down coat
+19,Fog,0,0,cardigan/lightweight winter clothing
+13,Rain,0,1,cardigan/waterproof clothing
+7,Dust,0,0,winter coat/mask
+4,Fog,1,0,down coat/lightweight winter clothing
+4,Snow,0,0,down coat/waterproof coating
+0,Snow,0,1,winter coat/waterproof coating
+7,Fog,0,0,winter coat/lightweight winter clothing
+14,Clear,0,0,sweater
+6,Mist,1,0,down coat/lightweight winter clothing
+5,Clear,0,0,winter coat
+22,Haze,0,0,long-sleeved shirt/lightweight winter clothing
+31,Rain,1,0,short-sleeved shirt/waterproof clothing
+10,Fog,1,0,winter coat/lightweight winter clothing
+3,Dust,1,0,down coat/mask
+19,Clear,1,0,sweater
+33,Drizzle,1,0,short-sleeved shirt/waterproof clothing
+17,Drizzle,1,0,sweater/waterproof clothing
+23,Rain,1,0,cardigan/waterproof clothing
+23,Clear,0,0,long-sleeved shirt
+9,Clear,0,1,sweater
+16,Squall,1,0,trench coat/waterproof clothing
+26,Thunderstorm,0,0,short-sleeved shirt/waterproof clothing
+29,Tornado,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+23,Clear,0,1,short-sleeved shirt
+35,Mist,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+-1,Ash,0,1,down coat/mask
+8,Mist,1,0,down coat/lightweight winter clothing
+-1,Dust,0,0,down coat/mask
+5,Clear,0,1,trench coat
+11,Rain,1,0,winter coat/waterproof clothing
+13,Clouds,0,0,sweater
+22,Ash,0,0,long-sleeved shirt/mask
+6,Thunderstorm,0,0,winter coat/waterproof clothing
+16,Fog,0,0,cardigan/lightweight winter clothing
+-1,Dust,0,0,down coat/mask
+2,Mist,0,0,down coat/lightweight winter clothing
+-4,Snow,1,0,down coat/waterproof coating
+7,Dust,0,0,winter coat/mask
+14,Fog,0,0,sweater/lightweight winter clothing
+30,Tornado,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+32,Rain,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+12,Drizzle,0,0,sweater/waterproof clothing
+29,Tornado,0,0,short-sleeved shirt/mask
+18,Mist,0,1,long-sleeved shirt/lightweight winter clothing
+2,Snow,0,1,winter coat/waterproof coating
+6,Haze,0,0,winter coat/lightweight winter clothing
+28,Haze,1,0,long-sleeved shirt/lightweight winter clothing
+3,Fog,0,1,trench coat/lightweight winter clothing
+23,Drizzle,0,0,long-sleeved shirt/waterproof clothing
+19,Rain,0,1,long-sleeved shirt/waterproof clothing
+11,Haze,0,1,cardigan/lightweight winter clothing
+14,Mist,0,0,sweater/lightweight winter clothing
+10,Dust,0,0,trench coat/mask
+30,Clear,0,1,"Short sleeves when outside, woven fabrics when indoors"
+15,Rain,0,0,sweater/waterproof clothing
+34,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+22,Tornado,0,0,long-sleeved shirt/mask
+16,Squall,0,1,long-sleeved shirt/waterproof clothing
+15,Fog,1,0,trench coat/lightweight winter clothing
+3,Snow,0,0,down coat/waterproof coating
+35,Mist,1,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+23,Rain,0,0,long-sleeved shirt/waterproof clothing
+15,Drizzle,0,0,sweater/waterproof clothing
+-3,Haze,1,0,down coat/lightweight winter clothing
+19,Ash,0,0,cardigan/mask
+18,Dust,0,0,cardigan/mask
+25,Thunderstorm,0,0,short-sleeved shirt/waterproof clothing
+26,Tornado,0,0,short-sleeved shirt/mask
+11,Clear,0,0,trench coat
+31,Ash,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+23,Tornado,0,0,long-sleeved shirt/mask
+2,Snow,0,0,down coat/waterproof coating
+16,Fog,1,0,trench coat/lightweight winter clothing
+22,Squall,1,0,cardigan/waterproof clothing
+18,Haze,0,0,cardigan/lightweight winter clothing
+8,Dust,0,0,trench coat/mask
+4,Dust,1,0,down coat/mask
+10,Drizzle,1,0,winter coat/waterproof clothing
+27,Dust,0,0,short-sleeved shirt/mask
+32,Dust,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+-4,Fog,1,0,down coat/lightweight winter clothing
+9,Dust,0,0,trench coat/mask
+1,Fog,0,1,winter coat/lightweight winter clothing
+7,Rain,1,0,down coat/waterproof clothing
+12,Ash,0,0,sweater/mask
+26,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+2,Snow,0,1,winter coat/waterproof coating
+33,Drizzle,1,0,short-sleeved shirt/waterproof clothing
+8,Mist,0,0,trench coat/lightweight winter clothing
+14,Ash,0,0,sweater/mask
+0,Thunderstorm,0,0,down coat/waterproof clothing
+10,Clear,0,0,trench coat
+10,Drizzle,0,1,sweater/waterproof clothing
+21,Thunderstorm,0,0,long-sleeved shirt/waterproof clothing
+-1,Snow,0,0,down coat/waterproof coating
+29,Tornado,0,0,short-sleeved shirt/mask
+33,Mist,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+-2,Rain,0,1,down coat/waterproof clothing
+19,Drizzle,0,0,cardigan/waterproof clothing
+1,Dust,0,1,winter coat/mask
+27,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+32,Tornado,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+32,Squall,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+13,Squall,0,0,sweater/waterproof clothing
+17,Ash,0,0,cardigan/mask
+28,Squall,0,0,short-sleeved shirt/waterproof clothing
+34,Ash,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+27,Tornado,0,0,short-sleeved shirt/mask
+34,Tornado,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+9,Dust,0,0,trench coat/mask
+19,Thunderstorm,0,0,cardigan/waterproof clothing
+-5,Fog,0,0,down coat/lightweight winter clothing
+4,Ash,1,0,down coat/mask
+3,Clouds,0,0,down coat
+-4,Dust,1,0,down coat/mask
+32,Haze,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+16,Clouds,1,0,trench coat
+20,Squall,0,1,short-sleeved shirt/waterproof clothing
+0,Rain,0,1,winter coat/waterproof clothing
+13,Drizzle,0,0,sweater/waterproof clothing
+18,Squall,0,1,long-sleeved shirt/waterproof clothing
+24,Tornado,0,0,long-sleeved shirt/mask
+21,Rain,1,0,cardigan/waterproof clothing
+3,Mist,0,1,trench coat/lightweight winter clothing
+34,Haze,1,0,short-sleeved shirt/lightweight winter clothing
+-4,Ash,0,0,down coat/mask
+16,Tornado,0,1,long-sleeved shirt/mask
+4,Fog,0,0,down coat/lightweight winter clothing
+22,Mist,1,0,cardigan/lightweight winter clothing
+27,Dust,0,0,short-sleeved shirt/mask
+3,Snow,0,0,down coat/waterproof coating
+12,Mist,0,1,cardigan/lightweight winter clothing
+14,Fog,0,1,cardigan/lightweight winter clothing
+13,Dust,0,0,sweater/mask
+30,Ash,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+20,Mist,0,0,long-sleeved shirt/lightweight winter clothing
+23,Clear,1,0,cardigan
+1,Fog,0,0,down coat/lightweight winter clothing
+20,Tornado,0,0,long-sleeved shirt/mask
+27,Drizzle,0,0,short-sleeved shirt/waterproof clothing
+32,Mist,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+30,Haze,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+-1,Ash,0,1,down coat/mask
+33,Squall,1,0,short-sleeved shirt/waterproof clothing
+3,Clouds,0,0,down coat
+25,Clouds,1,0,long-sleeved shirt
+29,Dust,0,0,short-sleeved shirt/mask
+-1,Snow,0,0,down coat/waterproof coating
+13,Drizzle,0,1,cardigan/waterproof clothing
+30,Clear,0,1,"Short sleeves when outside, woven fabrics when indoors"
+-1,Snow,0,1,down coat/waterproof coating
+28,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+22,Ash,0,1,short-sleeved shirt/mask
+10,Squall,0,0,trench coat/waterproof clothing
+35,Rain,1,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+12,Clouds,1,0,winter coat
+4,Fog,0,1,trench coat/lightweight winter clothing
+34,Drizzle,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+32,Drizzle,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+28,Haze,0,0,short-sleeved shirt/lightweight winter clothing
+0,Snow,0,0,down coat/waterproof coating
+30,Clouds,0,0,"Short sleeves when outside, woven fabrics when indoors"
+28,Squall,0,0,short-sleeved shirt/waterproof clothing
+23,Squall,0,0,long-sleeved shirt/waterproof clothing
+17,Haze,0,0,cardigan/lightweight winter clothing
+-5,Clear,0,1,down coat
+30,Drizzle,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+15,Drizzle,1,0,trench coat/waterproof clothing
+24,Tornado,0,0,long-sleeved shirt/mask
+10,Drizzle,0,0,trench coat/waterproof clothing
+31,Fog,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+26,Clear,0,1,"Short sleeves when outside, woven fabrics when indoors"
+31,Clear,0,0,"Short sleeves when outside, woven fabrics when indoors"
+23,Tornado,0,1,short-sleeved shirt/mask
+3,Snow,0,1,trench coat/waterproof coating
+26,Rain,0,0,short-sleeved shirt/waterproof clothing
+10,Dust,1,0,winter coat/mask
+21,Squall,0,1,short-sleeved shirt/waterproof clothing
+-3,Thunderstorm,0,0,down coat/waterproof clothing
+0,Snow,0,0,down coat/waterproof coating
+3,Snow,0,0,down coat/waterproof coating
+13,Drizzle,0,1,cardigan/waterproof clothing
+3,Snow,0,0,down coat/waterproof coating
+4,Clouds,0,0,down coat
+-5,Dust,0,1,down coat/mask
+28,Tornado,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+31,Haze,1,0,short-sleeved shirt/lightweight winter clothing
+-3,Fog,0,0,down coat/lightweight winter clothing
+0,Dust,1,0,down coat/mask
+4,Clear,0,0,down coat
+3,Thunderstorm,0,0,down coat/waterproof clothing
+13,Drizzle,0,0,sweater/waterproof clothing
+2,Dust,0,0,down coat/mask
+32,Drizzle,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+17,Drizzle,0,0,cardigan/waterproof clothing
+-5,Snow,0,0,down coat/waterproof coating
+26,Tornado,1,0,long-sleeved shirt/mask
+-3,Haze,0,0,down coat/lightweight winter clothing
+-3,Dust,0,1,down coat/mask
+5,Clouds,0,1,trench coat
+-4,Snow,0,1,down coat/waterproof coating
+28,Clouds,0,0,short-sleeved shirt
+9,Dust,1,0,down coat/mask
+27,Thunderstorm,0,0,short-sleeved shirt/waterproof clothing
+16,Tornado,0,0,cardigan/mask
+-5,Dust,1,0,down coat/mask
+17,Tornado,0,0,cardigan/mask
+9,Fog,0,0,trench coat/lightweight winter clothing
+-5,Rain,0,1,down coat/waterproof clothing
+34,Thunderstorm,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+-1,Snow,0,1,down coat/waterproof coating
+10,Mist,0,1,sweater/lightweight winter clothing
+24,Clouds,0,0,long-sleeved shirt
+-2,Snow,0,0,down coat/waterproof coating
+27,Squall,1,0,long-sleeved shirt/waterproof clothing
+2,Mist,0,0,down coat/lightweight winter clothing
+26,Clouds,0,1,"Short sleeves when outside, woven fabrics when indoors"
+31,Drizzle,1,0,short-sleeved shirt/waterproof clothing
+18,Thunderstorm,0,1,long-sleeved shirt/waterproof clothing
+1,Clouds,0,0,down coat
+23,Rain,0,1,short-sleeved shirt/waterproof clothing
+14,Clear,0,0,sweater
+-4,Clear,0,1,down coat
+31,Ash,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+20,Fog,1,0,sweater/lightweight winter clothing
+19,Tornado,1,0,sweater/mask
+18,Ash,0,1,long-sleeved shirt/mask
+12,Drizzle,0,0,sweater/waterproof clothing
+34,Tornado,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+19,Drizzle,0,0,cardigan/waterproof clothing
+9,Rain,0,1,sweater/waterproof clothing
+29,Ash,0,0,short-sleeved shirt/mask
+0,Snow,0,0,down coat/waterproof coating
+12,Clear,0,0,sweater
+22,Haze,0,0,long-sleeved shirt/lightweight winter clothing
+15,Squall,1,0,trench coat/waterproof clothing
+12,Clouds,0,0,sweater
+1,Haze,1,0,down coat/lightweight winter clothing
+27,Drizzle,0,0,short-sleeved shirt/waterproof clothing
+1,Snow,0,1,winter coat/waterproof coating
+35,Clear,0,0,"Short sleeves when outside, woven fabrics when indoors"
+8,Mist,0,0,trench coat/lightweight winter clothing
+24,Thunderstorm,0,0,long-sleeved shirt/waterproof clothing
+32,Mist,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+19,Clear,1,0,sweater
+31,Thunderstorm,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+14,Clear,0,0,sweater
+35,Squall,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+9,Fog,1,0,down coat/lightweight winter clothing
+25,Rain,0,0,short-sleeved shirt/waterproof clothing
+17,Rain,1,0,sweater/waterproof clothing
+3,Dust,0,0,down coat/mask
+19,Clear,0,0,cardigan
+2,Snow,0,0,down coat/waterproof coating
+28,Ash,0,0,short-sleeved shirt/mask
+0,Dust,1,0,down coat/mask
+28,Squall,0,0,short-sleeved shirt/waterproof clothing
+29,Dust,0,0,short-sleeved shirt/mask
+25,Fog,0,0,short-sleeved shirt/lightweight winter clothing
+2,Snow,1,0,down coat/waterproof coating
+1,Thunderstorm,0,0,down coat/waterproof clothing
+29,Rain,1,0,long-sleeved shirt/waterproof clothing
+15,Dust,0,1,long-sleeved shirt/mask
+10,Drizzle,0,0,trench coat/waterproof clothing
+18,Tornado,0,0,cardigan/mask
+23,Drizzle,0,0,long-sleeved shirt/waterproof clothing
+-2,Snow,0,0,down coat/waterproof coating
+20,Dust,0,0,long-sleeved shirt/mask
+34,Rain,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+23,Clouds,0,0,long-sleeved shirt
+2,Thunderstorm,0,1,winter coat/waterproof clothing
+24,Fog,0,0,long-sleeved shirt/lightweight winter clothing
+30,Haze,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+14,Clouds,0,0,sweater
+8,Rain,0,0,trench coat/waterproof clothing
+-2,Clouds,1,0,down coat
+-3,Rain,0,0,down coat/waterproof clothing
+27,Clear,0,1,"Short sleeves when outside, woven fabrics when indoors"
+13,Squall,0,1,cardigan/waterproof clothing
+16,Tornado,0,1,long-sleeved shirt/mask
+3,Rain,1,0,down coat/waterproof clothing
+33,Clouds,1,0,short-sleeved shirt
+25,Mist,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+6,Haze,0,0,winter coat/lightweight winter clothing
+31,Mist,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+27,Squall,0,0,short-sleeved shirt/waterproof clothing
+16,Thunderstorm,1,0,trench coat/waterproof clothing
+22,Rain,0,0,long-sleeved shirt/waterproof clothing
+19,Ash,0,0,cardigan/mask
+3,Snow,0,1,trench coat/waterproof coating
+32,Drizzle,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+-3,Clear,0,0,down coat
+10,Clear,1,0,winter coat
+2,Dust,0,0,down coat/mask
+34,Clouds,1,0,short-sleeved shirt
+12,Haze,0,1,cardigan/lightweight winter clothing
+33,Clear,0,0,"Short sleeves when outside, woven fabrics when indoors"
+26,Haze,0,0,short-sleeved shirt/lightweight winter clothing
+27,Ash,0,0,short-sleeved shirt/mask
+21,Tornado,1,0,cardigan/mask
+29,Dust,1,0,long-sleeved shirt/mask
+32,Squall,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+13,Clouds,0,1,cardigan
+25,Thunderstorm,0,0,short-sleeved shirt/waterproof clothing
+35,Haze,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+28,Squall,0,0,short-sleeved shirt/waterproof clothing
+28,Squall,0,0,short-sleeved shirt/waterproof clothing
+3,Ash,0,1,trench coat/mask
+21,Ash,1,0,cardigan/mask
+6,Ash,0,1,trench coat/mask
+-5,Ash,0,1,down coat/mask
+-2,Mist,0,0,down coat/lightweight winter clothing
+29,Haze,0,1,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+18,Mist,0,0,cardigan/lightweight winter clothing
+31,Mist,1,0,short-sleeved shirt/lightweight winter clothing
+27,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+-4,Clear,0,1,down coat
+2,Ash,0,0,down coat/mask
+20,Thunderstorm,0,0,long-sleeved shirt/waterproof clothing
+24,Drizzle,0,1,short-sleeved shirt/waterproof clothing
+12,Dust,0,0,sweater/mask
+34,Ash,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+14,Haze,0,0,sweater/lightweight winter clothing
+22,Squall,0,1,short-sleeved shirt/waterproof clothing
+6,Mist,0,0,winter coat/lightweight winter clothing
+-3,Snow,0,0,down coat/waterproof coating
+6,Dust,0,1,trench coat/mask
+23,Tornado,0,0,long-sleeved shirt/mask
+21,Tornado,1,0,cardigan/mask
+9,Rain,1,0,down coat/waterproof clothing
+23,Clouds,0,0,long-sleeved shirt
+34,Thunderstorm,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+31,Dust,1,0,short-sleeved shirt/mask
+24,Squall,1,0,cardigan/waterproof clothing
+0,Ash,0,0,down coat/mask
+18,Clouds,1,0,sweater
+1,Snow,0,0,down coat/waterproof coating
+20,Fog,0,1,short-sleeved shirt/lightweight winter clothing
+-3,Thunderstorm,0,0,down coat/waterproof clothing
+26,Clouds,0,0,short-sleeved shirt
+15,Squall,0,0,sweater/waterproof clothing
+26,Haze,0,0,short-sleeved shirt/lightweight winter clothing
+-5,Ash,0,0,down coat/mask
+33,Dust,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+22,Haze,0,0,long-sleeved shirt/lightweight winter clothing
+22,Clear,1,0,cardigan
+21,Fog,0,1,short-sleeved shirt/lightweight winter clothing
+31,Tornado,0,0,"Short sleeves when outside, woven fabrics when indoors/mask"
+23,Drizzle,0,0,long-sleeved shirt/waterproof clothing
+19,Tornado,0,1,long-sleeved shirt/mask
+26,Ash,0,1,"Short sleeves when outside, woven fabrics when indoors/mask"
+12,Squall,0,0,sweater/waterproof clothing
+7,Thunderstorm,0,1,sweater/waterproof clothing
+4,Snow,0,0,down coat/waterproof coating
+18,Tornado,0,1,long-sleeved shirt/mask
+-1,Dust,0,0,down coat/mask
+8,Clear,0,0,trench coat
+19,Rain,1,0,sweater/waterproof clothing
+-5,Fog,1,0,down coat/lightweight winter clothing
+-4,Fog,0,1,down coat/lightweight winter clothing
+29,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+20,Fog,0,0,long-sleeved shirt/lightweight winter clothing
+8,Mist,0,0,trench coat/lightweight winter clothing
+14,Drizzle,0,1,cardigan/waterproof clothing
+3,Fog,1,0,down coat/lightweight winter clothing
+0,Ash,0,1,winter coat/mask
+21,Clouds,0,0,long-sleeved shirt
+-4,Ash,1,0,down coat/mask
+30,Tornado,1,0,short-sleeved shirt/mask
+22,Ash,0,0,long-sleeved shirt/mask
+35,Drizzle,0,1,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+23,Ash,0,1,short-sleeved shirt/mask
+19,Thunderstorm,0,0,cardigan/waterproof clothing
+24,Tornado,0,1,short-sleeved shirt/mask
+4,Ash,0,0,down coat/mask
+1,Snow,1,0,down coat/waterproof coating
+0,Dust,0,0,down coat/mask
+24,Fog,0,0,long-sleeved shirt/lightweight winter clothing
+19,Ash,0,1,long-sleeved shirt/mask
+35,Thunderstorm,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+3,Clear,0,0,down coat
+30,Mist,0,0,"Short sleeves when outside, woven fabrics when indoors/lightweight winter clothing"
+8,Rain,1,0,down coat/waterproof clothing
+10,Drizzle,0,1,sweater/waterproof clothing
+-5,Clear,0,1,down coat
+6,Haze,1,0,down coat/lightweight winter clothing
+20,Fog,1,0,sweater/lightweight winter clothing
+9,Thunderstorm,0,0,trench coat/waterproof clothing
+-4,Ash,1,0,down coat/mask
+11,Clear,0,0,trench coat
+10,Drizzle,0,0,trench coat/waterproof clothing
+23,Mist,0,1,short-sleeved shirt/lightweight winter clothing
+12,Mist,0,1,cardigan/lightweight winter clothing
+14,Thunderstorm,0,0,sweater/waterproof clothing
+4,Ash,0,0,down coat/mask
+6,Clouds,0,0,winter coat
+15,Ash,0,0,sweater/mask
+18,Ash,0,0,cardigan/mask
+-1,Dust,0,0,down coat/mask
+20,Mist,0,0,long-sleeved shirt/lightweight winter clothing
+-1,Snow,0,0,down coat/waterproof coating
+35,Rain,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+18,Ash,0,0,cardigan/mask
+14,Thunderstorm,0,0,sweater/waterproof clothing
+10,Fog,1,0,winter coat/lightweight winter clothing
+1,Snow,0,0,down coat/waterproof coating
+24,Rain,0,0,long-sleeved shirt/waterproof clothing
+35,Clouds,0,0,"Short sleeves when outside, woven fabrics when indoors"
+14,Thunderstorm,0,0,sweater/waterproof clothing
+21,Squall,0,0,long-sleeved shirt/waterproof clothing
+-1,Mist,0,0,down coat/lightweight winter clothing
+30,Drizzle,0,0,"Short sleeves when outside, woven fabrics when indoors/waterproof clothing"
+7,Fog,0,1,sweater/lightweight winter clothing
+18,Thunderstorm,0,0,cardigan/waterproof clothing
+10,Squall,1,0,winter coat/waterproof clothing
+-2,Clouds,0,0,down coat
+7,Ash,0,0,winter coat/mask
+-5,Snow,0,0,down coat/waterproof coating
+17,Mist,0,1,long-sleeved shirt/lightweight winter clothing
+12,Haze,0,0,sweater/lightweight winter clothing
+28,Thunderstorm,0,0,short-sleeved shirt/waterproof clothing
+15,Squall,0,1,long-sleeved shirt/waterproof clothing
+27,Tornado,0,0,short-sleeved shirt/mask
+-4,Snow,0,0,down coat/waterproof coating
+27,Drizzle,0,0,short-sleeved shirt/waterproof clothing
