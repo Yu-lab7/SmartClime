@@ -44,9 +44,15 @@ https://voicevox.hiroshiba.jp/
 
 #### 3.このような画面が表示される(はず)
 
+![image](https://github.com/user-attachments/assets/cf41bb83-8546-4a35-baf7-01bae90876b5)
+
 #### 4.左上の"ファイル"をクリックし、"開く"をクリックする。その際、本プログラムが格納されているディレクトリをクリックする。
 
+![image2](https://github.com/user-attachments/assets/76604607-e323-4d06-8381-79aa4bf02cac)
+
 #### 5.左上の再生ボタンをクリックし、実行ボタンをクリックする。
+
+![image3](https://github.com/user-attachments/assets/908a8258-eda1-4ea8-af49-37b4c8f39eaf)
 
 ## ディレクトリの説明
 ```
