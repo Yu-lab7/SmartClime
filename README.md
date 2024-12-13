@@ -73,7 +73,7 @@ https://voicevox.hiroshiba.jp/
 
 ```
 
-##  各モジュールの説明(.pde)
+## 各モジュールの説明(.pde)
 
 ### WeatherForecast.pde
 
@@ -188,7 +188,7 @@ https://voicevox.hiroshiba.jp/
    -天気情報の表示
    -天気情報に基づいたアイコンの表示
 
-##　各モジュールの説明(.py)
+## 各モジュールの説明(.py)
 
 ### form.py
 
