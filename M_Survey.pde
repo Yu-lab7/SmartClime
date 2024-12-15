@@ -42,7 +42,9 @@ void checkSubmitForm(){
         is_cold_sensitive = "1";
         println("M_Survey.pde: checkSubmitForm(): is_cold_sensitive = 1");
     } else {
-        println("M_Survey.pde: checkSubmitForm(): Error");
+        is_hot_sensitive = "0";
+        is_cold_sensitive = "0";
+        println("M_Survey.pde: checkSubmitForm(): is_hot_sensitive = 0, is_cold_sensitive = 0");
     }
     morningTime = reserve[3];
     if(morningTime.startsWith("0")){
