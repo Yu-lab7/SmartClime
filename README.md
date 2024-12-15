@@ -188,7 +188,7 @@ final String ipgeolocation_API_KEY = "";
 
 ### RM_recommendClothes.pde
 
--　**役割** 推薦された服装を表示するモジュールを管理する。AIの処理を取得し、画面に表示する。
+- **役割** 推薦された服装を表示するモジュールを管理する。AIの処理を取得し、画面に表示する。
 - **主な役割** 
    - suggestClothes.pyを実行し、AIの処理を取得
    - 取得した情報を画面に表示
@@ -207,6 +207,12 @@ final String ipgeolocation_API_KEY = "";
    - リスク情報の計算
    - リスク情報とアドバイスの表示
    - リスク情報に基づいた画像の表示
+
+### RM_rightWrite.pde
+
+- **役割** 権利関係の記載
+- **主な役割**
+   - 権利関係の記載
 
 ### RM_Temperature.pde
 
@@ -308,23 +314,24 @@ final String ipgeolocation_API_KEY = "";
 ## 作成するにあたって参考にしたサイト
 
 ```
-1. 
-https://www.lixil.co.jp/reform/gensai/column/column_vol05/#:~:text=%E3%83%92%E3%83%BC%E3%83%88%E3%82%B7%E3%83%A7%E3%83%83%E3%82%AF%E3%81%AF10%E5%BA%A6,%E6%84%9F%E3%81%98%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AF%E3%81%82%E3%82%8A%E3%81%BE%E3%81%9B%E3%82%93%E3%81%8B%EF%BC%9F
+1. LIXIL,室温が体に影響を与える『ヒートショック』とは？症状や対策、なりやすい人,
+https://www.lixil.co.jp/reform/gensai/column/column_vol05/#:~:text=%E3%83%92%E3%83%BC%E3%83%88%E3%82%B7%E3%83%A7%E3%83%83%E3%82%AF%E3%81%AF10%E5%BA%A6,%E6%84%9F%E3%81%98%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AF%E3%81%82%E3%82%8A%E3%81%BE%E3%81%9B%E3%82%93%E3%81%8B%EF%BC%9F,(閲覧日 2024/12/12)
 
-2.
-https://www3.nhk.or.jp/sapporo-news/20241203/7000071751.html
+2. NHK,寒い時期 “ヒートショック”に注意！ 具体的な対策は,
+https://www3.nhk.or.jp/sapporo-news/20241203/7000071751.html,(閲覧日 2024/12/12)
 
-3.
-https://weathernews.jp/s/topics/202103/310055/
+3. WeatherNews,服装と気温の関係,
+春ファッションを楽しむために知っておきたいこと,
+https://weathernews.jp/s/topics/202103/310055/,(閲覧日 2024/12/13)
 
-4.
-https://www.fnn.jp/articles/-/769161?display=full
+4. 川原浩揮,「暑がりさん」と「寒がりさん」服装の目安ご紹介！ 寒暖差激しい“ジグザグ”な一週間に注意　真夏日→気温急落→夏日でも朝晩ヒンヤリ,FNNプライムオンライン,
+https://www.fnn.jp/articles/-/769161?display=full,(閲覧日 2024/12/13)
 
-5.
-https://tsumugi-official.studio.site/top
+5. mitsumizo(三溝 英司),ProcessBuilderクラスの使い方,
+https://qiita.com/mitsumizo/items/836ce2e00e91c33fcf95(閲覧日 2024/12/13)
 
-6.
-https://qiita.com/mitsumizo/items/836ce2e00e91c33fcf95
+6. パナソニック株式会社 コミュニケーションデザインセンター,9割が家庭で「体感温度の違いを感じたことがある」パナソニック エアーマイスターが教える、暑がり・寒がりが同室で過ごすコツ 〜暑がり・寒がりにそれぞれおすすめのエアコン最新機能は？〜,
+https://prtimes.jp/main/html/rd/p/000000794.000024101.html
 ```
 
 
