@@ -72,7 +72,7 @@ final String ipgeolocation_API_KEY = "https://api.ipgeolocation.io/ipgeo?apiKey=
 
 #### processing.exeから本プログラムを起動する方法を説明する。
 
-#### 1.voicevoxの起動
+#### 1.voicevoxの起動(起動状態を維持してください)
 
 #### 2.processing.exeを起動
 
@@ -113,7 +113,7 @@ final String ipgeolocation_API_KEY = "https://api.ipgeolocation.io/ipgeo?apiKey=
 
 ## 各モジュールの説明(.pde)
 
-### WeatherForecast.pde
+### WIICR.pde
 
 - **役割** メインの描画ループを管理し、各モジュールの描画を行います。また、時間に応じて適切な処理を実行します。
 - **主要な役割**
