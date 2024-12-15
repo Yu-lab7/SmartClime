@@ -12,8 +12,6 @@ void initialize(){
   isInitializedDates = true; 
 
   initializeImage();
-  //initializeGrid();
-  //initializePlaceholder();
   initializeShadow();
   initializeRModuleBackground(); 
   isInitializedImages = true;

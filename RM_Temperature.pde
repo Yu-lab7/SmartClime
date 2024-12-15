@@ -28,8 +28,3 @@ void drawTemperatureRModule(Area area){
         drawText(CENTER,CENTER,WHITE_COLOR,24,"TemperatureModule\nデータを取得できません",x+w/2, y+h/2);
     }
 }
-
-//ラズベリーパイとの通信用
-/*boolean updateTemperature(){
-  return false;
-} */
