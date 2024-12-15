@@ -35,12 +35,12 @@ final String HUMIDITY_PATH = "humidity/"; //湿度画像が格納されている
 final String RISK_PATH = "risk/"; //リスク画像が格納されているフォルダのパス
 final String CLOTHES_PATH = "clothes/"; //服装画像が格納されているフォルダのパス
 final String HEAVY_PATH = "heavy/"; //防寒具画像が格納されているフォルダのパス
-final String TTS_PATH = "..\\DigitalSignate\\python\\ttsAbout.py";
-final String TTS_PATH2 = "..\\DigitalSignate\\python\\ttsAbout2.py";
-final String AI_PATH = "..\\DigitalSignate\\python\\suggestClothes.py";
-final String AI_PATH2 = "..\\DigitalSignate\\python\\suggestClothes2.py";
-final String FORM_PATH = "..\\DigitalSignate\\python\\form.py";
-final String WAVE_PATH = "..\\DigitalSignate\\python\\openWav.py";
+final String TTS_PATH = "..\\WIICR\\python\\ttsAbout.py";
+final String TTS_PATH2 = "..\\WIICR\\python\\ttsAbout2.py";
+final String AI_PATH = "..\\WIICR\\python\\suggestClothes.py";
+final String AI_PATH2 = "..\\WIICR\\python\\suggestClothes2.py";
+final String FORM_PATH = "..\\WIICR\\python\\form.py";
+final String WAVE_PATH = "..\\WIICR\\python\\openWav.py";
 
 final String LOCATION =  "大阪府";// 現在位置を設定
 
