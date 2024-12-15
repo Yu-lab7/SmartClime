@@ -1,4 +1,4 @@
-# Weather Forecast Clothing Recommendation System
+# WIICR
 
 このプログラムは、天気予報や気温、湿度などの情報を基に、適切な服装を推薦するシステムです。ユーザーはアンケート形式で自分の体感温度や好みを入力し、その情報を基に最適な服装を提案します。また、リスク情報やアドバイスも提供します。
 
@@ -61,11 +61,11 @@ https://ipgeolocation.io/
 https://openweathermap.org/
 ```
 
-作成したAPIKEY.pdeに以下のコードを貼り付けて保存してください。
+作成したAPIKEY.pdeに以下のコードを貼り付けて保存後、取得したAPIキーをWEATHER_API_KEYでは""の中に、ipgeolocationではapikey=の後に入れてください。
 
 ```
 final String WEATHER_API_KEY = "";
-final String ipgeolocation_API_KEY = "";
+final String ipgeolocation_API_KEY = "https://api.ipgeolocation.io/ipgeo?apiKey=";
 ```
 
 ## 実行方法
@@ -88,7 +88,7 @@ final String ipgeolocation_API_KEY = "";
 
 ![image3](https://github.com/user-attachments/assets/908a8258-eda1-4ea8-af49-37b4c8f39eaf)
 
-#### [本番環境(Arduinoを接続した状態)で実行する場合] 6.WIICR.pdeのdebugModeをfalseに設定する。
+#### [本番環境(Arduinoを接続した状態)で実行する場合] 6. WIICR.pdeのdebugModeをfalseに設定する。
 
 ![2024-12-15](https://github.com/user-attachments/assets/dcfc2615-e2d7-48b9-9d58-d0e7c9d7039b)
 
