@@ -62,13 +62,7 @@ boolean updateIsHoliday(){
     
     // 休日情報の判定
     isHoliday = json.hasKey(currentDate); // 現在の日付がJSONキーに存在するか
-    
-    // 土曜日または日曜日も休日に追加判定
-    //youbi2 = calcYoubi(year(),month(),day());
-    //youbiString2 = youbiToString(youbi2);
-    //if (youbiString2.equals("土") || youbiString2.equals("日")) {
-      //isHoliday = true;
-     //}
+  
      
     } catch (Exception e){
     println("isHoliday():土日祝判定を取得できませんでした."+ e);

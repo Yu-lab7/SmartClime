@@ -206,7 +206,6 @@ void setup() {
     textFont(createFont("Noto Sans CJK jp Bold" ,32)); //テキストフォントの追加
     
     background = loadImage("background.jpg");
-    //background = pImageCut(loadImage("background.jpg"),CENTER,CENTER,width,height);
     
     connectWithPython3();
     checkSubmitForm();
@@ -266,16 +265,12 @@ void drawModules() {
 
     if (nowPageID == 0) {
         drawFullImageModule(background);
-        //drawGridModule();
-        //drawPlaceholderModule();
         drawWeatherRModule(Area.area1);
         drawTemperatureRModule(Area.area5);
         drawHumidityRModule(Area.area6);
         drawRiskRModule(Area.area3);
     } else if (nowPageID == 1) {
         drawFullImageModule(background);
-        //drawGridModule();
-        //drawPlaceholderModule();
         drawClothesRModule(Area.area1);
         drawHeavyOutfitRModule(Area.area3);
     }
@@ -283,6 +278,7 @@ void drawModules() {
     drawLocationModule();
     drawProgressBarModule();
     drawPageControlModule();
+    drawRight(Area.area8);
     if((morningTimeHT[0].equals(String.valueOf(hour)) && morningTimeHT[1].equals(String.valueOf(minute))) && checkOpened == 0){
         if(outfit.length == 1){
             callTTSPythonScript(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),setRiskString(),setAdviseString(),outfit[0],heavyOutfit,String.valueOf(checkMorningOrNight),nickname);
@@ -337,7 +333,8 @@ enum RModule{
     Humidity,
     Risk,
     Clothes,
-    HeavyOutfit
+    HeavyOutfit,
+    Right
 }
 
 Size moduleSize(RModule module) {
@@ -347,6 +344,7 @@ Size moduleSize(RModule module) {
     if(module == RModule.Risk) return Size.L;
     if(module == RModule.Clothes) return Size.L;
     if(module == RModule.HeavyOutfit) return Size.L;
+    if(module == RModule.Right) return Size.S;
     return Size.S;
 }
 
@@ -475,13 +473,3 @@ PGraphics rmoduleShadowImage(Size size) {
   if (size == Size.L) return moduleShadowL;
   return null;
 }
-
-/*void callAI(){
-    connectWithPython(String.valueOf(temperature),weatherString,is_cold_sensitive,is_hot_sensitive);
-    connectWithPython2(String.valueOf(tempMax),String.valueOf(tempMin),is_cold_sensitive,is_hot_sensitive);
-    if(outfit.length == 1){
-        callTTSPythonScript(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),riskStringSummer,adviseStringSummer,outfit[0],heavyOutfit);
-    } else {
-        callTTSPythonScript2(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),riskStringSummer,adviseStringSummer,outfit[0],outfit[1],heavyOutfit);
-    }
-}*/
