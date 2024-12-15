@@ -88,6 +88,10 @@ final String ipgeolocation_API_KEY = "";
 
 ![image3](https://github.com/user-attachments/assets/908a8258-eda1-4ea8-af49-37b4c8f39eaf)
 
+#### [本番環境(Arduinoを接続した状態)で実行する場合] 6.WIICR.pdeのdebugModeをfalseに設定する。
+
+![2024-12-15](https://github.com/user-attachments/assets/dcfc2615-e2d7-48b9-9d58-d0e7c9d7039b)
+
 ## ディレクトリの説明
 ```
 .
