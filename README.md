@@ -144,6 +144,12 @@ final String ipgeolocation_API_KEY = "https://api.ipgeolocation.io/ipgeo?apiKey=
 - **主な役割** 
   - 指定した画像を背景にする
 
+### M_generateVoicevox.pde
+
+- **役割** voicevoxの音声を呼ぶ
+- **主な役割**
+  - voicevoxの音声を作成、再生する。
+
 ### M_LaunchingScreen.pde
 
 - **役割** プログラムの起動時に表示されるランチャースクリーンを管理する。各種データの初期化状況を表示し、ユーザーに現在の進行状況を知らせる。
@@ -179,7 +185,7 @@ final String ipgeolocation_API_KEY = "https://api.ipgeolocation.io/ipgeo?apiKey=
 
 ### M_tomorrowWeather.pde
 
-- **役割** 明日の天気を取得し、音声を作成、再生するプログラムに渡します。
+- **役割** 明日の天気を取得します。
 - **主な役割** 明日の天気を取得
 
 ### M_tts.pde

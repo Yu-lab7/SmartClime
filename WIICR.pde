@@ -180,6 +180,8 @@ int currentDate = -1;
 int lastExecutionDate = -1;
 int checkOpened = 0;
 
+boolean isThreadRunning = false; //スレッドが実行中かどうか
+
 boolean debugMode = true; //デバックモードを設定
 
 //パソコン向けにスクリーンを設定
@@ -279,28 +281,7 @@ void drawModules() {
     drawProgressBarModule();
     drawPageControlModule();
     drawRight(Area.area8);
-    if((morningTimeHT[0].equals(String.valueOf(hour)) && morningTimeHT[1].equals(String.valueOf(minute))) && checkOpened == 0){
-        if(outfit.length == 1){
-            callTTSPythonScript(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),setRiskString(),setAdviseString(),outfit[0],heavyOutfit,String.valueOf(checkMorningOrNight),nickname);
-        } else {
-            callTTSPythonScript2(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),setRiskString(),setAdviseString(),outfit[0],outfit[1],heavyOutfit,String.valueOf(checkMorningOrNight),nickname);
-        }
-        openWaveFile();
-        checkOpened = 1;
-    } 
-
-    if((nightTimeHT[0].equals(String.valueOf(hour)) && nightTimeHT[1].equals(String.valueOf(minute))) && checkOpened == 0){
-        checkMorningOrNight = 1;
-        updateWeather2(String.valueOf(year) + "-" + String.valueOf(month) + "-" + String.valueOf(day));
-        if(outfit.length == 1){
-            callTTSPythonScript(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),setRiskString(),setAdviseString(),outfit[0],heavyOutfit,String.valueOf(checkMorningOrNight),nickname);
-        } else {
-            callTTSPythonScript2(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),setRiskString(),setAdviseString(),outfit[0],outfit[1],heavyOutfit,String.valueOf(checkMorningOrNight),nickname);
-        }
-        openWaveFile();
-        checkMorningOrNight = 0;
-        checkOpened = 1;
-    }
+    thread("createVoicevox");
 }
 
 //エリア数の定義
