@@ -3,7 +3,7 @@ import json
 import sys
 
 # 音声合成を行うメソッド
-def synthesize_voice(temperature, humidity, weather, temp, hum, riskString, advise, outfit, outfit2, heavy, check, speaker=8, filename="../DigitalSignate/python/output/output.wav"):
+def synthesize_voice(temperature, humidity, weather, temp, hum, riskString, advise, outfit, outfit2, heavy, check, nickname, speaker=8, filename="../WIICR/python/output/output.wav"):
     #print(f"送信するテキスト: {text}")  # デバッグ用プリント文
     if check == "0":
      text = f"おはようございます!{nickname}さん、現在の気温は{temperature}度、湿度は{humidity}パーセントです。天気は{weather}です。室内温度は{temp}度、室内湿度は{hum}パーセントです。これらの情報から、{riskString}。{advise}。また、今日のおすすめの服装は{outfit}です。{outfit2}。また、{heavy}も身に着けると良いでしょう。今日も一日頑張りましょう。"
@@ -132,4 +132,4 @@ if __name__ == "__main__":
     nickname = sys.argv[12]
 
     # 音声合成の実行
-    synthesize_voice(temperature,humidity,weather,temp,hum,riskString,advise,outfit,outfit2,heavy,check, speaker=8, filename="../DigitalSignate/python/output/output.wav")
+    synthesize_voice(temperature,humidity,weather,temp,hum,riskString,advise,outfit,outfit2,heavy,check,nickname, speaker=8, filename="../WIICR/python/output/output.wav")

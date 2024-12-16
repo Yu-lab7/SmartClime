@@ -282,23 +282,22 @@ void drawModules() {
     if((morningTimeHT[0].equals(String.valueOf(hour)) && morningTimeHT[1].equals(String.valueOf(minute))) && checkOpened == 0){
         if(outfit.length == 1){
             callTTSPythonScript(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),setRiskString(),setAdviseString(),outfit[0],heavyOutfit,String.valueOf(checkMorningOrNight),nickname);
-            openWaveFile();
         } else {
             callTTSPythonScript2(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),setRiskString(),setAdviseString(),outfit[0],outfit[1],heavyOutfit,String.valueOf(checkMorningOrNight),nickname);
-            openWaveFile();
         }
+        openWaveFile();
         checkOpened = 1;
     } 
 
     if((nightTimeHT[0].equals(String.valueOf(hour)) && nightTimeHT[1].equals(String.valueOf(minute))) && checkOpened == 0){
         checkMorningOrNight = 1;
+        updateWeather2(String.valueOf(year) + "-" + String.valueOf(month) + "-" + String.valueOf(day));
         if(outfit.length == 1){
-            callTTSPythonScript(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),riskStringSummer,adviseStringSummer,outfit[0],heavyOutfit,String.valueOf(checkMorningOrNight),nickname);
-            openWaveFile();
+            callTTSPythonScript(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),setRiskString(),setAdviseString(),outfit[0],heavyOutfit,String.valueOf(checkMorningOrNight),nickname);
         } else {
-            callTTSPythonScript2(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),riskStringSummer,adviseStringSummer,outfit[0],outfit[1],heavyOutfit,String.valueOf(checkMorningOrNight),nickname);
-            openWaveFile();
+            callTTSPythonScript2(String.valueOf(temperature),String.valueOf(humidity),weatherString,String.valueOf(temp),String.valueOf(hum),setRiskString(),setAdviseString(),outfit[0],outfit[1],heavyOutfit,String.valueOf(checkMorningOrNight),nickname);
         }
+        openWaveFile();
         checkMorningOrNight = 0;
         checkOpened = 1;
     }
