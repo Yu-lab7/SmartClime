@@ -42,7 +42,7 @@ final String AI_PATH2 = "..\\WIICR\\python\\suggestClothes2.py";
 final String FORM_PATH = "..\\WIICR\\python\\form.py";
 final String WAVE_PATH = "..\\WIICR\\python\\openWav.py";
 
-final String LOCATION =  "大阪府";// 現在位置を設定
+String LOCATION =  "";// 現在位置を設定
 
 //色の宣言
 color WHITE_COLOR; 
@@ -430,6 +430,7 @@ void fetchLocation() {
         JSONObject json = loadJSONObject(ipgeolocation_API_KEY);
         latitude = json.getFloat("latitude");
         longitude = json.getFloat("longitude");
+        LOCATION = json.getString("state_prov");    
     } catch(Exception e) {
         println("Error: " + e.getMessage());
     }
