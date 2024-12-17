@@ -2,24 +2,26 @@ import java.io.*;
 import java.net.*;
 import processing.serial.Serial;
 
-Serial sensor;
+Serial sensor;//sensorの設定
+
 PGraphics grid;//gridを表す変数
 PGraphics placeholder; //枠を表す変数
 
 final String SERIAL_PORT = "COM6"; //シリアルポートの設定
 final int RESOLUTION = 1024; //解像度の設定
 
-final int MODULE_RECT_ROUND = 30;
-final int PROGRESSBAR_HEIGHT = 55;
+final int MODULE_RECT_ROUND = 30; //モジュールの角丸の設定
+final int PROGRESSBAR_HEIGHT = 55; //プログレスバーの高さ
 
-PImage background;
+PImage background; //背景画像の設定
 PImage[] adImage;
 
 final int STAY_SECOND = 10; //1ページ当たりの滞在秒数
 
 final int PAGE_ALL_COUNT = 2; //全てのページの枚数
-final int AD_IMAGE_COUNT = 1; //広告画像の枚数
+final int AD_IMAGE_COUNT = 1; //画像の枚数
 
+//初期化の設定
 boolean isInitializedImages = false;
 boolean isInitializedDates = false;
 boolean isInitializedWeather = false;
@@ -28,6 +30,7 @@ boolean isInitializedRoomHumidity = false;
 boolean isInitializedRisk = false;
 boolean isInitializedClothes = false;
 
+//パスの設定
 final String AD_PATH = "ad/"; //広告画像が格納されているフォルダのパス
 final String WEATHER_PATH = "weather/"; //天気画像が格納されているフォルダのパス
 final String TEMPERATURE_PATH = "temperature/"; //気温画像が格納されているフォルダのパス
@@ -46,7 +49,6 @@ String LOCATION =  "";// 現在位置を設定
 
 //色の宣言
 color WHITE_COLOR; 
-
 color NEARLY_WHITE_COLOR;
 color NEARLY_GREEN_COLOR; 
 color BLACK_COLOR; 
@@ -64,13 +66,13 @@ int minute;
 int second;
 int beforeDay = day(); //日の更新用
 int beforeSecond = second(); //秒の更新用
-
 String youbiString;
 String youbiString2;
 Youbi youbi;
 Youbi youbi2;
 boolean isHoliday;
 
+//WeatherRModuleの変数
 boolean isUpdatedWeather = false; //データが正しく取得できたか確認
 float latitude = 0;
 float longitude = 0;
@@ -98,6 +100,8 @@ PGraphics riskShowSpring; //春のリスクの背景画像
 PGraphics riskShowSummer; //夏のリスクの背景画像
 PGraphics riskShowAutumn; //秋のリスクの背景画像
 PGraphics riskShowWinter; //冬のリスクの背景画像
+PGraphics riskDry;
+PGraphics riskShikke;
 String riskStringSpring;
 String riskStringSummer;
 String riskStringAutumn;
@@ -154,15 +158,12 @@ PGraphics moduleShadowL;
 int march = 3;
 int april = 4;
 int may = 5;
-
 int june = 6;
 int july = 7;
 int august = 8;
-
 int september = 9;
 int october = 10;
 int november = 11;
-
 int december = 12;
 int january = 1;
 int february = 2;
@@ -179,7 +180,6 @@ int checkMorningOrNight = 0;
 int currentDate = -1; 
 int lastExecutionDate = -1;
 int checkOpened = 0;
-
 boolean isThreadRunning = false; //スレッドが実行中かどうか
 
 boolean debugMode = true; //デバックモードを設定
@@ -193,7 +193,7 @@ void settings() {
 //初回描画時に実行
 void setup() { 
     frameRate(1); //描画処理を毎秒一回更新する
-    //noCursor(); //マウスカーソルの削除
+    noCursor(); //マウスカーソルの削除
     colorMode(HSB,360,100,100,100); //色の設定をHSBに設定
     
     WHITE_COLOR = color(0,0,100);
@@ -222,6 +222,32 @@ void draw() {
     updateDates();
     drawModules();
   }
+}
+
+void drawModules() {
+    currentDate = day();
+    if(currentDate != lastExecutionDate){
+        checkOpened = 0;
+        lastExecutionDate = currentDate;
+    }
+
+    if (nowPageID == 0) {
+        drawFullImageModule(background);
+        drawWeatherRModule(Area.area1);
+        drawTemperatureRModule(Area.area5);
+        drawHumidityRModule(Area.area6);
+        drawRiskRModule(Area.area3);
+    } else if (nowPageID == 1) {
+        drawFullImageModule(background);
+        drawClothesRModule(Area.area1);
+        drawHeavyOutfitRModule(Area.area3);
+    }
+    drawDateModule();
+    drawLocationModule();
+    drawProgressBarModule();
+    drawPageControlModule();
+    drawRight(Area.area8);
+    thread("createVoicevox");
 }
 
 void updateDates() {
@@ -256,32 +282,6 @@ void updateDates() {
         }
         beforeSecond = second;
 }
-}
-
-void drawModules() {
-    currentDate = day();
-    if(currentDate != lastExecutionDate){
-        checkOpened = 0;
-        lastExecutionDate = currentDate;
-    }
-
-    if (nowPageID == 0) {
-        drawFullImageModule(background);
-        drawWeatherRModule(Area.area1);
-        drawTemperatureRModule(Area.area5);
-        drawHumidityRModule(Area.area6);
-        drawRiskRModule(Area.area3);
-    } else if (nowPageID == 1) {
-        drawFullImageModule(background);
-        drawClothesRModule(Area.area1);
-        drawHeavyOutfitRModule(Area.area3);
-    }
-    drawDateModule();
-    drawLocationModule();
-    drawProgressBarModule();
-    drawPageControlModule();
-    drawRight(Area.area8);
-    thread("createVoicevox");
 }
 
 //エリア数の定義

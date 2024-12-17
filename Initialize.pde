@@ -270,7 +270,34 @@ void initializeRModuleBackground() {
   riskShowWinter.rect(0, 0, w, h);
   riskShowWinter.endDraw();
   //riskShowWinter.mask( sizeToModuleMask( moduleSize(module) ) );
-  
+
+  back = loadImage(RISK_PATH + "dry.png");
+  if (back == null) {
+    println("Error: Could not load image from " + RISK_PATH + "dry.png");
+  }
+  riskDry = createGraphics(w, h);
+
+  riskDry.beginDraw();
+  riskDry.colorMode(HSB, 360, 100, 100, 100);
+  riskDry.image( pImageCut(back, CENTER, CENTER, w, h) , -850, -950, 3*w, 3*h);
+  riskDry.fill(0, 0, 0, 0);
+  riskDry.noStroke();
+  riskDry.rect(0, 0, w, h);
+  riskDry.endDraw();
+
+  back = loadImage(RISK_PATH + "shikke.png");
+  if (back == null) {
+    println("Error: Could not load image from " + RISK_PATH + "shikke.png");
+  }
+  riskShikke = createGraphics(w, h);
+
+  riskShikke.beginDraw();
+  riskShikke.colorMode(HSB, 360, 100, 100, 100);
+  riskShikke.image( pImageCut(back, CENTER, CENTER, w, h) , -850, -950, 3*w, 3*h);
+  riskShikke.fill(0, 0, 0, 0);
+  riskShikke.noStroke();
+  riskShikke.rect(0, 0, w, h);
+  riskShikke.endDraw();
 
   //----------------------------------------//
   //2ページ目の背景画像の設定
