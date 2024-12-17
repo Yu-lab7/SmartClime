@@ -16,7 +16,7 @@ final int PROGRESSBAR_HEIGHT = 55; //プログレスバーの高さ
 PImage background; //背景画像の設定
 PImage[] adImage;
 
-final int STAY_SECOND = 10; //1ページ当たりの滞在秒数
+final int STAY_SECOND = 20; //1ページ当たりの滞在秒数
 
 final int PAGE_ALL_COUNT = 2; //全てのページの枚数
 final int AD_IMAGE_COUNT = 1; //画像の枚数
