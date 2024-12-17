@@ -346,7 +346,9 @@ https://www.fnn.jp/articles/-/769161?display=full,(閲覧日 2024/12/13)
 https://qiita.com/mitsumizo/items/836ce2e00e91c33fcf95(閲覧日 2024/12/13)
 
 6. パナソニック株式会社 コミュニケーションデザインセンター,9割が家庭で「体感温度の違いを感じたことがある」パナソニック エアーマイスターが教える、暑がり・寒がりが同室で過ごすコツ 〜暑がり・寒がりにそれぞれおすすめのエアコン最新機能は？〜,
-https://prtimes.jp/main/html/rd/p/000000794.000024101.html
+https://panasonic.jp/aircon/air_letter/news/sensible_temperature.html,(閲覧日 2024/12/15)
+
+7. にいがたマイホーム応援マガジン,室内の快適な温度とは？WHOは18℃以上を強く勧告！,https://www.toskenhome.com/blog/who18/#toc3 (閲覧日 2024/12/17)
 ```
 
 
