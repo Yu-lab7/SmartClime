@@ -14,12 +14,9 @@ final int MODULE_RECT_ROUND = 30; //モジュールの角丸の設定
 final int PROGRESSBAR_HEIGHT = 55; //プログレスバーの高さ
 
 PImage background; //背景画像の設定
-PImage[] adImage;
 
-final int STAY_SECOND = 20; //1ページ当たりの滞在秒数
-
+final int STAY_SECOND = 60; //1ページ当たりの滞在秒数
 final int PAGE_ALL_COUNT = 2; //全てのページの枚数
-final int AD_IMAGE_COUNT = 1; //画像の枚数
 
 //初期化の設定
 boolean isInitializedImages = false;
@@ -118,6 +115,13 @@ String adviseSpring;
 String adviseSummer;
 String adviseAutumn;
 String adviseWinter;
+int riskSlideIndex = 0;
+int riskSlideInterval = 10; //スライドショーの間隔
+int lastRiskSlideTime = 0; //最後にスライドを表示した時間
+int lastSlideIndex = -1; //最後に表示したスライドのインデックス
+int[] SummerRiskCount = new int[4]; //表示リスクを管理
+int[] WinterRiskCount = new int[4]; //表示リスクを管理
+int[] RiskFlag = new int[4]; //表示リスクを管理
 
 //ClothesRModuleの変数
 PGraphics clothesBackground; //服装の背景画像
@@ -237,6 +241,7 @@ void drawModules() {
         drawTemperatureRModule(Area.area5);
         drawHumidityRModule(Area.area6);
         drawRiskRModule(Area.area3);
+        //isUpdatedRiskSlideShow();
     } else if (nowPageID == 1) {
         drawFullImageModule(background);
         drawClothesRModule(Area.area1);
@@ -268,20 +273,19 @@ void updateDates() {
         youbiString = youbiToString(youbi);
         
         beforeDay = day;
-}
+    }
     
     //秒の変更
     if (isUpdatedSecond) {  
         if (second % STAY_SECOND == 0) {
             updateNowPageID(true);
         }
-        
         if (minute + second == 0) {
             println(hour + "時になりました.");
             isUpdatedWeather = updateWeather();
         }
         beforeSecond = second;
-}
+    }
 }
 
 //エリア数の定義
