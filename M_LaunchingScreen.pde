@@ -1,7 +1,7 @@
 void drawLaunchingScreenModule() {
   drawFullImageModule(background);
   
-  drawText(CENTER, BASELINE, GREEN_COLOR, 148, "Weather Forecast", width/2, height/2-380);
+  drawText(CENTER, BASELINE, GREEN_COLOR, 148, "Smart Clime", width/2, height/2-380);
   drawText(CENTER, BASELINE, BLACK_COLOR, 48, LOCATION, width/2, height/2-180);
   stroke(BLACK_COLOR);
   strokeWeight(5);

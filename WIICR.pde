@@ -28,7 +28,6 @@ boolean isInitializedRisk = false;
 boolean isInitializedClothes = false;
 
 //パスの設定
-final String AD_PATH = "ad/"; //広告画像が格納されているフォルダのパス
 final String WEATHER_PATH = "weather/"; //天気画像が格納されているフォルダのパス
 final String TEMPERATURE_PATH = "temperature/"; //気温画像が格納されているフォルダのパス
 final String HUMIDITY_PATH = "humidity/"; //湿度画像が格納されているフォルダのパス
@@ -82,7 +81,7 @@ float tempMin = 0.0;
 PGraphics weatherBackground;
 
 //TemperatureRModuleの変数
-boolean isUpdatedTemperature = false; //データが正しく取得できたか確認 
+boolean isUpdatedTemperature = true; //データが正しく取得できたか確認 
 PGraphics temperatureBackground; //気温の背景画像
 float temp = 0.0; //温度の変数
 
@@ -186,7 +185,7 @@ int lastExecutionDate = -1;
 int checkOpened = 0;
 boolean isThreadRunning = false; //スレッドが実行中かどうか
 
-boolean debugMode = true; //デバックモードを設定
+boolean debugMode = false;//デバックモードを設定
 
 //パソコン向けにスクリーンを設定
 void settings() {

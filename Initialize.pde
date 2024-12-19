@@ -54,7 +54,6 @@ void initialize(){
     }
   updateNowPageID(true);
 
-  if(debugMode == true){
     println("現在の緯度:"+latitude);
     println("現在の経度:"+longitude);
     println("現在の気温:"+temperature);
@@ -64,7 +63,7 @@ void initialize(){
     println("現在の部屋の湿度"+hum);
     println("最高気温:"+tempMax);
     println("最低気温:"+tempMin);
-  }
+  
 }
 
 void initializeGrid(){
