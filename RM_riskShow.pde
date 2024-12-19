@@ -18,7 +18,7 @@ void drawRiskRModule(Area area) {
     String riskTitle = "リスク表示";
     drawText(CENTER,BASELINE,WHITE_COLOR,32,riskTitle,x + 430,y + 50);
     
-    if (temp != 0.0 || hum != 0.0) { //実装時にはtemp == 0, hum == 0にする
+    if (temp == 0.0 || hum == 0.0) { //実装時にはtemp == 0, hum == 0にする
         drawText(CENTER,BASELINE,WHITE_COLOR,32,"riskShowModule\nデータを取得できません",x + 430,y + 150);
     } else {
 
@@ -116,7 +116,7 @@ String setRiskString() {
             riskStringSummer = "温度差疲労に注意";
             return riskStringSummer;
         } else if ((temp < 25 || temp > 29) ) {
-            riskStringSummer = "部屋の温度が快適ではありません";
+            riskStringSummer = "部屋の温度が快適ではない";
             return riskStringSummer;
         } else if(hum < 40 ){
             riskStringSummer = "乾燥に注意";
@@ -132,7 +132,7 @@ String setRiskString() {
             riskStringWinter = "ヒートショックに注意";
             return riskStringWinter;
         } else if(temp < 18){
-            riskStringWinter = "部屋の温度が低すぎます";
+            riskStringWinter = "部屋の温度が低い";
             return riskStringWinter;
         } else if((hum < 40 || debugMode == true )){
             riskStringWinter = "乾燥に注意";

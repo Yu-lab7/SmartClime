@@ -95,7 +95,7 @@ neutral_radio = ttk.Radiobutton(form_frame, text="どちらでもない", variab
 neutral_radio.grid(row=3, column=2, pady=10, sticky="w")
 
 # 朝の時間入力の説明ラベル
-morning_time_instruction_label = tk.Label(form_frame, text="情報を伝える朝の時間(3:00~12:00)を入力してください (例: 08:00)", bg="white", fg="blue", font=("Helvetica", 12))
+morning_time_instruction_label = tk.Label(form_frame, text="情報を伝える朝の時間(03:00~12:00)を入力してください (例: 08:00)", bg="white", fg="blue", font=("Helvetica", 12))
 morning_time_instruction_label.grid(row=4, column=0, columnspan=2, pady=10, sticky="w")
 
 # ラベルとエントリー（朝の時間）
